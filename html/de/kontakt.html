@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Kontakt | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/googleMaps.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../contact.html"><img src="../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../en/contact.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="cities/newyork.html">New York</a></li>
+                                <li><a href="cities/lasvegas.html">Las Vegas</a></li>
+                                <li><a href="cities/washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="cities/paris.html">Paris</a></li>
+                                <li><a href="cities/larochelle.html">La Rochelle</a></li>
+                                <li><a href="cities/strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="cities/berlin.html">Berlin</a></li>
+                                <li><a href="cities/halle.html">Halle Westfalen</a></li>
+                                <li><a href="cities/munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="italien.html">Italien</a>
+                            <ul>
+                                <li><a href="cities/rom.html">Rom</a></li>
+                                <li><a href="cities/venedig.html">Venedig</a></li>
+                                <li><a href="cities/mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="russland.html">Russland</a>
+                            <ul>
+                                <li><a href="cities/moskau.html">Moskau</a></li>
+                                <li><a href="cities/stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="cities/stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="england.html">England</a>
+                            <ul>
+                                <li><a href="cities/london.html">London</a></li>
+                                <li><a href="cities/manchester.html">Manchester</a></li>
+                                <li><a href="cities/liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="cities/vancouver.html">Vancouver</a></li>
+                                <li><a href="cities/montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="reiseziele.html">Reiseziele</a></li>
+                <li><a href="unserTeam.html">Unser Team</a></li>
+                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a class="password" onClick="passWordDeutsch()">Premiumbereich</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+       
+       <section class="countryName">
+            <article>KONTAKTFORMULAR</article>
+        </section>
+       
+        <section class="contactMain">
+
+            <section>
+
+                <p><span>Tel</span> : +49 (0)21 19 02 12</p>
+                <p><span>Fax</span> : +49 (0)21 19 02 22</p>
+
+                <form>
+                    <ul>
+                        <li class="twoColumnPart">
+                            <label for="name">Name</label>
+                            <input id="name" type="text" value="" name="name" placeholder="bsp.: Max Mustermann">
+                        </li>
+                        <li class="twoColumnPart">
+                            <label for="email">Email<span>*</span></label>
+                            <input id="email" type="email" value="" name="email" placeholder="bsp.: abc@gmail.com" required>
+                        </li>
+                        <li class="twoColumnPart">
+                            <label for="country">Land</label>
+                            <select id="country" name="country">
+
+                          <option value="canada">Kanada</option>
+                          <option value="usa">Vereinigte Staaten</option>
+                          <option value="allemagne" selected>Deutschland</option>
+                          <option value="espagne">Spanien</option>
+                          <option value="france">Frankreich</option>
+                          <option value="italie">Italien</option>
+                          <option value="angleterre">England</option>
+                          <option value="belgique">Belgien</option>
+                          <option value="others">Andere</option>
+                        </select>
+                        </li>
+                        <li class="twoColumnPart">
+                            <label for="tel">Telefon</label>
+                            <input type="tel" id="tel" name="telephone" placeholder="bsp.: 04 12 06 11 03">
+                        </li>
+                        <li>
+                            <label for="message">Nachricht<span>*</span></label>
+                            <textarea id="message" name="message" placeholder="Schreiben Sie eine Nachricht..." required></textarea>
+                        </li>
+                    </ul>
+                    <input type="submit" value="Envoyer un message">
+                </form>
+
+            </section>
+
+
+            <section>
+                <p><span>Email</span> : <a href="mailto:info@holipedia.com" target="_top">info@holipedia.com</a></p>
+                <p><span>Adresse</span> : <a href="https://goo.gl/0QJ8e1">23 Avenue Albert Einstein, 17000 La Rochelle</a></p>
+
+                <div id="map"></div>
+                <script class="maps" src="https://maps.googleapis.com/maps/api/js?AIzaSyABlIotk29vs7sgZq9AKrtLS4ntmwvCw9Y&signed_in=true&callback=initMap" async defer>
+                </script>
+            </section>
+
+
+        </section>
+    </main>
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/kontakt.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="frankreich.html">Frankreich</a></li>
+                    <li><a href="vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="deutschland.html">Deutschland</a></li>
+                    <li><a href="schweden.html">Schweden</a></li>
+                    <li><a href="russland.html">Russland</a></li>
+                    <li><a href="england.html">England</a></li>
+                    <li><a href="italien.html">Italien</a></li>
+                    <li><a href="kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges</li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="unserTeam.html">Impressum</a></li>
+                    <li><a href="unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="datenschutz.html">Datenschutz</a></li>
+                    <li><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

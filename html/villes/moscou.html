@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Moscou | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../de/cities/moskau.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="../en/cities/moscow.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()" class="active">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../allemagne.html">Allemagne</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italie.html">Italie</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venise.html">Venise</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russie.html" class="active active2">Russie</a>
+                            <ul>
+                                <li><a href="moscou.html" class="active active2">Moscou</a></li>
+                                <li><a href="stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../suede.html">Suède</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../angleterre.html">Angleterre</a>
+                            <ul>
+                                <li><a href="londres.html">Londres</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../notreEquipe.html">Notre equipe</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousSousDossier()">Aire Premium</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageMoscouCity topImageCity">
+            <span>Russie</span>
+            <h3>Moscou</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Bienvenue !</a></li>
+                    <li><a href="#aVoir" target="_self">À voir, à faire</a></li>
+                    <li><a href="#Decouvrir" target="_self">Découvrir</a></li>
+                    <li><a href="#Hebergement" target="_self">Hébergement</a></li>
+                </ul>
+
+            </section>
+                <section class="cityArticles">
+                    <article>
+                        <h5 id="Guide">Bienvenue à Moscou</h5>
+                        <p>Les rayons du soleil se reflètent sur les coupoles dorées des églises. Des femmes court vêtues descendent de voitures luxueuses. Des soldats en uniforme arpentent la place Rouge au pas cadencé.</p>
+
+                        <p>Vous êtes à Moscou, capitale politique, économique et culturelle de cette immense contrée. Ici, se trouvent les racines médiévales de la Russie : le Kremlin, qui conserve la splendeur des grands princes moscovites, et la cathédrale Basile-le-Bienheureux, témoin de la défaite des Tatars.</p>
+
+                        <p>La ville rappelle aussi un passé plus récent, encore dans nos mémoires. Sur la place Rouge, le fondateur de l'État soviétique repose momifié pour l'éternité. À quelques kilomètres de là, son héritier, juché sur un tank devant la Maison blanche, provoqua la chute de ce même État. Moscou a toujours été renommée pour la diversité de sa population et la richesse de sa culture. Aujourd'hui plus que jamais, les activités culturelles foisonnent.</p>
+
+                        <p>Que ce soit un opéra de Tchaïkovski ou une pièce de Tchekhov, les arts de la scène figurent parmi les meilleurs et les moins chers au monde. La galerie Tretiakov et le musée des Beaux-Arts Pouchkine renferment des collections mondialement réputées d'art russe et impressionniste. Avec l'émergence de la Nouvelle Russie sont apparues de nouvelles formes d'art et de distraction. Discothèque underground ou exposition avant-gardiste au musée d'Art moderne, ce côté bohème offre un aperçu de l'avenir du pays : tantôt intellectuel et stimulant, tantôt débauché et dépravé, mais toujours fascinant.</p>
+
+                    </article>
+                    <article>
+                        <h5 id="aVoir">Les lieux à visiter</h5>
+                        <ul>
+
+                            <li>
+                                <h6>Le Kremlin</h6>
+
+                                <p>Dernier symbole du pouvoir politique russe, cette ancienne forteresse est le berceau de Moscou. On peut y admirer le talent des plus grands peintres d’icônes russes, y découvrir le trésor qui déclencha une révolution, y pleurer un ou deux dirigeants, avant de grimper au sommet du clocher d’Ivan-le-Grand pour admirer un panorama impressionnant. En sortant, ne manquez ni les bouquets des jeunes mariés ni le ballet synchronisé des gardiens de la tombe du Soldat inconnu.</p>
+                            </li>
+
+                            <li>
+                                <h6>La place Rouge</h6>
+
+                                <p>On ne se lasse pas de découvrir la place Rouge. Les tours majestueuses et les murs massifs du Kremlin, Basilele- Bienheureux avec son camaïeu audacieux de couleurs et de motifs, la façade ouvragée du GOuM ainsi que l’auguste musée d’Histoire, tout de briques rouges, bordent cette vaste étendue pavée. La nuit, les édifices illuminés font de la place, enfin paisible, un lieu magique.</p>
+                            </li>
+
+                            <li>
+                                <h6>Shopping à Izmaïlovo</h6>
+
+                                <p>Empruntez la passerelle, passez la porte, et vous voilà transporté au Moyen Âge : églises en bois, murs blanchis… et boutiques de souvenirs. Comme autrefois, les étals autour d’un faux kremlin reconstitué proposent les meilleures affaires : artisanat traditionnel, oeuvres d’art, antiquités, tapis d’Asie centrale ou babioles soviétiques.</p>
+                            </li>
+
+                            <li>
+                                <h6>Le Bolchoï</h6>
+
+                                <p>Après six ans de travaux qui auront coûté la bagatelle de 730 millions de dollars, le théâtre Bolchoï a rouvert ses portes en 2011. Drapée de velours rouge, ornée de nouvelles moulures, la scène principale y a gagné en magnificence. Depuis sa création, en 1824, la salle offre un décor magique à des spectacles exigeants. C’est le lieu de résidence du prestigieux Ballet du Bolchoï.</p>
+                            </li>
+
+                            <li>
+                                <h6>Souzdal</h6>
+
+                                <p>Avec ses canaux, ses prairies fleuries et les dômes de ses églises en forme de meringue, cette capitale médiévale offre un décor de conte de fées. Sous la domination moscovite, Souzdal devint un centre monastique prospère. À la fin du XVIIe siècle, de riches marchands financèrent la construction de 30 ravissantes églises. Classée zone protégée, épargnée lors de la construction du chemin de fer, Souzdal a pu conserver de nombreuses perles architecturales et une atmosphère champêtre.</p>
+                            </li>
+
+                            <li>
+                                <h6>Le métro de Moscou</h6>
+
+                                <p>Le métro de Moscou relève la gageure de cumuler cours d’histoire, musée d’art et efficacité. Depuis son ouverture en 1930, les travaux n’ont pas cessé. La décoration des stations et l’implantation du métro en dit long sur la politique d’urbanisation des XXe et XXIe siècles. Prouesse technologique, le métro moscovite est également richement orné avec une profusion de marbre et de granit, de mosaïques et de bas-reliefs.</p>
+                            </li>
+
+                            <li>
+                                <h6>La galerie Tretiakov</h6>
+
+                                <p>Situé dans Lavrouchinsky per, le plus grand musée d’art de Moscou qui se trouve dans un édifice de style russo-byzantin, abrite une extraordinaire collection d’icônes anciennes ou d’avant-garde (le deuxième bâtiment, situé dans Krymsky val, est consacré aux mouvements du XXe siècle : suprématisme, constructivisme et réalisme socialiste). Célèbre pour sa collection de peintures réalistes, le musée fait aussi la part belle au style russobyzantin et à l’Art nouveau.</p>
+                            </li>
+
+                            <li>
+                                <h6>Les bains Sandouny</h6>
+
+                                <p>Le meilleur moyen d’évacuer le stress urbain, c’est encore de se plonger dans les vapeurs régénératrices d’une bania traditionnelle. Plus qu’un simple lieu d’hygiène, la bania est un art de vivre typiquement russe. Été comme hiver, on en sort merveilleusement propre et détendu. Quelques petits coups de rameau de bouleau bien sentis viendront améliorer votre circulation sanguine. Puisqu’on vous dit que c’est pour votre bien ! Sandouny, le plus vieil établissement de Moscou, est un lieu luxueux, idéal pour s’offrir cette expérience revigorante.</p>
+                            </li>
+
+                            <li>
+                                <h6>Excursions sur la Moskova</h6>
+
+                                <p>Pour admirer la ville depuis un point de vue inédit sans souffrir des embouteillages, rien ne vaut le bateau. La croisière dure 1 heure 30 et vous permettra d’admirer le monastère Novodevitchi, le parc Gorki, la cathédrale du Christ- Sauveur, le Kremlin et le monastère Novospasski. Au-delà de la promenade touristique, le bateau peut aussi être un astucieux moyen de transport.</p>
+                            </li>
+
+                            <li>
+                                <h6>Le musée des <br> Beaux-Arts Pouchkine</h6>
+
+                                <p>Depuis plus d’un siècle, le musée Pouchkine rassemble dans ses collections des merveilles qui résument avec brio les beaux-arts depuis l’Antiquité jusqu’à l’ère moderne. Son emplacement originel, devenu depuis le bâtiment central, est consacré à l’Égypte et à la Grèce antiques ainsi qu’aux maîtres flamands. La galerie d’Art européen et américain des XIXe et XXe siècles voisine abrite des chefs-d’oeuvre impressionnistes et néo-impressionnistes.</p>
+                            </li>
+
+                        </ul>
+                    </article>
+                    <article id="Decouvrir">
+                        <h5>Découvrez la beauté de Moscou</h5>
+
+                        <img src="../../img/moscouVille1.jpg" alt="moscouVille1">
+                        <img src="../../img/moscouVille2.jpg" alt="moscouVille2">
+                        <img src="../../img/moscouVille3.jpg" alt="moscouVille3">
+                        <img src="../../img/moscouVille4.jpg" alt="moscouVille4">
+                        <img src="../../img/moscouVille5.jpg" alt="moscouVille5">
+                        <img src="../../img/moscouVille6.jpg" alt="moscouVille6">
+                        <img src="../../img/moscouVille7.jpg" alt="moscouVille7">
+                        <img src="../../img/moscouVille8.jpg" alt="moscouVille8">
+                        <img src="../../img/moscouVille9.jpg" alt="moscouVille9">
+
+                    </article>
+                    <article id="Hebergement">
+                        <h5>Hébergement</h5>
+
+
+                        <section>
+                            <aside>
+                                <img src="../../img/moscouHotel1.jpg" alt="moscouHotel1">
+                            </aside>
+
+                            <aside>
+                                <a href="https://www.tripadvisor.fr/Hotel_Review-g298484-d299906-Reviews-Radisson_Royal_Hotel_Moscow-Moscow_Central_Russia.html">
+                                    Radisson Royal Hotel Moscow
+                                </a>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripVotes">1 265 avis</div>
+                                <p>N°3 sur 308 hôtels à Moscou</p>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299906-r464709366-Radisson_Royal_Hotel_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Discrétion et superbes vues” <span>11/03/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299906-r454737669-Radisson_Royal_Hotel_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“a conseiller” <span>25/01/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299906-r449897017-Radisson_Royal_Hotel_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Hôtel incroyable” <span>06/01/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299906-r420721511-Radisson_Royal_Hotel_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Hors du temps” <span>21/09/2016</span></p>
+                                </a>
+
+                            </aside>
+
+                            <aside>
+                                <form action="https://www.tripadvisor.fr/Hotel_Review-g298484-d299906-Reviews-Radisson_Royal_Hotel_Moscow-Moscow_Central_Russia.html" target="_blank">
+                                    <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                                </form>
+                            </aside>
+                        </section>
+
+
+                        <section>
+                            <aside>
+                                <img src="../../img/moscouHotel2.jpg" alt="moscouHotel2">
+                            </aside>
+
+                            <aside>
+                                <a href="https://www.tripadvisor.fr/Hotel_Review-g298484-d299869-Reviews-Hotel_Metropol_Moscow-Moscow_Central_Russia.html">
+                                    Hotel Metropol Moscow
+                                </a>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval tripEvalHalf"></div>
+                                <div class="tripVotes">2 703 avis</div>
+                                <p>N°4 sur 308 hôtels à Moscou</p>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299869-r465906601-Hotel_Metropol_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Hôtel très bien situé” <span>11/03/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299869-r461782922-Hotel_Metropol_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Un des meilleurs hôtels à Moscou” <span>26/02/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299869-r458915125-Hotel_Metropol_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“4 jours a moscou” <span>12/02/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d299869-r425375103-Hotel_Metropol_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Un séjour exceptionnel !” <span>15/10/2016</span></p>
+                                </a>
+                            </aside>
+
+                            <aside>
+                                <form action="https://www.tripadvisor.fr/Hotel_Review-g298484-d299869-Reviews-Hotel_Metropol_Moscow-Moscow_Central_Russia.html" target="_blank">
+                                    <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                                </form>
+                            </aside>
+                        </section>
+
+
+                        <section>
+                            <aside>
+                                <img src="../../img/moscouHotel3.jpg" alt="moscouHotel3">
+                            </aside>
+
+                            <aside>
+                                <a href="https://www.tripadvisor.fr/Hotel_Review-g298484-d8356367-Reviews-Palmira_Business_Club-Moscow_Central_Russia.html">
+                                    Palmira Business Club
+                                </a>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval tripEvalHalf"></div>
+                                <div class="tripVotes">275 avis</div>
+                                <p>N°7 sur 308 hôtels à Moscou</p>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d8356367-r468217107-Palmira_Business_Club-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>”Bel hôtel” <span>18/03/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d8356367-r454718704-Palmira_Business_Club-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Très agréable” <span>25/01/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d8356367-r380732466-Palmira_Business_Club-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Voyages d'affaires” <span>08/06/2016</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d8356367-r347977633-Palmira_Business_Club-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Coup de coeur” <span>15/02/2016</span></p>
+                                </a>
+
+                            </aside>
+
+                            <aside>
+                                <form action="https://www.tripadvisor.fr/Hotel_Review-g298484-d8356367-Reviews-Palmira_Business_Club-Moscow_Central_Russia.html" target="_blank">
+                                    <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                                </form>
+                            </aside>
+                        </section>
+
+                        <section>
+                            <aside>
+                                <img src="../../img/moscouHotel4.jpg" alt="moscouHotel4">
+                            </aside>
+
+                            <aside>
+                                <a href="https://www.tripadvisor.fr/Hotel_Review-g298484-d2322616-Reviews-Mercure_Arbat_Moscow-Moscow_Central_Russia.html">
+                                    Mercure Arbat Moscow
+                                </a>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval"></div>
+                                <div class="tripEval tripEvalEmpty"></div>
+                                <div class="tripVotes">1 430 avis</div>
+                                <p>N°9 sur 308 hôtels à Moscou</p>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d2322616-r448430612-Mercure_Arbat_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Trés bon rapport qualité prix” <span>02/01/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d2322616-r448191195-Mercure_Arbat_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Bon hotel mais accueil moyen” <span>01/01/2017</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d2322616-r428412779-Mercure_Arbat_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Joli mais loin de la perfection” <span>16/10/2016</span></p>
+                                </a>
+                                <a href="https://www.tripadvisor.fr/ShowUserReviews-g298484-d2322616-r426320203-Mercure_Arbat_Moscow-Moscow_Central_Russia.html#CHECK_RATES_CONT">
+                                    <p>“Top” <span>09/10/2016</span></p>
+                                </a>
+                            </aside>
+
+                            <aside>
+                                <form action="https://www.tripadvisor.fr/Hotel_Review-g298484-d2322616-Reviews-Mercure_Arbat_Moscow-Moscow_Central_Russia.html" target="_blank">
+                                    <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                                </form>
+                            </aside>
+                        </section>
+
+                    </article>
+                </section>
+            </section>
+    </main>
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/villes/moscou.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="../allemagne.html">Allemagne</a></li>
+                    <li><a href="../suede.html">Suede</a></li>
+                    <li><a href="../russie.html">Russie</a></li>
+                    <li><a href="../angleterre.html">Angleterre</a></li>
+                    <li><a href="../italie.html">Italie</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres (Villes de Russie)</li>
+                    <li><a href="stpetersbourg.html">St. Petersbourg</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="../conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="../notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="../conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="../declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Strasburg | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/strasbourg.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/strasburg.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html" class="active active2">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html" class="active active2">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+
+
+
+        <article class="imageStrasbourgCity topImageCity">
+            <span>Frankreich</span>
+            <h3>Strasburg</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Strasburg</h5>
+                    <p>„Carrefour de l'Europe“ - Schnittpunkt Europas, so wird Straßburg in Werbeprospekten genannt. Ein Kreuzpunkt ist die Stadt in der Tat.</p>
+                    <p>Hier fühlt man sich beim Espresso im Boulevardcafé ganz wie in Frankreich und im Gasthaus bei einem Schoppen Wein oder einem frisch gezapften Bier - fast - wie zu Hause. Deutsche und Franzosen, unter deren Herrschaft Straßburg (frz.: Strasbourg) abwechselnd stand, haben die Stadt geprägt. Heute begegnen sich in Straßburg neben Tausenden von Touristen auch regelmäßig Politiker aus Europa, denn seit 1949 ist die Elsassmetropole Sitz des Europarats. Außerdem ist Straßburg Tagungsort des Europaparlaments der EU, das sich hier zu seinen monatlichen Plenarsitzungen trifft. Dann reisen mehr als 2000 Abgeordnete, Parlamentsangestellte und Dolmetscher an, belegen die Hotels und bevölkern die Restaurants.</p>
+                    <p>Nicht alle der 28000 hier lebenden Ausländer (von denen die Türken mit 14000 die größte Gruppe bilden) sind so wohl gelitten wie die Beamten des Europarats oder die Europaabgeordneten: Bei Wahlen verbuchen der rechtsextremistische französische Front National und sein regionaler Ableger L'Alsace d'abord („Das Elsass zuerst“) in Straßburg und Umgebung regelmäßig mehr als zehn Prozent der Stimmen. Ihr gutes Abschneiden verdanken sie vor allem der wachsenden Angst vieler Franzosen um ihre Ruhe und Sicherheit - und Straßburg macht da keine Ausnahme. Die wohlhabende, bürgerlich geprägte Elsassmetropole sorgt nämlich immer wieder für Schlagzeilen. In einigen Problemvierteln am Rand der Stadt grassieren Arbeitslosigkeit und soziale Ausgrenzung. Immer häufiger entladen sich in diesen Plattenbaughettos Spannungen und Frustrationen in gewaltsamen Ausschreitungen.</p>
+                    <p>Straßburg ist stolz auf seine Geschichte, gibt sich aber gleichzeitig resolut modern. So bemüht sich die Stadt um den Ausbau ihres Technologiezentrums, wo inmitten von Hightechunternehmen die International Space University künftige Weltraumspezialisten ausbildet. Seit sich 2009 die drei Straßburger Universitäten zusammenschlossen, besitzt die Elsassmetropole die mit 41000 Studenten und über 5000 Dozenten größte Hochschule Frankreichs. Ein denkmalgeschütztes Gebäude im historischen Viertel Petite France beherbergt außerdem die berühmte Eliteverwaltungshochschule ENA. Mehrere sehenswerte Museen, die Rheinoper und das Théâtre National de Strasbourg sowie renommierte Festivals machen Straßburg auch zu einem Zentrum für Kultur. Außerdem ist die Europastadt Sitz des Kulturkanals Arte.</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Sasbachwalden</h6>
+
+                            <p>Sasbachwalden: Bezauberndes Blumen- und Weindorf im Schwarzwald Im Naturpark Schwarzwald Mitte/Nord inmitten herrlicher Reblandschaft liegt die Ferienregion Sasbachwalden, welche sich von 172 bis 1.164 Metern ü.d.M. in herrlicher Panoramalage eine einmalige Aussicht ins nahe gelegene Rheintal bietet. Von hier aus erreicht man bequem bekannte Ziele wie Baden-Baden, Straßburg und Freiburg. Als eine der schönsten Gemeinden im Schwarzwald, ist es kein Wunder, dass Sasbachwalden bereits bei drei Wettbewerben mit der Goldmedaille ausgezeichnet als Bundessieger hervorging. Vielseitig und abwechslungsreich ist das Freizeitprogramm: das traditionelle Winzerfest im Oktober und das kulinarische Sommerfest sowie kulturelle Veranstaltungen der Spitzenklasse. Für Erholung in Sasbachwalden ist bestens gesorgt. So verfügt das vollkommen industriefreie Dorf über wissenschaftlich nachgewiesene hervorragende Klimaeigenschaften und exzellente Luftreinheit. Sehenswürdigkeiten der Region, wie z.B. eine alte Weintrotte aus dem 16. Jahrhundert, die romantischen Gaishöll-Wasserfälle, die Burgruine Brigittenschloss oder auch das Turenne-Museum in Sasbach-Obersasbach, runden einen gelungenen Aufenthalt in der Ferienregion ab. Über 40 gastronomische Betriebe, von der urigen Wein- und Vesperstube über das gutbürgerliche Landgasthaus bis hin zum Michelin-Stern gekrönten Spitzen-Restaurant, kümmern sich gekonnt um das leibliche Wohl des Gastes. Flanieren Sie auf der Badischen Genussmeile und genießen Sie zum guten Essen den preisgekrönten Wein der Lagen "Alde Gott" und „Schelzberg“.</p>
+                        </li>
+
+                        <li>
+                            <h6>Gemeinde Appenweier</h6>
+
+                            <p>Appenweier, Nesselried und Urloffen Ortenau - Mittlerer Schwarzwald, Elsass - Paris - Straßburg Appenweier, Nesselried und Urloffen laden ein zu malerischen Wanderungen in die Schwarzwaldhöhen von 147m bis 392m - für Familien genauso wie für Geübte. Über das nahegelegene Oberkirch führen Wanderwege in das Renchtal bis Bad Peterstal-Griesbach auf die Routen des Schwarzwaldvereins. Wandern, Mountainbike, Motorbike oder Roadster. Die Schwarzwaldhochstraße ist Ziel für Motorradfahrer und Sonnenanbeter sowie Ausgangsort für Gebirgsradler. Etliche Touristenrouten zeigen die Facetten von Folklore und Natur der beliebten Ferienregion. Kulinarische Küchen, ruhige Übernachtungen und traditionelles, gastfreundschaftliches Leben machen die Gemeinde zu einem beliebten Aufenthaltsort. Urloffen ist für seinen Meerrettich bekannt, Nesselried für seine Weine und Obstbrände. Nur 24 Minuten sind es ohne Umsteigen vom Appenweierer Bahnhof zum Hauptbahnhof und zum Straßenbahnnetz der Europastadt Straßburg. Außerdem ist Appenweier mit der Bahn über Karlsruhe, Baden-Baden, Freiburg, Offenburg ideal erreichbar. Durch den TGV-Halt in Straßburg ist selbst ein Tagesausflug in die Metropole Paris nicht ausgeschlossen (2:20 Stunden einfach).</p>
+                        </li>
+
+                        <li>
+                            <h6>Palais de l'Europe</h6>
+
+                            <p>Der Palast mit schräg emporstrebenden Wänden ist Sitz des Europarats. Dahinter befindet sich das Gebäude des Europ. Gerichtshofs für Menschenrechte. Am gegenüberliegenden Illufer wurde der Neubau für das Europaparlament eingeweiht. Der futuristische Bau ist bereits eine neue Touristenattraktion.</p>
+                        </li>
+
+                        <li>
+                            <h6>Musees du Château des Rohan</h6>
+
+                            <p>Im direkt an der Ill gelegenen ehemaligen Bischöflichen Palais aus dem 18. Jh. sind drei Museen untergebracht: das Musée Archéologique, das Musée des Arts Décoratifs (Kunstgewerbemuseum) und das Musée des Beaux-Arts.</p>
+                        </li>
+
+                        <li>
+                            <h6>Place de la République</h6>
+
+                            <p>Die Kolossalbauten des Platzes sind heute zum größten Teil Verwaltungsgebäude. Hier steht das beeindruckendste Denkmal der Stadt: Eine Mutter, die Straßburg symbolisiert, hält ihre beiden im Ersten Weltkrieg gefallenen Söhne in den Armen - einer starb für Frankreich, einer für Deutschland.</p>
+                        </li>
+
+                        <li>
+                            <h6>Terrasse Panoramique <br> du Barrage Vauban</h6>
+
+                            <p>Das Vauban-Wehr mit seinen 13 Schleusentürmen wurde vom Festungsbaumeister Ludwigs XIV. als Teil eines Befestigungsgürtels gebaut, der Straßburg uneinnehmbar machen sollte. Seit 1967 dient es als Panoramaterrasse, von der aus man über Petite France und das Münsterviertel blickt.</p>
+                        </li>
+
+                        <li>
+                            <h6>Cour du Corbeau</h6>
+
+                            <p>Hinter einem unscheinbaren Eingang verbirgt sich der Rabenhof - ein malerischer, von mittelalterlichen Fachwerkhäusern mit offenen Holzgalerien gesäumter Innenhof. Davor liegt der Pont du Corbeau, von dem aus im Mittelalter Verbrecher, in Säcke eingenäht, in die Ill geworfen wurden.</p>
+                        </li>
+
+                        <li>
+                            <h6>Ancienne Douane</h6>
+
+                            <p>In dem "Alten Kaufhüs" an der Rabenbrücke wurden im Mittelalter Waren gelagert. Das Gebäude wurde im Zweiten Weltkrieg zerstört und 1956 originalgetreu wieder aufgebaut. Heute beherbergt es ein Restaurant mit Terrasse zu Ill sowie Galerieräume, in denen oft interessante Ausstellungen zu sehen sind.</p>
+                        </li>
+
+                        <li>
+                            <h6>Maison Kammerzell</h6>
+
+                            <p>Mit seiner prachtvollen, mit zahlreichen symbolhaften Holzschnitzereien verzierten Fachwerkfassade ist es das wohl meistfotografierte Patrizierhaus Straßburgs. Heute beherbergt das 1467 erbaute und 1571 vom damaligen Besitzer, einem reichen Kaufmann, erweiterte Gebäude ein Restaurant.</p>
+                        </li>
+
+                        <li>
+                            <h6>Parc de l'Orangerie</h6>
+
+                            <p>Straßburgs schönster Park mit Kinderspielplätzen, einem kleinen Tiergehege, einer Storchenaufzugsstation und einem See (Bootsverleih). Im Pavillon Josephine finden im Sommer häufig Konzerte statt. Ein Café mit Terrasse bietet sich für eine kleine Pause an.</p>
+                        </li>
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Strasburgs</h5>
+
+                    <img src="../../../img/strasbourgVille1.jpg" alt="strasbourgVille1">
+                    <img src="../../../img/strasbourgVille2.jpg" alt="strasbourgVille2">
+                    <img src="../../../img/strasbourgVille3.jpeg" alt="strasbourgVille3">
+                    <img src="../../../img/strasbourgVille4.jpg" alt="strasbourgVille4">
+                    <img src="../../../img/strasbourgVille5.jpg" alt="strasbourgVille5">
+                    <img src="../../../img/strasbourgVille6.jpg" alt="strasbourgVille6">
+                    <img src="../../../img/strasbourgVille7.jpg" alt="strasbourgVille7">
+                    <img src="../../../img/strasbourgVille8.jpg" alt="strasbourgVille8">
+                    <img src="../../../img/strasbourgVille9.jpg" alt="strasbourgVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/strasbourgHotel1.jpg" alt="strasbourgHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187075-d197342-Reviews-Sofitel_Strasbourg_Grande_Ile-Strasbourg_Bas_Rhin_Grand_Est.html">
+                                    Sofitel Strasbourg Grande Ile</a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 214 Bewertungen</div>
+                            <p>Nr. 1 von 128 Hotels in Strasburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d197342-r469223385-Sofitel_Strasbourg_Grande_Ile-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Essen unter Freunden” <span>21/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d197342-r465145443-Sofitel_Strasbourg_Grande_Ile-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Ein gutes Hotel !” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d197342-r467631818-Sofitel_Strasbourg_Grande_Ile-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Sehr angenehmer Aufenthalt” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d197342-r467623616-Sofitel_Strasbourg_Grande_Ile-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Strasburgaufenthalt” <span>16/03/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187075-d197342-Reviews-Sofitel_Strasbourg_Grande_Ile-Strasbourg_Bas_Rhin_Grand_Est.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/strasbourgHotel2.jpg" alt="strasbourgHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187075-d262160-Reviews-Hotel_Rohan-Strasbourg_Bas_Rhin_Grand_Est.html">
+                                    Hotel Rohan
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">48 Bewertungen</div>
+                            <p>Nr. 2 von 128 Hotels in Strasburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d262160-r466799903-Hotel_Rohan-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Nichts zu sagen !” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d262160-r464775757-Hotel_Rohan-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Tolle Zimmer” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d262160-r463771381-Hotel_Rohan-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Super platziert" <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d262160-r453002792-Hotel_Rohan-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“einfach nur perfekt” <span>18/01/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187075-d262160-Reviews-Hotel_Rohan-Strasbourg_Bas_Rhin_Grand_Est.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/strasbourgHotel3.jpg" alt="strasbourgHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187075-d2711798-Reviews-Hotel_Le_Bouclier_d_Or-Strasbourg_Bas_Rhin_Grand_Est.html">
+                                    Hotel Le Bouclier d'Or
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">644 Bewertungen</div>
+                            <p>Nr. 3 von 128 Hotels in Strasburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d2711798-r466535821-Hotel_Le_Bouclier_d_Or-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Strasburgbesichtigung” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d2711798-r459924809-Hotel_Le_Bouclier_d_Or-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Charmantes Hotel” <span>15/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d2711798-r458758270-Hotel_Le_Bouclier_d_Or-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Unser neues Hotel!” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d2711798-r456605719-Hotel_Le_Bouclier_d_Or-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>”Super Ausruhmoment” <span>02/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187075-d2711798-Reviews-Hotel_Le_Bouclier_d_Or-Strasbourg_Bas_Rhin_Grand_Est.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/strasbourgHotel4.jpg" alt="strasbourgHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187075-d482548-Reviews-Romantik_Hotel_Beaucour-Strasbourg_Bas_Rhin_Grand_Est.html">
+                                    Romantik Hotel Beaucour
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">352 Bewertungen</div>
+                            <p>Nr. 9 von 128 Hotels in Strasburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d482548-r468273318-Romantik_Hotel_Beaucour-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Toller Tag in Strasburg” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d482548-r464348865-Romantik_Hotel_Beaucour-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Cocooning” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d482548-r462725783-Romantik_Hotel_Beaucour-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“KLASSE HOTEL” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187075-d482548-r457934140-Romantik_Hotel_Beaucour-Strasbourg_Bas_Rhin_Grand_Est.html#CHECK_RATES_CONT">
+                                <p>“Man fühlt sich zuhause” <span>07/02/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187075-d482548-Reviews-Romantik_Hotel_Beaucour-Strasbourg_Bas_Rhin_Grand_Est.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/strasburg.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere französische Städte)</li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="larochelle.html">La Rochelle</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

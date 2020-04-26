@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Venice | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/venise.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/venedig.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html" class="active active2">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html" class="active active2">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageVeniseCity topImageCity">
+            <span>Italy</span>
+            <h3>Venice</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to Venice</h5>
+                    <p>Imagine the audacity of building a city of marble palaces on a lagoon – and that was only the start.</p>
+
+                    <p>Garden islands and lagoon aquaculture yield speciality produce and seafood you won’t find elsewhere – all highlighted in inventive Venetian cuisine, with tantalising traces of ancient spice routes. The city knows how to put on a royal spread, as France’s King Henry III once found out when faced with 1200 dishes and 200 bonbons. Today such feasts are available in miniature at happy hour, when bars mount lavish spreads of cicheti (Venetian tapas). Save room and time for a proper sit-down Venetian meal, with lagoon seafood to match views at canalside bistros and toasts with Veneto’s signature bubbly, prosecco.</p>
+
+                    <p>Never was a thoroughfare so aptly named as the Grand Canal, reflecting the glories of Venetian architecture lining its banks. At the end of Venice’s signature waterway, Palazzo Ducale and Basilica di San Marco add double exclamation points. But wait until you see what’s hiding in narrow backstreets: neighbourhood churches lined with Veroneses and priceless marbles, Tiepolo’s glimpses of heaven on homeless-shelter ceilings, and a tiny Titian that mysteriously lights up an entire cathedral.</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Palazzo Ducale</h6>
+
+                            <p>This grand Gothic palace was the Doge's official residence from the 9th century, and seat of the Venetian Republic's government (and prisons) for nearly seven centuries. The Doge's Apartments are on the 1st floor, but it's the lavishly decorated 2nd-floor chambers that are the real highlight. These culminate in the echoing Sala del Maggior Consiglio (Grand Council Hall), home to the Doge’s throne and a 22m-by-7m Paradise painting by Tintoretto’s son Domenico.</p>
+                        </li>
+
+                        <li>
+                            <h6>Gallerie dell'Accademia</h6>
+
+                            <p>Venice's historic gallery traces the development of Venetian art from the 14th to 18th centuries, with works by Bellini, Titian, Tintoretto, Veronese and Canaletto among others. The former Santa Maria della Carità convent complex housing the collection maintained its serene composure for centuries until Napoleon installed his haul of Venetian art trophies here in 1807. Since then there’s been non-stop visual drama inside its walls.</p>
+                        </li>
+
+                        <li>
+                            <h6>Basilica di San Marco</h6>
+
+                            <p>With its Byzantine domes and 8500 sq metres of luminous mosaics, Venice's basilica is an unforgettable sight. It dates to the 9th century when, according to legend, two merchants smuggled the corpse of St Mark out of Egypt in a barrel of pork fat. When the original burnt down in 932 Venice rebuilt the basilica in its own cosmopolitan image, with Byzantine domes, a Greek cross layout and walls clad in marbles from Syria, Egypt and Palestine.</p>
+                        </li>
+
+                        <li>
+                            <h6>Peggy Guggenheim Collection</h6>
+
+                            <p>After losing her father on the Titanic, heiress Peggy Guggenheim became one of the great collectors of the 20th century. Her palatial canalside home, Palazzo Venier dei Leoni, showcases her stockpile of surrealist, futurist and abstract expressionist art with works by up to 200 artists, including her ex-husband Max Ernst, Jackson Pollock (among her many rumoured lovers), Picasso and Salvador Dalí.</p>
+                        </li>
+
+                        <li>
+                            <h6>Basilica di Santa Maria <br> della Salute</h6>
+
+                            <p>Guarding the entrance to the Grand Canal, this 17th-century domed church was commissioned by Venice’s plague survivors as thanks for their salvation. Baldassare Longhena's uplifting design is an engineering feat that defies simple logic; in fact the church is said to have mystical curative properties. Titian eluded the plague until age 94, leaving 12 key paintings in the basilica's art-slung sacristy.</p>
+                        </li>
+
+                        <li>
+                            <h6>The Ghetto</h6>
+
+                            <p>In medieval times this Cannaregio outpost housed a getto (foundry). But it was as the designated Jewish quarter from the 16th to 18th centuries gave the word a whole new meaning. In accordance with the Venetian Republic’s 1516 decree, Jewish lenders, doctors and clothing merchants were allowed to attend to Venice's commercial interests by day, while at night and on Christian holidays, they were restricted to the gated island of the Ghetto Nuovo.</p>
+                        </li>
+
+                        <li>
+                            <h6>Scuola Grande di San Rocco</h6>
+
+                            <p>Everyone wanted the commission to paint this building dedicated to the patron saint of the plague-stricken, so Tintoretto cheated: instead of producing sketches like rival Veronese, he gifted a splendid ceiling panel of patron St Roch, knowing it couldn't be refused or matched by other artists. The artist documents Mary's life story in the assembly hall, and both Old and New Testament scenes in the Sala Grande Superiore upstairs.</p>
+                        </li>
+
+                        <li>
+                            <h6>Ca' Rezzonico</h6>
+
+                            <p>Baroque dreams come true at Baldassare Longhena's Grand Canal palace, where a marble staircase leads to gilded ballrooms, frescoed salons and sumptuous boudoirs. Giambattista Tiepolo's Throne Room ceiling is a masterpiece of elegant social climbing, showing gorgeous Merit ascending to the Temple of Glory clutching the Golden Book of Venetian nobles’ names – including Tiepolo’s patrons, the Rezzonico family.</p>
+                        </li>
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of Venice</h5>
+
+                    <img src="../../../img/veniseVille1.jpg" alt="veniseVille1">
+                    <img src="../../../img/veniseVille2.jpg" alt="veniseVille2">
+                    <img src="../../../img/veniseVille3.jpg" alt="veniseVille3">
+                    <img src="../../../img/veniseVille4.jpg" alt="veniseVille4">
+                    <img src="../../../img/veniseVille5.jpg" alt="veniseVille5">
+                    <img src="../../../img/veniseVille6.jpg" alt="veniseVille6">
+                    <img src="../../../img/veniseVille7.jpg" alt="veniseVille7">
+                    <img src="../../../img/veniseVille8.jpg" alt="veniseVille8">
+                    <img src="../../../img/veniseVille9.jpg" alt="veniseVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel1.jpg" alt="veniseHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187870-d613798-Reviews-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html">
+                                    Hilton Molino Stucky Venice Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">6 422 reviews</div>
+                            <p>#1 of 386 Hotels in Venice</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r469464838-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Cool” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r462183546-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“awesome expérience.” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r463008155-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Good hotel but not wow” <span>21/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r462715015-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Carneval in Venice” <span>20/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187870-d613798-Reviews-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel2.jpg" alt="veniseHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187870-d1013704-Reviews-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html">
+                                    Hotel Ca' Zusto Venezia
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">790 reviews</div>
+                            <p>#2 of 386 Hotels in Venice</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r463706248-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“we come again !” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r463024002-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Perfect” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r442105284-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Top !” <span>05/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r434635641-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Wonderful day” <span>04/11/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187870-d1013704-Reviews-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel3.jpg" alt="veniseHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187870-d1057391-Reviews-Ruzzini_Palace_Hotel-Venice_Veneto.html">
+                                    Ruzzini Palace Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 287 reviews</div>
+                            <p>#4 of 386 Hotels in Venice</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r468894644-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Beautiful building” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r465517662-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“romantic weekend in Venice” <span>11/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r461945574-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>”MAGNIFICIENT STAY” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r423931213-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Top” <span>30/09/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187870-d1057391-Reviews-Ruzzini_Palace_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel4.jpg" alt="veniseHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187870-d2558563-Reviews-Carnival_Palace_Hotel-Venice_Veneto.html">
+                                    Carnival Palace Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">2 019 reviews</div>
+                            <p>#6 of 386 Hotels in Venice</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r468841349-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“awsome stay” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r468372885-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Classe !” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r467619664-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“genial stay” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r467136823-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Excellent” <span>17/03/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187870-d2558563-Reviews-Carnival_Palace_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/venice.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of Italy)</li>
+                    <li><a href="rome.html">Rome</a></li>
+                    <li><a href="milan.html">Milan</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

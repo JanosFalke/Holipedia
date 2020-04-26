@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Sweden | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/countryMaps.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+
+        <article>
+            <a href="indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../suede.html"><img src="../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../de/schweden.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="usa.html">United States</a>
+                            <ul>
+                                <li><a href="cities/newyork.html">New York</a></li>
+                                <li><a href="cities/lasvegas.html">Las Vegas</a></li>
+                                <li><a href="cities/washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="france.html">France</a>
+                            <ul>
+                                <li><a href="cities/paris.html">Paris</a></li>
+                                <li><a href="cities/larochelle.html">La Rochelle</a></li>
+                                <li><a href="cities/strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="germany.html">Germany</a>
+                            <ul>
+                                <li><a href="cities/berlin.html">Berlin</a></li>
+                                <li><a href="cities/halle.html">Halle Westfalen</a></li>
+                                <li><a href="cities/munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="italy.html">Italy</a>
+                            <ul>
+                                <li><a href="cities/rome.html">Rome</a></li>
+                                <li><a href="cities/venice.html">Venice</a></li>
+                                <li><a href="cities/milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="russia.html">Russia</a>
+                            <ul>
+                                <li><a href="cities/moscow.html">Moscow</a></li>
+                                <li><a href="cities/stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sweden.html" class="active active2">Sweden</a>
+                            <ul>
+                                <li><a href="cities/stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="england.html">England</a>
+                            <ul>
+                                <li><a href="cities/london.html">London</a></li>
+                                <li><a href="cities/manchester.html">Manchester</a></li>
+                                <li><a href="cities/liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="canada.html">Canada</a>
+                            <ul>
+                                <li><a href="cities/vancouver.html">Vancouver</a></li>
+                                <li><a href="cities/montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="abousus.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordEnglish()">Premium Area</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="countryName">
+            <article>SWEDEN</article>
+        </section>
+
+        <section class="mapSection">
+
+            <div id="carteCountry"></div>
+            <script src="https://maps.googleapis.com/maps/api/js?AIzaSyABlIotk29vs7sgZq9AKrtLS4ntmwvCw9Y&signed_in=true&callback=mapSWEDENenglish" async defer></script>
+
+        </section>
+
+        <section class="nosVilles">We offer you the following cityguides :</section>
+
+        <section class="countryImgSection">
+            <section id="stockholmIci">
+                <a href="cities/stockholm.html">STOCKHOLM</a>
+            </section>
+
+            <div>
+                <a href="cities/stockholm.html"><img src="../../img/stockholm1.jpg" alt="stockholmImg"></a>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/sweden.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="france.html">France</a></li>
+                    <li><a href="usa.html">United States</a></li>
+                    <li><a href="germany.html">Germany</a></li>
+                    <li><a href="sweden.html">Sweden</a></li>
+                    <li><a href="russia.html">Russia</a></li>
+                    <li><a href="england.html">England</a></li>
+                    <li><a href="italy.html">Italy</a></li>
+                    <li><a href="canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of Sweden)</li>
+                    <li><a href="cities/stockholm.html">Stockholm</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="termsofuse.html">Terms of Use</a></li>
+                    <li><a href="abousus.html">About Holipedia</a></li>
+                    <li><a href="privacypolicy.html">Legal Details</a></li>
+                    <li><a href="privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

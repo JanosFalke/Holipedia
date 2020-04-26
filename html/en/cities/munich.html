@@ -1,0 +1,469 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Munich | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/munich.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/munchen.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html" class="active active2">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html" class="active active2">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">PremiumArea</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageMunichCity topImageCity">
+            <span>Germany</span>
+            <h3>Munich</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome in Munich</h5>
+                    <p>The natural habitat of well-heeled power dressers and Lederhosen-clad thigh-slappers, Mediterranean-style street cafes and Mitteleuropa beer halls, highbrow art and high-tech industry, Germany’s unofficial southern capital is a flourishing success story that revels in its own contradictions. If you’re looking for Alpine clichés, they’re all here, but the Bavarian metropolis has many an unexpected card down its Dirndl.</p>
+                    <p>But whatever else this city is, it’s popular. Statistics show Munich is enticing more visitors than ever, especially in summer and during Oktoberfest, when the entire planet seems to arrive to toast the town.</p>
+                    <p>Munich’s walkable centre retains a small-town air but holds some world-class sights, especially art galleries and museums. Throw in royal Bavarian heritage, an entire suburb of Olympic legacy and a kitbag of dark tourism, and it's clear why southern Germany’s metropolis is such a favourite among those who seek out the past but like to hit the town once they’re done.</p>
+
+
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+
+                        <li>
+                            <h6>Residenzmuseum</h6>
+
+                            <p>Home to Bavaria's Wittelsbach rulers from 1508 until WWI, the Residenz is Munich's number one attraction. The amazing treasures, as well as all the trappings of their lifestyles over the centuries, are on display at the Residenzmuseum, which takes up around half of the palace. Allow at least two hours to see everything at a gallop.</p>
+                        </li>
+
+                        <li>
+                            <h6>Schloss Nymphenburg</h6>
+
+                            <p>This commanding palace and its lavish gardens sprawl around 5km northwest of the Altstadt. Begun in 1664 as a villa for Electress Adelaide of Savoy, the stately pile was extended over the next century to create the royal family's summer residence. Franz Duke of Bavaria, head of the once royal Wittelsbach family, still occupies an apartment here.</p>
+                        </li>
+
+                        <li>
+                            <h6>Münchner Stadtmuseum</h6>
+
+                            <p>Installed for the city's 850th birthday (2008), the Münchner Stadtmuseum's Typisch München (Typically Munich) exhibition – taking up the whole of a rambling building – tells Munich's story in an imaginative, uncluttered and engaging way. Exhibits in each section represent something quintessential about the city; a booklet/audioguide relates the tale behind them, thus condensing a long and tangled history into easily digestible themes.</p>
+                        </li>
+
+                        <li>
+                            <h6>Alte Pinakotheke</h6>
+
+                            <p>Munich's main repository of Old European Masters is crammed with all the major players that decorated canvases between the 14th and 18th centuries. This neoclassical temple was masterminded by Leo von Klenze and is a delicacy even if you can't tell your Rembrandt from your Rubens. The collection is world famous for its exceptional quality and depth, especially when it comes to German masters.</p>
+                        </li>
+
+                        <li>
+                            <h6>Pinakothek der Moderne</h6>
+
+                            <p>Germany's largest modern-art museum unites four significant collections under a single roof: 20th-century art, applied design from the 19th century to today, a graphics collection and an architecture museum. It's housed in a spectacular building by Stephan Braunfels, whose four-storey interior centres on a vast eye-like dome through which soft natural light filters throughout the blanched white galleries.</p>
+                        </li>
+
+                        <li>
+                            <h6>Bayerisches Nationalmuseum</h6>
+
+                            <p>Picture the classic 19th-century museum, a palatial neoclassical edifice overflowing with exotic treasure and thought-provoking works of art, a repository for a nation’s history, a grand purpose-built display case for royal trinkets, church baubles and state-owned rarities – this is the Bavarian National Museum, a good old-fashioned institution for no-nonsense museum lovers. As the collection fills 40 rooms over three floors, there’s a lot to get through here, so be prepared for at least two hours’ legwork.</p>
+                        </li>
+
+                        <li>
+                            <h6>Neue Pinakothek</h6>
+
+                            <p>The Neue Pinakothek harbours a well-respected collection of 19th- and early-20th-century paintings and sculpture, from rococo to Jugendstil (art nouveau). All the world-famous household names get wall space here, including crowd-pleasing French impressionists such as Monet, Cézanne and Degas as well as Van Gogh, whose boldly pigmented Sunflowers (1888) radiates cheer.</p>
+                        </li>
+
+                        <li>
+                            <h6>Olympiapark</h6>
+
+                            <p>The area to the north of the city where soldiers once paraded and the world's first Zeppelin landed in 1909 found a new role in the 1960s as the Olympiapark. Built for the 1972 Olympic Summer Games, it has quite a small-scale feel and some may be amazed that the games could once have been held at such a petite venue.</p>
+                        </li>
+
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of Munich</h5>
+
+                    <img src="../../../img/munichVille1.jpg" alt="munichVille1">
+                    <img src="../../../img/munichVille2.jpg" alt="munichVille2">
+                    <img src="../../../img/munichVille3.jpg" alt="munichVille3">
+                    <img src="../../../img/munichVille4.jpg" alt="munichVille4">
+                    <img src="../../../img/munichVille5.jpg" alt="munichVille5">
+                    <img src="../../../img/munichVille6.jpg" alt="munichVille6">
+                    <img src="../../../img/munichVille7.jpg" alt="munichVille7">
+                    <img src="../../../img/munichVille8.jpg" alt="munichVille8">
+                    <img src="../../../img/munichVille9.jpg" alt="munichVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/munichHotel1.jpg" alt="munichHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187309-d279562-Reviews-Hotel_Laimer_Hof-Munich_Upper_Bavaria_Bavaria.html">
+                                    Hotel Laimer Hof
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 071 reviews</div>
+                            <p>#1 of 381 Hotels in Munich</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d279562-r460980936-Hotel_Laimer_Hof-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Weekend getaway...” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d279562-r441374816-Hotel_Laimer_Hof-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“So lovely reception.” <span>01/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d279562-r384712843-Hotel_Laimer_Hof-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“A very good secret...” <span>21/06/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d279562-r362788278-Hotel_Laimer_Hof-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Very nice stay” <span>09/04/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187309-d279562-Reviews-Hotel_Laimer_Hof-Munich_Upper_Bavaria_Bavaria.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/munichHotel2.jpg" alt="munichHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187309-d656270-Reviews-The_Charles_Hotel-Munich_Upper_Bavaria_Bavaria.html">
+                                    The Charles Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 432 reviews</div>
+                            <p>#2 of 381 Hotels in Munich</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d656270-r448784838-The_Charles_Hotel-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“awwwesome hotel!" <span>03/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d656270-r448497765-The_Charles_Hotel-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“lovely journey” <span>02/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d656270-r428162466-The_Charles_Hotel-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“nice hotel” <span>15/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d656270-r406537677-The_Charles_Hotel-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“High class” <span>17/08/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187309-d656270-Reviews-The_Charles_Hotel-Munich_Upper_Bavaria_Bavaria.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/munichHotel3.jpg" alt="munichHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187309-d217948-Reviews-Hotel_Muenchen_Palace-Munich_Upper_Bavaria_Bavaria.html">
+                                    Hotel Muenchen Palace
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">655 reviews</div>
+                            <p>#5 of 381 Hotels in Munich</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d217948-r467877485-Hotel_Muenchen_Palace-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“a real 4 stars” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d217948-r370647109-Hotel_Muenchen_Palace-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Excellent hotel but a little expensive” <span>06/05/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d217948-r311965765-Hotel_Muenchen_Palace-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Friends weekend” <span>20/09/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d217948-r311954146-Hotel_Muenchen_Palace-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>”Weekend between friends” <span>20/09/2015</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187309-d217948-Reviews-Hotel_Muenchen_Palace-Munich_Upper_Bavaria_Bavaria.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/munichHotel4.jpg" alt="munichHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187309-d228368-Reviews-Marc_Munchen-Munich_Upper_Bavaria_Bavaria.html">
+                                    Marc München Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">1 376 reviews</div>
+                            <p>#8 of 381 Hotels in Munich</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d228368-r458228540-Marc_Munchen-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Very good emplacement” <span>09/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d228368-r449451696-Marc_Munchen-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Good hotel, I recommand” <span>05/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d228368-r442343630-Marc_Munchen-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Very nice hotel” <span>06/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187309-d228368-r439333832-Marc_Munchen-Munich_Upper_Bavaria_Bavaria.html#CHECK_RATES_CONT">
+                                <p>“Hotel of high quality” <span>22/11/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187309-d228368-Reviews-Marc_Munchen-Munich_Upper_Bavaria_Bavaria.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/munich.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of Germany)</li>
+                    <li><a href="berlin.html">Berlin</a></li>
+                    <li><a href="halle.html">Halle Westfalen</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

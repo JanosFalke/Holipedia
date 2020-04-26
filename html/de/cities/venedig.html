@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Venedig | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/lireLaSuite.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/venise.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/venice.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html" class="active active2">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html" class="active active2">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageVeniseCity topImageCity">
+            <span>Italien</span>
+            <h3>Venedig</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Venedig</h5>
+                    <p>Niemand, der in der Lagunenstadt ankommt, sieht dieses Weltwunder zum ersten Mal: Zu oft wurde es beschrieben, besungen, auf Bildern und in Filmen dargestellt, sodass es längst Eingang in das kollektive Bewusstsein ganz Europas gefunden hat. Die wasserumspülten Paläste entlang der großen Kanäle sehen tatsächlich so unwirklich glänzend und zugleich so morsch aus, wie in den opulenten Bildbänden und Reisekatalogen. Die Piazza San Marco und an ihrer Stirnseite der gleichnamige Dom erscheinen auch in natura wirklich so mondän und makellos, als handle es sich um eine glamouröse Filmkulisse. Und das Panorama vom Kai vor dem Dogenpalast übers Wasser Richtung San Giorgio und Giudecca gleicht jenem, das Canaletto malte, in der Tat aufs Haar.</p>
+                    <p>Doch genügt es, ein, zwei Stunden durch das Labyrinth aus Gassen, Plätzen und Hinterhöfen zu schlendern, um zu ahnen: Hier will nicht bloß eine architektonisch besonders schöne, so dicht und reich wie keine zweite mit Kunstschätzen bestückte Stadt erkundet werden. Nein, hier gilt es, das weltweit wohl wundersamste Gemeinwesen, ein einzigartiges Phänomen der Zivilisationsgeschichte, mit allen Sinnen – und hoffentlich mit Muße – zu erspüren.</p>
+                    <p>Das Wunder nahm um 500 n. Chr. seinen Anfang, als die Festlandbewohner, die Veneter, vor den Hunnen und Langobarden in die Lagune flohen. Kurz nach 800 verbanden sie nach und nach Dutzende kleiner Inseln mit Brücken, rammten Millionen von Holzpfählen in den schlammigen Untergrund und schufen so jenes 7,5 km2 große Stadtgebiet, wie es sich heute noch mit seinen alles in allem rund 3000 Gässchen und 100 Plätzen, den etwa 150 Kanälen und über 400 Brücken präsentiert.</p>
+                    <p>Der Blick vom Kirchturm ist es, der Neuankömmlingen auf Anhieb ein Bild von der Einmaligkeit der Lage und Anlage dieser Stadt vermittelt. Vom Campanile des Benediktinerklosters San Giorgio Maggiore zum Beispiel sind die Umrisse der Stadt gut auszumachen. Im Osten sieht man das riesige Gelände des Arsenals, der Schiffswerft. Noch ein Stück weiter östlich leuchtet das Grün der Giardini Pubblici, des Stadtparks, und das angrenzende Ausstellungsareal der Biennale. Im Westen ragen die Betonklötze der Parkgaragen und des Bahnhofs aus dem rostroten Dächermeer, und in weiter Ferne ragen die Schlote der Industriezonen von Marghera und Mestre in den dort allzu oft smogverhangenen Himmel. Zum Greifen nah hingegen ist das große, spiegelverkehrte „S“ des Canal Grande. Ein kleines Stück östlich von dessen Ende liegt das Herz und einstige Machtzentrum der Stadt: der Dogenpalast sowie die Piazza di San Marco mit der Basilika.</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Piazza San Marco</h6>
+
+                            <p>Napoleons Diktum vom "schönsten Salon der Welt" hat seine Gültigkeit auch gut zwei Jh.e später nicht verloren. Der 175 m lange, leicht trapezförmige Markusplatz ist fürwahr einzigartig, die Vielfalt an Stimmungen, die man auf ihm im Wechsel der Tages- und Jahreszeiten erleben kann, enorm. Er war Schauplatz unzähliger Prozessionen wie auch weltlicher Feste. Bis heute ist die Piazza Bühne der Eitelkeiten für Einheimische und Zugereiste. Und während der seltenen Stunden an nebligen Wintertagen oder in tiefer Nacht, in denen sie, von den üblichen Massen verwaist, in sich ruht, dient sie vereinzelten Traumwandlern als magische Kulisse.</p>
+                        </li>
+
+                        <li>
+                            <h6>Ponte di Rialto</h6>
+
+                            <p>Als Treffpunkt oder Fotomotiv weltberühmt - das ist die Rialtobrücke. In ihrer heutigen Form aus istrischem Stein wurde die Brücke, die die Bezirke San Marco und San Polo verbindet, im ausgehenden 16. Jh. als Ersatz für ihre hölzerne, schon recht morsche Vorgängerin errichtet. Sie bildete bis in die Mitte des 19. Jhs. den einzigen Fußgängerweg über den Canal Grande. Ihr Architekt war ein gewisser Antonio da Ponte, der sich seinerzeit mit seinem zwar recht plumpen, dafür aber sehr soliden und dem Schiffsverkehr genügend Raum lassenden Entwurf gegen prominente Konkurrenten wie Michelangelo, Palladio, Sansovino und Scamozzi durchzusetzen vermochte.</p>
+                        </li>
+
+                        <li>
+                            <h6>Basilica di San Marco</h6>
+
+                            <p>Die sinnenbetörende Pracht dieser in ihrem Kern an die 1000 Jahre alten Kirche mit fünf Kuppeln und maßwerkverzierten Bögen und Fenstern ist das Ergebnis zahlreicher Erweiterungen und Umbauten. Den Kern bildet immer noch jener im 11. Jh. über dem Grundriss eines griechischen Kreuzes errichtete Bau, in dem seinerzeit die identitätsstiftende Reliquie der Stadt, die im ägyptischen Alexandria entwendeten Gebeine des hl. Markus, aufbewahrt wurde. Den reichsten byzantinischen Gold- und Silberschatz der Welt gibt es im Tesoro, der Schatzkammer, zu sehen. Er stammt zum größten Teil aus Konstantinopel, das die Venezianer im Jahr 1204 plünderten. Obwohl ein großer Teil seiner Bestände von Napoleon geraubt und eingeschmolzen wurde, umfasst der Tesoro eine imposante Sammlung liturgischer Geräte, Reliquiare und Schnitzarbeiten.</p>
+                        </li>
+
+                        <li>
+                            <h6>Santi Giovanni e Paolo</h6>
+
+                            <p>Die Bedeutung, die das offizielle Venedig den Dominikanern als Bauherren dieses größten gotischen Gotteshauses der Stadt beimaß, zeigt sich in der Tatsache, dass nicht weniger als 27 Dogen hier ihre letzte Ruhe fanden. An deren Gräbern lässt sich eindrucksvoll die Entwicklung der örtlichen Bildhauerkunst von der Spätgotik bis in die Barockzeit ablesen. Sie findet in dem gleichsam das ganze innere Kirchenportal umfassenden Grab Alvise Mocenigos ihren kolossalen Höhepunkt. Dessen kaum minder wuchtiges Gegenüber bildet der von Baldassare Longhena konzipierte Barockaltar. Unter den zahlreichen Kunstwerken, die das Innere dieser in ihrer Gesamtheit auffallend asketischen Bettelordenskirche sonst noch bereichern, verdienen u.a. die Bilder von Giovanni Bellini, Lorenzo Lotto und Paolo Veronese Aufmerksamkeit.</p>
+                        </li>
+
+                        <li>
+                            <h6>Palazzo Ducale</h6>
+
+                            <p>Der Palast der Paläste, Machtzentrum der Politik und Gesetzgebung, höchstes Symbol venezianischer Zivilisation und Blickfang jeder Stadtvedute. 120 Dogen haben von hier aus während fast 1000 Jahren die Geschicke der Seerepublik gelenkt. In seiner heutigen, gotischen Form ist der aus drei zwischen 70 und 100 m langen Trakten bestehende Komplex zum größten Teil im 14. und frühen 15. Jh. entstanden. Schon die kolossale, mit Marmor verkleidete, im unteren Bereich von zahllosen zierlichen Säulen und Bögen durchsetzte Fassade verdient höchste Bewunderung. Man sollte die wunderschönen Skulpturengruppen "Adam und Eva" und die "Trunkenheit Noahs" an den Ecken des Südflügels beachten sowie die entzückenden Szenen an jedem einzelnen der Dutzenden Säulenkapitelle! Vollends überwältigend ist dann der Rundgang durch das Innere des Dogenpalasts. Er beginnt gegenüber der Loggetta und dem Campanile an seinem hochgotischen Hauptportal, der Porta della Carta. Durch sie betritt man den Innenhof, der von einem zweigeschossigen Triumphtor, dem Arco Foscari, und der Scala dei Giganti beherrscht wird, die zwei Statuen des Neptun und Mars von Jacopo Sansovino bewachen.
+                                <p id="laSuite1"><a href="#nogo" onclick="lire()">Weiterlesen...</a></p>
+                                <p id="lire1" class="lireSuite">An der Ausschmückung der Räumlichkeiten waren die bedeutendsten Maler des 16. Jhs., allen voran Tintoretto, Tizian und Paolo Veronese, beteiligt. Auf ihren meist extrem großformatigen Bildern sind die wichtigsten Ereignisse der Stadtgeschichte festgehalten, von den Mythen der Gründungszeit bis zu den großen militärischen Erfolgen. Den wohl gewaltigsten Eindruck hinterlässt die Sala del Maggior Consiglio, der 54 x 25 m große Raum, in dem der aus bis zu 1800 Mitgliedern bestehende Große Rat die hohen Staatsbeamten und Männer der Signoria zu wählen pflegte. Den Blickfang stellt Tintorettos Paradiesbild an der Stirnseite dar, das mit 7 x 22 m größte Leinwandbild der Welt. Den Abschluss der Tour bildet der Gang auf der Seufzerbrücke hinüber in den Neuen Kerker. Ein besonderes Erlebnis bieten die täglich auf Italienisch, Französisch und Englisch geführten Rundgänge auf "geheimen Wegen", den Itinerari Segreti. In ihrem Verlauf gelangt man u.a. in die Zwischendecke des Großen Ratssaals, die Amtsräume des Großkanzlers, die Geheimarchive und in jene Bleikammern (piombi), in denen einst auch Giacomo Casanova schmorte.</p>
+                        </li>
+
+                        <li>
+                            <h6>Santa Maria Gloriosa dei Frari</h6>
+
+                            <p>Die "Frari", wie Santa Maria Gloriosa dei Frari meist kurz genannt wird, ist neben der Dominikanerkirche Santi Giovanni e Paolo die zweite große gotische Bettelordenskirche der Stadt. Im Kontrast zu der sich selbst auferlegten Bescheidenheit und zu den sehr schlichten Außenmauern stellten ihre Bauherren, die Franziskaner, ihren Einfluss im Innenraum nicht gerade unter den Scheffel: Beim Rundgang entpuppt sich die Frari als Kunstschrein allerersten Ranges. In dem enormen Langhaus fällt sofort die Grabpyramide des Bildhauers Antonio Canova ins Auge. Vis-à-vis befinden sich das Grab Tizians und dessen sogenannte Pesaro-Madonna. In den Chorkapellen bzw. der Sakristei hängen kostbare Altarblätter von Bartolomeo Vivarini und Giovanni Bellini, steht eine Johannes-Skulptur von Donatello und liegt der Komponist Claudio Monteverdi bestattet. Den unwiderstehlichen Blickfang bildet aber die über dem Hochaltar schwebende Assunta ("Mariä Himmelfahrt"), ein Geniestreich Tizians, der durch seine grandiose Farbgebung und die zur Entstehungszeit völlig neuartige, dramatisch himmelwärts strebende Komposition der Malkunst gegen Ende der Renaissance bereits den Weg in Richtung Barock wies.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museo del Settecento Veneziano</h6>
+
+                            <p>Das Museo del Settecento Veneziano dokumentiert den opulenten Lebensstil des Adels zur Spätzeit der Republik eindrucksvoll. Über alle drei Etagen erstreckt sich dieses "Museum des 18. Jhs." Anhand kostbarer Möbel und Dekorstücke, Bilder und Deckengemälde vermittelt es einen authentischen Einblick in die Lebenswelt der reichen Adelsfamilien jener Blütezeit. Prunkstücke sind das geschnitzte Mobiliar und die Lampen tragenden Mohren, diverse Deckenfresken sowie die Kabinettbilder Pietro Longhis mit Szenen aus dem venezianischen Alltagsleben.</p>
+                        </li>
+
+                        <li>
+                            <h6>Arsenale</h6>
+
+                            <p>Vom 14. bis ins ausgehende 18. Jh. war diese Werft, in der Venedig sämtliche Schiffe seiner riesigen Kriegs- und Handelsflotte fabrizieren ließ und auch Waffen und Pulver lagerte, das Zentrum der größten Seemacht im östlichen Mittelmeer und dementsprechend streng bewacht. Heute werden auf dem 320.000 m2 großen Areal, dessen Eingang ein prächtiges, von vier Löwen flankiertes Portal markiert, Fähr- und Frachtschiffe repariert, außerdem unterhalten diverse High-Tech-Firmen Werkstätten und Büros. Nur noch einen kleinen Teil hält das italienische Militär in Beschlag.</p>
+                        </li>
+
+                        <li>
+                            <h6>Palazzo Zenobio</h6>
+
+                            <p>In dem gegen Ende des 17. Jhs. erbauten Palast unterhielten über 150 Jahre lang armenische Mönche ein Internat. Neuerdings dient der Prachtbau als Jugendherberge. Während der Biennale kann man ihren großen Schatz, einen verschwenderisch dekorierten Ballsaal, besichtigen.</p>
+                        </li>
+
+                        <li>
+                            <h6>San Pantalon</h6>
+
+                            <p>Hinter der ziemlich schlichten, um nicht zu sagen nackten Fassade wartet eine wenig bekannte Sensation: ein wahrlich gigantisches, aus 40 Leinwandelementen zusammengesetztes Deckenbild, das dem Betrachter im doppelten Sinne den Kopf verdreht.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Venedigs</h5>
+
+                    <img src="../../../img/veniseVille1.jpg" alt="veniseVille1">
+                    <img src="../../../img/veniseVille2.jpg" alt="veniseVille2">
+                    <img src="../../../img/veniseVille3.jpg" alt="veniseVille3">
+                    <img src="../../../img/veniseVille4.jpg" alt="veniseVille4">
+                    <img src="../../../img/veniseVille5.jpg" alt="veniseVille5">
+                    <img src="../../../img/veniseVille6.jpg" alt="veniseVille6">
+                    <img src="../../../img/veniseVille7.jpg" alt="veniseVille7">
+                    <img src="../../../img/veniseVille8.jpg" alt="veniseVille8">
+                    <img src="../../../img/veniseVille9.jpg" alt="veniseVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel1.jpg" alt="veniseHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187870-d613798-Reviews-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html">
+                                    Hilton Molino Stucky Venice Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">6 422 Bewertungen</div>
+                            <p>Nr. 1 von 386 Hotels in Venedig</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r469464838-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Genial” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r462183546-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Super schönes WE” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r463008155-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Gutes Hotel aber nicht wow” <span>21/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r462715015-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Karneval in Venedig” <span>20/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187870-d613798-Reviews-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel2.jpg" alt="veniseHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187870-d1013704-Reviews-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html">
+                                    Hotel Ca' Zusto Venezia
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">790 Bewertungen</div>
+                            <p>Nr. 2 von 386 Hotels in Venedig</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r463706248-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“wir kommen wieder !” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r463024002-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Hammer” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r442105284-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Top !” <span>05/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r434635641-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“angenehmer Moment” <span>04/11/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187870-d1013704-Reviews-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel3.jpg" alt="veniseHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187870-d1057391-Reviews-Ruzzini_Palace_Hotel-Venice_Veneto.html">
+                                    Ruzzini Palace Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 287 Bewertungen</div>
+                            <p>Nr. 4 von 386 Hotels in Venedig</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r468894644-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“schönes Gebäude” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r465517662-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“romatisches Wochenende” <span>11/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r461945574-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>”EINFACH NUR TOLL” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r423931213-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Super toll” <span>30/09/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187870-d1057391-Reviews-Ruzzini_Palace_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/veniseHotel4.jpg" alt="veniseHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187870-d2558563-Reviews-Carnival_Palace_Hotel-Venice_Veneto.html">
+                                    Carnival Palace Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">2 019 Bewertungen</div>
+                            <p>Nr. 6 von 386 Hotels in Venedig</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r468841349-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“angenehmer Aufenthalt” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r468372885-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Klasse !” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r467619664-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“genialer Aufenthalt” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r467136823-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Exzellent” <span>17/03/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187870-d2558563-Reviews-Carnival_Palace_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/venedig.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere italienische Städte)</li>
+                    <li><a href="mailand.html">Mailand</a></li>
+                    <li><a href="rom.html">Rom</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Milan | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/milan.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/mailand.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html" class="active active2">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html" class="active active2">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageMilanCity topImageCity">
+            <span>Italy</span>
+            <h3>Milan</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to Mailand</h5>
+                    <p>Milan is Italy’s city of the future, a fast-paced metropolis where creativity is big business, looking good is compulsory and after-work drinks are an art form.</p>
+                    <p>Since Leonardo da Vinci broke all the rules in his stunning Last Supper, the indefatigably inventive Milanese seem to have skipped straight from the Renaissance to the 21st-century. Not only is Milan a treasure trove of 20th-century art, but art deco and rationalist architecture abound. Today the city leads the way with the largest post-war re-development in Italy, impressive, sustainable architecture and a futuristic skyline modelled by Zaha Hadid, Daniel Libeskind and César Pelli. And there’s more to come with ambitious plans to mould the city into a hi-tech hub, home to the likes of Google, Microsoft, Alibaba and Apple.</p>
+                    <p>Ruled by the Caesars, Napoleon, the Austro-Hungarians and Mussolini, Milan has an ancient and fascinating cultural history. Mercantile Milan invented the idea of the city-state and the Edict of Milan (AD 313) ended the persecution of Christians. Art collections old and new mark the genius of Old Masters and provoke new conversations about where the world is headed. Prestigious nights at La Scala and an illustrious literary heritage are balanced by a diverse contemporary music and publishing scene. In short, Milan is so much more than the puritanically work-obsessed city it is often portrayed as.</p>
+                    <p>From cutting-edge design showcases to hi-tech olive presses and a sidewalk scene that makes Fashion Week seem entirely redundant, Milan is both thrilling and fun. Everyone here is fizzing with ideas, ambition and energy, and it’s catching. Unlike nonna’s Italy further south, Milanese, like New Yorkers, are refreshing modernists. The main currency here isn’t the euro or amazing design gadgetry, it’s inspiration – and that’s what I love.</p>
+                    <p>Cucina povera (peasant cooking) may be the cry of the south, but Milanese cuisine is a product of a rich urban culture. Just note the golden hue of its quintessential dishes: cotoletta (burnished, buttery veal) and saffron risotto. It was in powerful commercial cities such as Milan that Italy’s great cuisine was born, marrying Mediterranean fruits, spices and herbs with cooking methods, pastry techniques and eating styles from France and central Europe. Even today Milan continues to push Italy’s culinary boundaries, making sushi and dim sum their own, and holding the second highest number of Michelin stars in the country.</p>
+                    <p>Though Italian design is world renowned, its roots lie in 1930s Milan and seeing it in a home context offers fresh appreciation. A visit to the Design Museum is a wonderful way to pay homage to the work of Italy’s best and brightest. In addition, Milan is home to all the major design showrooms and an endless round of trade fairs. And it’s not just insiders who have all the fun. Milanese fashion houses have branched out into spas, bars, hotels, galleries and restaurants. So, why not join them for a touch of la vita moda (the stylish life).</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+                        <li>
+                            <h6>The Last Supper</h6>
+
+                            <p>Milan's most famous mural, Leonardo da Vinci’s The Last Supper is hidden away on a wall of the refectory adjoining the Basilica di Santa Maria delle Grazie. Depicting Christ and his disciples at the dramatic moment when Christ reveals he's aware of his betrayal, it's a masterful psychological study and one of the world's most iconic images. To see it you must book in advance or sign up for a guided city tour.</p>
+                        </li>
+
+                        <li>
+                            <h6>Duomo</h6>
+
+                            <p>A vision in pink Candoglia marble, Milan's extravagant Gothic cathedral, 600 years in the making, aptly reflects the city's creativity and ambition. Its pearly white facade, adorned with 135 spires and 3400 statues rises like the filigree of a fairy-tale tiara, wowing the crowds with its extravagant detail. The interior is no less impressive, punctuated by the largest stained-glass windows in Christendom, while in the crypt saintly Carlo Borromeo is interred in a rock-crystal casket.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museo Nazionale della Scienza <br> e della Tecnologia</h6>
+
+                            <p>Kids and would-be inventors will go goggle-eyed at Milan's science museum, the largest of its kind in Italy. It is a fitting tribute in a city where arch-inventor Leonardo da Vinci did much of his finest work. The 16th-century monastery where it is housed features a collection of more than 10,000 items, including models based on da Vinci's sketches, and outdoor hangars housing steam trains, planes and Italy's first submarine, Enrico Toti. More recently, the museum added a helicopter flight simulator, in which you can swoop over Milan in a real AW109 cockpit.</p>
+                        </li>
+
+                        <li>
+                            <h6>Castello Sforzesco</h6>
+
+                            <p>Originally a Visconti fortress, this iconic red-brick castle was later home to the mighty Sforza dynasty, who ruled Renaissance Milan. The castle's defences were designed by the multitalented da Vinci; Napoleon later drained the moat and removed the drawbridges. Today, it houses seven specialised museums, which gather together intriguing fragments of Milan’s cultural and civic history, including Michelangelo’s final work, the Rondanini Pietà, now housed in the frescoed hall of the castle's Ospedale Spagnolo (Spanish Hospital).</p>
+                        </li>
+
+                        <li>
+                            <h6>Pinacoteca di Brera</h6>
+
+                            <p>Located upstairs from the centuries-old Accademia di Belle Arti (still one of Italy’s most prestigious art schools), this gallery houses Milan’s impressive collection of Old Masters, much of it ‘lifted’ from Venice by Napoleon. Rubens, Goya and Van Dyck all have a place in the collection, but you're here for the Italians: Titian, Tintoretto, Veronese, and the Bellini brothers. Much of the work has tremendous emotional clout, most notably Mantegna's brutal Lamentation over the Dead Christ.</p>
+                        </li>
+
+                        <li>
+                            <h6>Chiesa di San Maurizio</h6>
+
+                            <p>This 16th-century royal chapel and one-time Benedictine convent is Milan's hidden crown jewel, every inch of it covered in breathtaking frescoes, most of them executed by Bernardino Luini who worked with Leonardo da Vinci. Many of the frescoes immortalise Ippolita Sforza, Milanese literary maven, and other members of the powerful Sforza and Bentivoglio clans who paid for the chapel's decoration.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museo del Novecento</h6>
+
+                            <p>Overlooking Piazza del Duomo, with fabulous views of the cathedral, is Mussolini's Arengario, from where he would harangue huge crowds in his heyday. Now it houses Milan's museum of 20th-century art. Built around a futuristic spiral ramp (an ode to the Guggenheim), the lower floors are cramped, but the heady collection, which includes the likes of Umberto Boccioni, Campigli, de Chirico and Marinetti, more than distracts.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museo Poldi Pezzoli</h6>
+
+                            <p>Inheriting his fortune at the age of 24, Gian Giacomo Poldi Pezzoli also inherited his mother's love of art. During extensive European travels he was inspired by the 'house museum' that was to become London's V&A and had the idea of transforming his apartments into a series of themed rooms based on the great art periods (the Middle Ages, early Renaissance, baroque etc.). Crammed with big-ticket Renaissance artworks, these Sala d’Artista are exquisite works of art in their own right.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of Mailand</h5>
+
+                    <img src="../../../img/milanVille1.jpg" alt="milanVille1">
+                    <img src="../../../img/milanVille2.jpg" alt="milanVille2">
+                    <img src="../../../img/milanVille3.jpg" alt="milanVille3">
+                    <img src="../../../img/milanVille4.jpg" alt="milanVille4">
+                    <img src="../../../img/milanVille5.jpg" alt="milanVille5">
+                    <img src="../../../img/milanVille6.jpg" alt="milanVille6">
+                    <img src="../../../img/milanVille7.jpg" alt="milanVille7">
+                    <img src="../../../img/milanVille8.jpg" alt="milanVille8">
+                    <img src="../../../img/milanVille9.jpg" alt="milanVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/milanHotel1.jpg" alt="milanHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187849-d202844-Reviews-Starhotels_E_c_ho-Milan_Lombardy.html">
+                                    Starhotels E.c.ho.
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 234 reviews</div>
+                            <p>#1 of 430 Hotels in Milan</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202844-r464665870-Starhotels_E_c_ho-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“For a weekend” <span>04/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202844-r455927450-Starhotels_E_c_ho-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Topissime !” <span>30/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202844-r431295522-Starhotels_E_c_ho-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Excellent stay ” <span>24/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202844-r421828652-Starhotels_E_c_ho-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Good emplacement” <span>24/09/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187849-d202844-Reviews-Starhotels_E_c_ho-Milan_Lombardy.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/milanHotel2.jpg" alt="milanHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187849-d228989-Reviews-Windsor_Hotel_Milano-Milan_Lombardy.html">
+                                    Windsor Hotel Milano
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 675 reviews</div>
+                            <p>#3 of 430 Hotels in Milan</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d228989-r469222772-Windsor_Hotel_Milano-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Milan 2 days” <span>21/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d228989-r466540023-Windsor_Hotel_Milano-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“So lovely personal” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d228989-r464519354-Windsor_Hotel_Milano-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Perferct” <span>04/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d228989-r462921385-Windsor_Hotel_Milano-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Very good hotel” <span>03/03/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187849-d228989-Reviews-Windsor_Hotel_Milano-Milan_Lombardy.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/milanHotel3.jpg" alt="milanHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187849-d232917-Reviews-Enterprise_Hotel-Milan_Lombardy.html">
+                                    Enterprise Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 500 reviews</div>
+                            <p>#5 of 430 Hotels in Milan</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d232917-r466914852-Enterprise_Hotel-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Excellent hotel” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d232917-r463978510-Enterprise_Hotel-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Milan,milan,milan” <span>04/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d232917-r460426420-Enterprise_Hotel-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Very beautiful hotel” <span>16/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d232917-r459366984-Enterprise_Hotel-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>”Awesome” <span>13/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187849-d232917-Reviews-Enterprise_Hotel-Milan_Lombardy.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/milanHotel4.jpg" alt="milanHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187849-d202880-Reviews-Starhotels_Anderson-Milan_Lombardy.html">
+                                    Starhotels Anderson
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">1 350 reviews</div>
+                            <p>#11 of 430 Hotels in Milan</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202880-r431025040-Starhotels_Anderson-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Very nice emplacement” <span>23/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202880-r428072900-Starhotels_Anderson-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“normal Hotel” <span>15/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202880-r422708191-Starhotels_Anderson-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Good” <span>27/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187849-d202880-r358911255-Starhotels_Anderson-Milan_Lombardy.html#CHECK_RATES_CONT">
+                                <p>“Familytrip” <span>27/03/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187849-d202880-Reviews-Starhotels_Anderson-Milan_Lombardy.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/milan.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of Italy)</li>
+                    <li><a href="venice.html">Venice</a></li>
+                    <li><a href="rome.html">Rome</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

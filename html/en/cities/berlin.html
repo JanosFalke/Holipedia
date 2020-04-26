@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Berlin | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/berlin.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/berlin.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html" class="active active2">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html" class="active active2">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <article class="imageBerlinCity topImageCity">
+            <span>Germany</span>
+            <h3>Berlin</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to Berlin</h5>
+                    <p>Berlin's combo of glamour and grit is bound to mesmerise anyone keen to explore its vibrant culture, cutting-edge architecture, fabulous food, intense parties and tangible history.</p>
+                    <p>When it comes to creativity, the sky’s the limit in Berlin, Europe's newest start-up capital. In the last 20 years, the city has become a giant lab of cultural experimentation thanks to an abundance of space, cheap rent and a free-wheeling spirit that nurtures and encourages new ideas. Top international performers grace its theatre, concert and opera stages; international art-world stars like Olafur Eliasson and Jonathan Meese make their home here; and Clooney and Hanks shoot blockbusters in the German capital. High-brow, low-brow and everything in between – there’s plenty of room for the full arc of cultural expression.</p>
+                    <p>Berlin is a big multicultural metropolis but deep down it maintains the unpretentious charm of an international village. Locals follow the credo 'live and let live' and put greater emphasis on personal freedom and a creative lifestyle than on material wealth and status symbols. Cafes are jammed at all hours, drinking is a religious rite and clubs keep going until the wee hours or beyond. Size-wise, Berlin is pretty big but its key areas are wonderfully compact and easily navigated on foot, by bike or by using public transport.</p>
+                    <p>Berlin is a bon vivant, passionately feasting on the smorgasbord of life, never taking things – or itself – too seriously. To me, this city is nothing short of addictive. It embraces me, inspires me, accepts me and makes me feel good about myself, the world and other people. I enjoy its iconic sights, its vast swathes of green, its sky bars and chic restaurants, but I love its gritty sides more. There's nothing static about Berlin: it's unpredictable, unpretentious and irresistible. And it loves you back – if you let it in. Bismarck and Marx, Einstein and Hitler, JFK and Bowie, they’ve all shaped – and been shaped by – Berlin, whose richly textured history stares you in the face at every turn. This is a city that staged a revolution, was headquartered by Nazis, bombed to bits, divided in two and finally reunited – and that was just in the 20th century! Walk along remnants of the Berlin Wall, marvel at the splendour of a Prussian palace, visit Checkpoint Charlie or stand in the very room where the Holocaust was planned. Berlin is like an endlessly fascinating 3D textbook where the past is very much present wherever you go.</p>
+                    <p>Forget about New York – Berlin is the city that truly never sleeps. Sometimes it seems as though Berliners are the lotus eaters of Germany, people who love nothing more than a good time. The city's vast party spectrum caters for every taste, budget and age group. From tiny basement clubs to industrial techno temples, chestnut-canopied beer gardens to fancy cocktail caverns, saucy cabarets to ear-pleasing symphonies – Berlin delivers hot-stepping odysseys, and not just after dark and on weekends but pretty much 24/7. Pack your stamina!</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+                        <li>
+                            <h6>Brandenburger Tor</h6>
+
+                            <p>A symbol of division during the Cold War, the landmark Brandenburg Gate now epitomises German reunification. Carl Gotthard Langhans found inspiration in Athens’ Acropolis for the elegant triumphal arch, completed in 1791 as the royal city gate. It stands sentinel over Pariser Platz, a harmoniously proportioned square once again framed by banks, a hotel and the US, British and French embassies, just as it was during its 19th-century heyday.</p>
+                        </li>
+
+                        <li>
+                            <h6>Gedenkstätte Berliner Mauer</h6>
+
+                            <p>For an insightful primer on the Berlin Wall, visit this outdoor memorial, which extends for 1.4km along Bernauer Strasse and integrates an original section of Wall, vestiges of the border installations and escape tunnels, a chapel and a monument. Multimedia stations, panels, excavations and a Documentation Centre provide context and explain what the border fortifications looked like and how they shaped the everyday lives of people on both sides of it. There's a great view from the centre's viewing platform.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museumsinsel</h6>
+
+                            <p>Walk through ancient Babylon, meet an Egyptian queen, clamber up a Greek altar or be mesmerised by Monet's ethereal landscapes. Welcome to Museumsinsel (Museum Island), Berlin's most important treasure trove, spanning 6000 years' worth of art, artefacts, sculpture and architecture from Europe and beyond. Spread across five grand museums built between 1830 and 1930, the complex takes up the entire northern half of the little Spree Island where Berlin's settlement began in the 13th century.</p>
+                        </li>
+
+                        <li>
+                            <h6>Neues Museum</h6>
+
+                            <p>David Chipperfield's reconstruction of the bombed-out Neues Museum is now the residence of Queen Nefertiti, the showstopper of the Egyptian Museum, which also features mummies, sculptures and sarcophagi. Pride of place at the Museum of Pre- and Early History (in the same building) goes to Trojan antiquities, a Neanderthal skull and the 3000-year-old 'Berliner Goldhut', a golden conical hat. Skip the queue by buying your timed ticket online. Entry must be made during the designated 30-minute time slot.</p>
+                        </li>
+
+                        <li>
+                            <h6>Reichstag</h6>
+
+                            <p>It’s been burned, bombed, rebuilt, buttressed by the Wall, wrapped in fabric and finally turned into the modern home of the German parliament by Norman Foster: the 1894 Reichstag is indeed one of Berlin’s most iconic buildings. Its most distinctive feature, the glittering glass dome, is serviced by a lift and affords fabulous 360-degree city views. For guaranteed access, make free reservations online, otherwise try scoring tickets at the Reichstag Service Centre for the same or next day. Bring ID. At the top, pick up a free auto-activated audioguide to learn about the building, landmarks and the workings of parliament while following the ramp spiralling up around the dome’s mirror-clad central cone.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Pergamonmuseum</h6>
+
+                            <p>Opening a fascinating window on to the ancient world, this palatial three-wing complex unites a rich feast of classical sculpture and monumental architecture from Greece, Rome, Babylon and the Middle East, including the radiant-blue Ishtar Gate from Babylon, the Roman Market Gate of Miletus and the Caliph's Palace of Mshatta. Renovations put the namesake Pergamon Altar off limits until 2019. Budget at least two hours for this amazing place and be sure to pick up the free and excellent audioguide.</p>
+                        </li>
+
+                        <li>
+                            <h6>East Side Gallery</h6>
+
+                            <p>The year was 1989. After 28 years, the Berlin Wall, that grim and grey divider of humanity, finally met its maker. Most of it was quickly dismantled, but along Mühlenstrasse, paralleling the Spree, a 1.3km stretch became the East Side Gallery, the world’s largest open-air mural collection. In more than 100 paintings, dozens of international artists translated the era’s global euphoria and optimism into a mix of political statements, drug-induced musings and truly artistic visions.</p>
+                        </li>
+
+                        <li>
+                            <h6>Schloss Charlottenburg</h6>
+
+                            <p>Charlottenburg Palace is one of the few sites in Berlin that still reflects the one-time grandeur of the Hohenzollern clan that ruled the region from 1415 to 1918. Originally a petite summer retreat, it grew into an exquisite baroque pile with opulent private apartments, richly festooned festival halls, collections of precious porcelain and paintings by French 18th-century masters. It's lovely in fine weather when you can fold a stroll in the palace park into a day of peeking at royal treasures.</p>
+                        </li>
+
+                        <li>
+                            <h6>Fernsehturm</h6>
+
+                            <p>Germany's tallest structure, the TV Tower has been soaring 368m high since 1969 and is as iconic to Berlin as the Eiffel Tower is to Paris. On clear days, views are stunning from the panorama level at 203m or from the upstairs restaurant, which makes one revolution per hour. To shorten the wait, buy a timed ticket online.</p>
+                        </li>
+
+                        <li>
+                            <h6>Sammlung Boros</h6>
+
+                            <p>This Nazi-era bunker shelters one of Berlin's finest private contemporary art collections. Advertising guru Christian Boros acquired the behemoth in 2003 and converted it into a shining beacon of art. Book online (weeks, if not months, ahead!) to join a guided tour (also in English) of works by such hotshots as Wolfgang Tillmans, Olafur Eliasson and Ai Weiwei, and to pick up fascinating nuggets about the building's past incarnations.</p>
+                        </li>
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Disover the beauty of Berlin</h5>
+
+                    <img src="../../../img/berlinVille1.jpg" alt="berlinVille1">
+                    <img src="../../../img/berlinVille2.jpg" alt="berlinVille2">
+                    <img src="../../../img/berlinVille3.jpg" alt="berlinVille3">
+                    <img src="../../../img/berlinVille4.jpg" alt="berlinVille4">
+                    <img src="../../../img/berlinVille5.jpg" alt="berlinVille5">
+                    <img src="../../../img/berlinVille7.jpg" alt="berlinVille6">
+                    <img src="../../../img/berlinVille6.jpg" alt="berlinVille7">
+                    <img src="../../../img/berlinVille8.JPG" alt="berlinVille8">
+                    <img src="../../../img/berlinVille9.jpg" alt="berlinVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel3.jpg" alt="berlinHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187323-d306038-Reviews-Hotel_Q-Berlin.html">
+                                    Hotel Q!
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 176 reviews</div>
+                            <p>#1 of 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r464760096-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“I would like to stay” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r447240683-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Hotel Design with Spa” <span>28/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r426052869-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“A go-to!” <span>08/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r366362581-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Hotel Q for ONE weekend” <span>22/04/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187323-d306038-Reviews-Hotel_Q-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel4.jpg" alt="berlinHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187323-d1307675-Reviews-The_Circus_Hotel-Berlin.html">
+                                    The Circus Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 485 reviews</div>
+                            <p>#3 of 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r447993897-The_Circus_Hotel-Berlin.html#review_447993897">
+                                <p>“Perfect !” <span>30/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r424764893-The_Circus_Hotel-Berlin.html#review_424764893">
+                                <p>“Good adress for Berlin" <span>03/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r416325773-The_Circus_Hotel-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Awesome” <span>09/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r397461631-The_Circus_Hotel-Berlin.html#CHECK_RATES_CONT">
+                                <p>“what a hotel” <span>26/07/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187323-d1307675-Reviews-The_Circus_Hotel-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel2.jpg" alt="berlinHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187323-d230572-Reviews-Grand_Hyatt_Berlin-Berlin.html">
+                                    Grand Hyatt Berlin
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">2 743 reviews</div>
+                            <p>#23 of 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r449004193-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Nice building...” <span>03/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r448239411-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Very good hotel” <span>01/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r442086535-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Just german” <span>05/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r430520129-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>”Hotel of 'Grande Classe'” <span>22/10/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187323-d230572-Reviews-Grand_Hyatt_Berlin-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel1.jpg" alt="berlinHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g187323-d6896648-Reviews-Leonardo_Hotel_Berlin_Mitte-Berlin.html">
+                                    Leonardo Hotel Berlin Mitte
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">870 reviews</div>
+                            <p>#109 of 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r464198132-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“i love berlin” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r452350708-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Super good journey” <span>16/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r449580011-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“good position” <span>05/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r436737949-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Interessting emplacement” <span>13/01/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g187323-d6896648-Reviews-Leonardo_Hotel_Berlin_Mitte-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/berlin.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of Germany)</li>
+                    <li><a href="halle.html">Halle Westfalen</a></li>
+                    <li><a href="munich.html">Munich</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

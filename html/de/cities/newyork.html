@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>New York | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/newyork.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/newyork.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html" class="active active2">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html" class="active active2">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageNewYorkCity topImageCity">
+            <span>Vereinigte Staaten</span>
+            <h3>New York</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in New York</h5>
+                    <p>Von den Musicaltheatern am Broadway bis zu den schäbigen Cabarets von Greenwich Village stolpern New-York-Besucher auf Schritt und Tritt über Comedyclubs, Jazzlounges und Off-Theater. Daneben lauert eine elektrisierende Welt der Kunst und Kultur – in Weltklassemuseen von gigantischen Ausmaßen ebenso wie in progressiven Galerien für Nachwuchstalente. Wer seine Erwartungen so hoch schraubt wie die Wolkenkratzer der Stadt, kann in dieser Reizüberflutung unzählige Glanzmomente erleben, die weit über die glitzernden Lichter des Times Square hinausgehen.</p>
+                    <p>Der Big Apple ist ein unglaublich vielfältiges urbanes Ökosystem. Das beste Organ, um diesen Kulturmix optimal zu würdigen, ist der Gaumen. Die New Yorker Gastroszene lockt als Parade der Superlative, über der ein ganzer Michelin-Sternenhimmel strahlt. Von den karibischen Küchen in Harlem bis zu neuen Interpretationen amerikanischer Hausmannskost in Downtown bietet New York unendlich viele Möglichkeiten für reiselustige Geschmacksnerven.</p>
+                    <p>New Yorker Trends entwickeln sich schneller als ein Twitter-Feed. Die Stadt, die ihren Finger fest am Puls der Zeit hat, ist eins der innovativsten Fleckchen des Planeten. In dieser Welt der Vertikalen bekommt man alles zu jeder Zeit, von der aktuellen Couture der Pariser Laufstege bis zu den ergonomischen Faulenzersesseln aus Tokioter Designateliers. Die Uhren ticken hier schneller als anderswo – alles ist ständig im Fluss, und die New Yorker sind immerzu auf der Jagd nach dem Neuesten und Angesagtesten, nur um sich die Woche darauf über den nächsten großen Hit auszutauschen.</p>
+                    <p>Vor 100 Jahren begrüßte die fackelschwingende Kultfigur die Einwanderer nach einer langen Reise über die Weltmeere. Heute wacht die Lady über die moderne Auffassung des Freiheitsbegriffs. New York ist längst viel mehr als ein Tor zum Land der unbegrenzten Möglichkeiten – es ist eine Stadt des Triumphs, der Entdeckungen und Experimente, ein Ort, an dem jeder frei ist, er oder sie selbst zu sein. In New York lässt man alle Vorbehalte hinter sich, schüttelt seine Hemmungen ab und stürzt sich mitten hinein ins Getümmel..</p>
+
+
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Central Park</h6>
+                            <p>London hat den Hyde Park, Paris den Bois de Boulogne – und New York den weltberühmten Central Park. Er umfasst gut 340 ha Rasen, Hügel und Felsen, Ulmenalleen, penibel gepflegte Grünflächen und mehrere Seen – dazu kommen ein Freilichttheater, die John-Lennon-Gedenkstätte, ein idyllisches Uferlokal (Loeb Boathouse) und eine beliebte Statue von Alice im Wunderland. Bleibt bloß die schwierige Entscheidung, wo man seinen Rundgang beginnt.</p>
+                        </li>
+
+                        <li>
+                            <h6>Wolkenkratzer</h6>
+                            <p>New York besitzt Unmengen dieser phallischen Fortschrittssymbole, in jeder Form und Größe, vom eleganten Chrysler Building über das legendäre Empire State Building bis zur filigranen Fassade des Flatiron Building. Doch statt von oben auf das endlose Lichtermeer der Stadt hinabzustarren, ziehen Besucher oft die urtypischen New-York-Ansichten unten auf der Straße vor: Hier ragt immer wieder die markante Spitze eines Hochhausturms majestätisch zwischen den hupenden Taxis der frühabendlichen Rushhour auf.</p>
+                        </li>
+
+                        <li>
+                            <h6>Broadway-Shows</h6>
+                            <p>Nur das Londoner West End kann mit dem Theater District von Midtown mithalten, mit seiner Flut von Premieren, Wiederaufführungen, Riesenhits und Superflops. Zwischen 40th und 54th St, Sixth und Eighth Ave, erstreckt sich die New Yorker „Traumfabrik“ – eine Welt der Romanzen und des Verrats, der Morde und Triumphe, der märchenhaften Kostüme und mitreißenden Melodien. Über die Vaudeville-Ränke von Chicago und die vertonte Tierwelt des Königs der Löwen hinaus bietet das Viertel auch neue und klassische Off-Broadway- und Off-off-Broadway-Bühnenkost, die selbst anspruchsvollste Theatergänger zufriedenstellen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Kulinarische Klassiker</h6>
+                            <p>Wer ein herzhaftes Stück vom Big Apple abbeißen will, probiert sich am besten einmal quer durch die bewährten New Yorker Leibspeisen. Los geht’s mit einem „bagel and a schmear“ – einem gelochten Brötchen, dessen Teig vorgekocht und dann gebacken wird, mit ordentlich Frischkäse drauf. Dann kommt ein Rindfleisch-Hotdog mit „the works“ (allem Drum und Dran), gefolgt von Pastrami (Rauchfleisch) auf Roggenbrot mit Gewürzgurken. Man sollte unbedingt noch Platz für die superdünne Pizza nach New Yorker Art (vor dem Verzehr fachmännisch zu falten) und den extracremigen Käsekuchen mit Keksboden lassen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Freiheitsstatue & Ellis Island</h6>
+                            <p>Seit ihrer Einweihung 1886 hat „Lady Liberty“ Millionen von Einwanderer willkommen geheißen, die in der Hoffnung auf ein besseres Leben per Schiff in den Hafen von New York einliefen. Heute begrüßt sie Millionen Touristen, von denen viele ihre Krone erklimmen, um eines der schönsten Panoramen der New Yorker Skyline zu genießen. Ganz in der Nähe liegt Ellis Island, das von 1892 bis 1954 erste Station für über zwölf Millionen Neuankömmlinge war. Heute erinnert es mit einem der bewegendsten Museen der Stadt an den Mut und die Ausdauer dieser Menschen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museumsmeile</h6>
+                            <p>Eines der größten Museen der Welt, mit einer wahrhaft erschöpfenden Sammlung? Eine kopfstehende Spirale von Frank Lloyd Wright? Eine Villa von 1914 voll unschätzbarer Werke österreichischer und deutscher Expressionisten? Gibt es hier alles. Auf dem 25 Häuserblocks langen Abschnitt der Fifth Ave von der 80th bis zur 105th St sorgen einige der renommiertesten Kunstinstitutionen der Welt, wie das Metropolitan Museum of Art, das Guggenheim Museum und die Neue Galerie, dafür, dass Besuchern die Augen übergehen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Shoppen</h6>
+                            <p>New York ist ein Leitstern am Konsumhimmel – mit tausend Gelegenheiten zum therapeutischen Frustshoppen, was selbst einen Woody Allen von seinen Neurosen kurieren könnte. Designer aus der Stadt und aus aller Welt stellen hier ihre Kreationen zur Schau und verführen dazu, die Reisekasse zu plündern. Doch letztlich geht es beim Shoppen in New York nicht primär darum, sich die Schränke zu füllen. Es ist vor allem eine Möglichkeit, die unzähligen Subkulturen der Stadt und ihre Kunst- und urbanen Erzeugnisse zu erleben.</p>
+                        </li>
+
+                        <li>
+                            <h6>Bummel über die Brooklyn Bridge</h6>
+                            <p>Es gibt drei Wahrzeichen, die New York ausmachen: die mit Wolkenkratzern gespickte Skyline, die glanzvolle Erscheinung der Freiheitsstatue und die Spitzbögen der Brooklyn Bridge. Das 1873 ganz aus Granit erbaute Meisterwerk der Neugotik war Inspirationsquelle für Dichtung (Jack Kerouacs „Brooklyn Bridge Blues“), Musik (Frank Sinatras „Brooklyn Bridge“) und zahlreiche Kunstwerke (wie die Fotografien von Walker Evans). Außerdem ist die Brücke der schönste Weg, um vom südlichen Manhattan nach Brooklyn Heights zu gelangen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Yankee-Stadion</h6>
+                            <p>Das neue Stadion in der South Bronx ist nicht gerade schön (der Entwurf könnte auch aus Mussolinis Zeiten stammen), aber doch das Zuhause eines der berühmtesten Teams des amerikanischen Baseballs: der Yankees, die mit Spielerlegenden wie Babe Ruth und Joe DiMaggio Geschichte schrieben. Damals wie heute schreien sich hier die Baseballfans für ihre Mannschaft die Seele aus dem Leib und stärken sich zwischendurch mit Schweinebraten- Brötchen und kaltem Bier: der Inbegriff eines uramerikanischen Lebensgefühls.</p>
+                        </li>
+
+                        <li>
+                            <h6>MoMA</h6>
+                            <p>Das Museum of Modern Art (MoMA) ist der vielleicht größte Hamsterer moderner Meisterwerke weltweit und das Gelobte Land für Kulturbeflissene. Besucher können hier van Goghs Sternennacht, Cézannes Badende, Picassos Les Demoiselles d’Avignon, Pollocks One: Number 31, 1950 und Warhols Campbell’s Soup Cans in Augenschein nehmen, sollten dabei aber noch genug Zeit einplanen für die Werke von Chagall, Dix, Rothko, de Kooning und Haring, eine kostenlose Filmvorführung, ein Gläschen Wein im Skulpturengarten, eine Dosis Designershopping und ein Gourmetmahl im Museumsrestaurant Modern.</p>
+                        </li>
+
+                        <li>
+                            <h6>Die High Line</h6>
+                            <p>Die High Line ist eine Erfolgsgeschichte der Stadtsanierung und ein wunderbares Beispiel für das Bemühen New Yorks, Zeugnisse der industriellen Vergangenheit in attraktive Wohlfühlzonen für die Innenstadtbewohner zu verwandeln. Die ehemals unansehnliche Hochbahntrasse, die sich zwischen Schlachthöfen und Mietskasernen dahinschlängelte, lädt heute als luftig grüner Parkstreifen zu Ruhepausen und Geselligkeit ein. Und natürlich hat sie die Immobilienbranche auf Trab gebracht und Weltklassearchitekten dazu beflügelt, rundherum tollen Wohnraum zu schaffen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Williamsburg</h6>
+                            <p>Hier gibt es nostalgische Cocktaillounges mit 1930er-Jahre-Flair, Szenelokale, die schlichte Pizza oder auch Michelinstern- Gastronomie auftischen, und so viele Musikkneipen und Biergärten, dass sich vernügungssüchtige Nachteulen wochenlang auslassen können. Für die eher Tagaktiven hält Williamsburg diverse Wohn-Boutiquen und Modeläden jeder Fasson bereit, von Secondhand-Kaufhäusern bis zu Designershops. Nicht umsonst ist dieser Teil von Brooklyn – nur eine Subway- Station von Downtown Manhattan entfernt – der aktuell trendigste Tummelplatz der Stadt.</p>
+                        </li>
+
+                        <li>
+                            <h6>Jazz im West Village</h6>
+                            <p>Mit den Namen Village Vanguard und Blue Note kann nicht jeder etwas anfangen, aber Jazzfreunde horchen auf, wenn diese Stichworte fallen. Auch wenn sich der blaue Dunst in den Clubs des West Village gelichtet hat, sind die Lokale immer noch quicklebendig und präsentieren einen bunten Mix lokaler und internationaler Talente. Das hier ist nicht irgendeine der vielen Ecken mit Herz und Seele, die es in der scheinbar anonymen Wolkenkratzerwüste gibt, sondern der Nabel einer der kunst- und ausdrucksvollsten Musikgattungen überhaupt.</p>
+                        </li>
+
+                        <li>
+                            <h6>Times Square</h6>
+                            <p>Der Times Square ist viel mehr als nur die Kreuzung von Broadway und Seventh Ave. Er ist ein Konzentrat der USA – eine grelle, elektrisierende Ballung aus Hollywood-Reklame, glitzernder Cola-Werbung und halbnackten Cowboys. Dem amerikanischen Traum getreu hat sich diese „Wegkreuzung der Welt“ immer wieder neu erfunden, von den Varietés der 1920er über die Pornokinos der 1970er bis zum aufpolierten, rauchfreien Aushängeschild des 21. Jhs. Man kann ihn lieben oder hassen, aber keinesfalls verpassen, vor allem nach Sonnenuntergang, wenn die Megabildschirme die Nacht zum Tag machen.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit New Yorks</h5>
+
+                    <img src="../../../img/newYorkVille1.jpg" alt="newYorkVille1">
+                    <img src="../../../img/newYorkVille2.jpg" alt="newYorkVille2">
+                    <img src="../../../img/newYorkVille3.jpg" alt="newYorkVille3">
+                    <img src="../../../img/newYorkVille4.JPG" alt="newYorkVille4">
+                    <img src="../../../img/newYorkVille5.jpg" alt="newYorkVille5">
+                    <img src="../../../img/newYorkVille6.jpg" alt="newYorkVille6">
+                    <img src="../../../img/newYorkVille7.jpg" alt="newYorkVille7">
+                    <img src="../../../img/newYorkVille8.jpg" alt="newYorkVille8">
+                    <img src="../../../img/newYorkVille9.jpg" alt="newYorkVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/newYorkHotel1.jpg" alt="newYorkHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g60763-d93358-Reviews-Pod_51_Hotel-New_York_City_New_York.html">
+                                    Pod 51 Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">4 650 Bewertungen</div>
+                            <p>Nr. 1 von 467 Hotels in New York</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93358-r469156931-Pod_51_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Perfekt” <span>21/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93358-r459577210-Pod_51_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Ein sehr sehr schönes Hotel” <span>14/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93358-r448301353-Pod_51_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Original” <span>01/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93358-r437620375-Pod_51_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Sehr gut platzeirt” <span>15/11/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g60763-d93358-Reviews-Pod_51_Hotel-New_York_City_New_York.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/newYorkHotel2.jpg" alt="newYorkHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g60763-d3235844-Reviews-Pod_39_Hotel-New_York_City_New_York.html">
+                                    Pod 39 Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">3 145 Bewertungen</div>
+                            <p>Nr. 2 von 467 Hotels in New York</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d3235844-r468443733-Pod_39_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“gutes Preis/Leistung-Verhältnis” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d3235844-r464879476-Pod_39_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Gut aber...” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d3235844-r450139008-Pod_39_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Super Aufenthalt !” <span>07/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d3235844-r436911034-Pod_39_Hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Sauber, top” <span>13/11/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g60763-d3235844-Reviews-Pod_39_Hotel-New_York_City_New_York.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/newYorkHotel3.jpg" alt="newYorkHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g60763-d93543-Reviews-Shelburne_NYC_an_Affinia_hotel-New_York_City_New_York.html">
+                                    Shelburne NYC-an Affinia hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">4 599 Bewertungen</div>
+                            <p>Nr. 3 von 467 Hotels in New York</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93543-r465879842-Shelburne_NYC_an_Affinia_hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Sehr gut für eine Kleinfamilie” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93543-r465241905-Shelburne_NYC_an_Affinia_hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Im Herzen Manhattens” <span>09/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93543-r436382764-Shelburne_NYC_an_Affinia_hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Ruhig und toll ” <span>11/11/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93543-r433654271-Shelburne_NYC_an_Affinia_hotel-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Sehr sehr schön” <span>01/11/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g60763-d93543-Reviews-Shelburne_NYC_an_Affinia_hotel-New_York_City_New_York.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/newYorkHotel4.jpg" alt="newYorkHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g60763-d93507-Reviews-New_York_Marriott_Marquis-New_York_City_New_York.html">
+                                    New York Marriott Marquis
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">9 629 Bewertungen</div>
+                            <p>Nr. 19 von 467 Hotels in New York</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93507-r466697468-New_York_Marriott_Marquis-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Super geil” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93507-r465132565-New_York_Marriott_Marquis-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Komfortabel” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93507-r461841675-New_York_Marriott_Marquis-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Super toll platziert” <span>01/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g60763-d93507-r459532162-New_York_Marriott_Marquis-New_York_City_New_York.html#CHECK_RATES_CONT">
+                                <p>“Zu empfehlen” <span>14/02/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g60763-d93507-Reviews-New_York_Marriott_Marquis-New_York_City_New_York.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/newyork.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere amerikanische Städte)</li>
+                    <li><a href="lasvegas.html">Las Vegas</a></li>
+                    <li><a href="washington.html">Washington</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

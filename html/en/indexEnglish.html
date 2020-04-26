@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Home | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/search.js"></script>
+    <script type="text/javascript" src="../../js/evaluation.js"></script>
+    <script type="text/javascript" src="../../js/slider.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../index.html"><img src="../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../de/indexDeutsch.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="indexEnglish.html" class="active">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="usa.html">United States</a>
+                            <ul>
+                                <li><a href="cities/newyork.html">New York</a></li>
+                                <li><a href="cities/lasvegas.html">Las Vegas</a></li>
+                                <li><a href="cities/washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="france.html">France</a>
+                            <ul>
+                                <li><a href="cities/paris.html">Paris</a></li>
+                                <li><a href="cities/larochelle.html">La Rochelle</a></li>
+                                <li><a href="cities/strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="germany.html">Germany</a>
+                            <ul>
+                                <li><a href="cities/berlin.html">Berlin</a></li>
+                                <li><a href="cities/halle.html">Halle Westfalen</a></li>
+                                <li><a href="cities/munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="italy.html">Italy</a>
+                            <ul>
+                                <li><a href="cities/rome.html">Rome</a></li>
+                                <li><a href="cities/venice.html">Venice</a></li>
+                                <li><a href="cities/milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="russia.html">Russia</a>
+                            <ul>
+                                <li><a href="cities/moscow.html">Moscow</a></li>
+                                <li><a href="cities/stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="cities/stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="england.html">England</a>
+                            <ul>
+                                <li><a href="cities/london.html">London</a></li>
+                                <li><a href="cities/manchester.html">Manchester</a></li>
+                                <li><a href="cities/liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="canada.html">Canada</a>
+                            <ul>
+                                <li><a href="cities/vancouver.html">Vancouver</a></li>
+                                <li><a href="cities/montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="abousus.html">Our Team</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordEnglish()">Premium Area</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <ul id="slides">
+            <li class="slide showing">
+                <p class="berlin"><strong>Berlin</strong>, Germany</p>
+            </li>
+            <li class="slide">
+                <p class="strasbourg"><strong>Strasburg</strong>, France</p>
+            </li>
+            <li class="slide">
+                <p class="newYork"><strong>New York</strong>, USA</p>
+            </li>
+            <li class="slide">
+                <p class="londonSlider"><strong>London</strong>, England</p>
+            </li>
+            <li class="slide">
+                <p class="stPetersbourg"><strong>St. Petersburg</strong>, Russia</p>
+            </li>
+        </ul>
+
+
+        <section class="searchWidth">
+            <section id="informationsTop">
+                <h2>You are looking for a good guide for your next holidays?</h2>
+                <input onclick="toggleSearchMenu()" type="text" id="inputSearch" onkeyup="searchBox()" placeholder="Search for your city..." title="Enter Cityname">
+
+                <ul id="menu-boxSearch">
+                    <li><a href="cities/newyork.html">New York</a></li>
+                    <li><a href="cities/lasvegas.html">Las Vegas</a></li>
+                    <li><a href="cities/washington.html">Washington DC.</a></li>
+
+                    <li><a href="cities/paris.html">Paris</a></li>
+                    <li><a href="cities/larochelle.html">La Rochelle</a></li>
+                    <li><a href="cities/strasburg.html">Strasburg</a></li>
+
+                    <li><a href="cities/berlin.html">Berlin</a></li>
+                    <li><a href="cities/halle.html">Halle Westfalen</a></li>
+                    <li><a href="cities/munich.html">Munich</a></li>
+
+                    <li><a href="cities/rome.html">Rome</a></li>
+                    <li><a href="cities/venice.html">Venice</a></li>
+                    <li><a href="cities/milan.html">Milan</a></li>
+
+                    <li><a href="cities/moscow.html">Moscow</a></li>
+                    <li><a href="cities/stpetersburg.html">St. Petersburg</a></li>
+
+                    <li><a href="cities/stockholm.html">Stockholm</a></li>
+
+                    <li><a href="cities/london.html">London</a></li>
+                    <li><a href="cities/manchester.html">Manchester</a></li>
+                    <li><a href="cities/liverpool.html">Liverpool</a></li>
+
+                    <li><a href="cities/vancouver.html">Vancouver</a></li>
+                    <li><a href="cities/montreal.html">Montreal</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <div class="top">Discover the most beautiful cities.</div>
+        <section class="middleImgsSection">
+            <section class="middleImgs">
+                <a href="cities/rome.html">
+                    <article>
+                        <span><strong>Rome</strong></span>
+                        <p>Art, Cultur, History</p>
+                    </article>
+                </a>
+                <a href="cities/newyork.html">
+                    <article>
+                        <span><strong>New York</strong></span>
+                        <p>Skyline & View</p>
+                    </article>
+                </a>
+                <a href="cities/london.html">
+                    <article>
+                        <span><strong>London</strong></span>
+                        <p>Buckingham Palace, Big Ben, ...</p>
+                    </article>
+                </a>
+                <a href="cities/paris.html">
+                    <article>
+                        <span><strong>Paris</strong></span>
+                        <p>The Eiffel Tower</p>
+                    </article>
+                </a>
+                <a href="cities/berlin.html">
+                    <article>
+                        <span><strong>Berlin</strong></span>
+                        <p>The Television Tower</p>
+                    </article>
+                </a>
+                <a href="cities/venice.html">
+                    <article>
+                        <span><strong>Venice</strong></span>
+                        <p>Gondolatrips through the canals</p>
+                    </article>
+                </a>
+            </section>
+        </section>
+
+
+        <div class="avis">
+            <article class="middle">Customers ratings.</article>
+
+            <section class="avisSection">
+                <section class="avisSectionContent">
+
+                    <div class="contentAvis">
+                        <h2>Global satisfaction:<span>4.0/5*</span></h2>
+                        <form class="notes" name="notes" method="get">
+                            <input type="radio" name="note" id="note5" value="5">
+                            <label for="note5">&#x2605;</label>
+                            <input type="radio" name="note" id="note4" value="4">
+                            <label for="note4">&#x2605;</label>
+                            <input type="radio" name="note" id="note3" value="3">
+                            <label for="note3">&#x2605;</label>
+                            <input type="radio" name="note" id="note2" value="2">
+                            <label for="note2">&#x2605;</label>
+                            <input type="radio" name="note" id="note1" value="1">
+                            <label for="note1">&#x2605;</label>
+                            <span onClick="evaluationEnglish()" id="evaluation" class="eval">Send rating</span>
+                        </form>
+
+
+                        <div class="photosInsta">
+                            <ul>
+                                <li class="avis1">
+                                    <a href="https://www.instagram.com/p/xEIsoXgll2/?taken-by=jfalkephotography">
+                                        <p>#Holipedia #ThankYou</p><img class="insta" src="../../img/insta.png" alt="instagramLogo"></a>
+                                </li>
+                                <li class="avis2">
+                                    <a href="https://www.instagram.com/p/BGmlhDhtsKA/?taken-by=theamngt">
+                                        <p>#Holipedia #Merci</p><img class="insta" src="../../img/insta.png" alt="instagramLogo"></a>
+                                </li>
+                                <li class="avis3">
+                                    <a href="https://www.instagram.com/p/p1PK34glrT/?taken-by=jfalkephotography">
+                                        <p>#Holipedia #Sweden</p><img class="insta" src="../../img/insta.png" alt="instagramLogo"></a>
+                                </li>
+                                <li class="avis4">
+                                    <a href="https://www.instagram.com/p/-6T1JWtsK2/?taken-by=theamngt">
+                                        <p>#Holipedia #SoNice</p><img class="insta" src="../../img/insta.png" alt="instagramLogo"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <article class="separation"></article>
+
+
+                    <div class="infopremium">
+                        <div>You can find the password of the <strong>Premium Area</strong> on our <a href="https://www.facebook.com/HolipediaOfficial/"> Facebook</a>page.</div>
+                        <article>You will get :</article>
+                        <ul>
+                            <li>Tubemaps</li>
+                            <li>additional Images</li>
+                            <li>City maps</li>
+                            <li>Touristguides in PDF</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+        </div>
+
+        <section class="newsletter">
+            <article>For more Information</article>
+            <form action="mailto:janos.falke@web.de" method="post" enctype="text/plain">
+                <input class="newsletterButton" type="submit" value="Send me an e-mail!">
+            </form>
+        </section>
+
+
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <section class="socialMediaIndex">
+            <section class="reseauSociaux">
+                <p>SOCIAL MEDIA</p>
+
+                <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+            </section>
+
+            <div></div>
+
+            <section class="footerMenu">
+                <ul>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li><a href="termsofuse.html">Terms of Use</a></li>
+                    <li><a href="abousus.html">About Holipedia</a></li>
+                    <li><a href="privacypolicy.html">Legal Details</a></li>
+                </ul>
+                <ul>
+                    <li><a href="privacypolicy.html">Privacy Statement</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="sitemap.html">Site Map</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="partenaires">
+            <article>Our Partners</article>
+            <ul>
+                <li>
+                    <a href="http://www.storck.com/en/"><img class="storck" src="../../img/storck.png" alt="Storck"></a>
+                </li>
+                <li>
+                    <a href="https://tripadvisor.com"><img class="tripadvisor" src="../../img/tripadvisor.png" alt="TripAdvisor"></a>
+                </li>
+                <li>
+                    <a href="https://booking.com"><img class="booking" src="../../img/booking.png" alt="Booking"></a>
+                </li>
+                <li>
+                    <a href="https://kayak.com"><img class="kayak" src="../../img/kayak.png" alt="Kayak"></a>
+                </li>
+                <li>
+                    <a href="https://trivago.com"><img class="trivago" src="../../img/trivago.png" alt="Trivago"></a>
+                </li>
+                <li>
+                    <a href="https://airfrance.com"><img class="airfrance" src="../../img/airfrance.png" alt="AirFrance"></a>
+                </li>
+            </ul>
+        </section>
+
+
+        <article class="footerImage"></article>
+
+        <section class="copyright">
+            <p>© 2017 Holipedia, J.F. All Rights. *Average of over 13092 ratings.</p>
+        </section>
+    </footer>
+</body>
+
+</html>

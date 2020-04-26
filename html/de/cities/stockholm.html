@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+    
+    <title>Stockholm | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/stockholm.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/stockholm.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html" class="active active2">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html" class="active active2">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageStockholmCity topImageCity">
+            <span>Schweden</span>
+            <h3>Stockholm</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Stockholm</h5>
+                    <p>Goldgelbe Bürgerhäuser, die im klaren nordischen Licht warm leuchten, prachtvolle Renaissancegebäude, die von Wohlstand zeugen, schreiende Möwen, die über weißen Schärendampfern kreisen: Stockholm, strahlende Hauptstadt des Nordens, fasziniert – besonders durch das viele Wasser, das in der Sonne herrlich glitzert und im Winter zu Eis erstarrt. Ein Drittel der Fläche Stockholms ist Wasser, und das ist rein und von hervorragender Qualität. Hier können Sie mitten im Zentrum unbesorgt baden oder dicke Lachse angeln!</p>
+                    <p>Das zweite Drittel der Stadtfläche ist grün. Abgesehen von vielen kleinen lauschigen Ecken mit Bäumen, Büschen und Rasen zieht sich ein riesiger, geschützter Nationalpark von 27 km2 mitten durch die Innenstadt, der Ekoparken. In welcher anderen Millionenmetropole gibt es das schon? Und die Grünanlagen sind stets gut besucht, im Sommer wie im Winter, denn die Stockholmer sind – wie die Schweden generell – sehr naturverbunden. Kommen die ersten Strahlen der Frühjahrssonne durch, hält die sonnenhungrigen Hauptstädter nach den langen Monaten der Dunkelheit nichts mehr in geschlossenen Räumen. Dann geht es raus ins Freie. Mit Mobiltelefon bewaffnet, sitzen sie verträumt mit geschlossenen Augen auf den Treppenstufen des Kungliga Dramatiska Teatern (Dramaten) und genießen bei einem Caffè Latte die Wärme und das Licht, auf die sie so lange verzichten mussten. Eilig werden Tische und Stühle selbst noch vor das winzigste Café gestellt und mit Wolldecken bestückt. Eine Vorsichtsmaßnahme, über die man sich wundern mag, scheinen doch die Stockholmer im Gegensatz zu Mitteleuropäern Temperaturen anders zu empfinden. Denn selbst bei objektiv niedrigen Frühjahrstemperaturen sind sie schon leicht bekleidet, während es Besucher aus südlicheren Gegenden noch ordentlich fröstelt.</p>
+                    <p>Im Mai und Juni, wenn alles grünt und blüht, wird die Stadt richtig lebendig. Dann starten die Schärendampfer tutend in die neue Saison, Festivals und Marathonläufe locken Besucher an, mit Kind und Kegel zieht es die Stockholmer zum Picknicken hinaus. Sie tanken ordentlich Licht und Energie für die kalten, dunklen Wintertage, wenn die Straßen der Hauptstadt sich leeren, die Schiffe vertäut am Ufer liegen und es drinnen umso gemütlicher wird. Unzählige Lampen in den Fenstern leuchten warm ins Winterdunkel, Flammenschalen vor den Eingangstüren verbreiten heimelige Stimmung. So überstehen die Stockholmer die dunkle Jahreszeit.</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Storkyrkan</h6>
+
+                            <p>Die über 700 Jahre alte Domkirche spielte für Schwedens Staatskirche eine wichtige Rolle: Von hier aus verbreitete der große Reformator Olaus Petri (1493-1552) die lutherische Lehre über das Land. Die Fassade der Kirche, die 1306 geweiht wurde, ist im Stil des italienischen Barock gehalten. Die fünfschiffige Basilika mit dem 66 m hohen Turm wurde mehrfach umgebaut, deshalb lassen sich im Inneren verschiedene Epochen erkennen. Die ältesten Teile, die Deckengemälde in der Marienkapelle, stammen aus dem Mittelalter, die Krönungsstühle und die Kanzel über dem Grab von Olaus Petri aus dem späten Barock. Kostbare Kunstschätze sind auch der Silberaltar aus dem 17. Jh. und die große Gruppe Der heilige Georg mit dem Drachen (1489) aus Eichenholz und Elchgeweih, die der Lübecker Bildhauer Bernt Notke schuf. Das Gemälde Vädersolstavlan mit der ältesten Ansicht Stockholms stellt ein besonderes Lichtphänomen mit sechs funkelnden Sonnenringen dar, das 1535 über Stockholm zu sehen war. Die Storkyrkan war bis 1873 Krönungskirche der schwedischen Könige. 1976 heirateten hier König Carl XVI. Gustaf und Königin Silvia. 2010 wurde sie aus Anlass der Hochzeit von Kronprinzessin Victoria und Prinz Daniel aufwendig renoviert.</p>
+                        </li>
+
+                        <li>
+                            <h6>Vasamuseet</h6>
+
+                            <p>Im 17. Jh. war Schweden eine Großmacht im Ostseeraum. Während des Dreißigjährigen Kriegs (1618-48) gab König Gustav II. Adolf aus dem Herrschergeschlecht Wasa den Auftrag für den Bau eines stattlichen Kriegsschiffs. Mit diesem gigantischen Projekt hoffte der König die schwedischen Interessen gegen Polen wahren zu können, mit dem sich das Land seit 1600 im Krieg befand. Geplant war ein riesiges Schiff mit mehr als 64 Kanonen, 300 Soldaten und 145 Seeleuten an Bord. Darüber hinaus sollte die Vasa Macht demonstrieren und dem Feind ordentlich Furcht einflößen. Doch dazu kam es niemals. 1628 sank das 53 m hohe und 69 m lange königliche Kriegsschiff der Schweden wegen eines Konstruktionsfehlers bereits auf seiner Jungfernfahrt im Stockholmer Hafen. Erst 333 Jahre später, 1961, wurde das Schiff geborgen, sorgfältig konserviert, restauriert und ein eigenes Museum dafür gebaut. Ein besonderes Erlebnis ist das Vasa-Museum schon beim Eintreten: In einer riesigen Halle erhebt sich das imposante Kriegsschiff aus der Dunkelheit. Auf drei Galerien, die den Originalrumpf der Vasa umgeben, sind verschiedene Ausstellungen mit Exponaten zum Bau, zur Geschichte und zur Bergung des Schiffs sowie zum Leben an Bord zu sehen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Riksdagshuset</h6>
+
+                            <p>Das monumentale Reichstagsgebäude und die Reichsbank auf Helgeandsholmen wurden 1905 bzw. 1906 eröffnet. Als die Schweden 1971 den Zweikammerreichstag abschafften und den Einkammerreichstag einführten, wurde ein neuer Plenarsaal notwendig. Während das Parlament für 12 Jahre ins Kulturhuset am Sergels torg umzog, fanden bis 1983 umfangreiche Umbaumaßnahmen statt. Reichstags- und Reichsbankgebäude wurden miteinander verbunden und vergrößert, im westlichen Teil des Komplexes liegt der Plenarsaal, dessen Wände und Stühle aus hellem Birkenholz gefertigt sind.</p>
+                        </li>
+
+                        <li>
+                            <h6>Katarina Kyrka</h6>
+
+                            <p>Jean de la Vallée entwarf diese Kirche mit klassizistischer Fassade, die 1695 vollendet war. Zwei Mal brannte sie ab (1723 und 1990). Nach dem letzten Brand achtete man auf einen strengen, originalgetreuen Wiederaufbau, bei dem auch die alten Bautechniken angewendet wurden. Kosten: fast 300 Mio. Kronen, die z.T. aus Spendengeldern finanziert wurden. 1995 wurde die neue Kirche geweiht. Auf dem Friedhof liegt die frühere schwedische Außenministerin Anna Lindh begraben, die 2003 bei einem Attentat im Kaufhaus NK ums Leben kam.</p>
+                        </li>
+
+                        <li>
+                            <h6>Östermalms Saluhall</h6>
+
+                            <p>Die Architekten Isak Gustaf Clason (1856-1930) und Kasper Salin (1856-1919) ließen sich beim Bau dieser rund 3000 m2 großen Markthalle von Backsteinarchitektur und neuartigen Gusseisenkonstruktionen inspirieren, die sie auf Reisen nach Deutschland, Frankreich und Italien gesehen hatten. In Anwesenheit König Oscars I. wurde die Halle, heute ein Spezialitätentempel, 1888 eröffnet.</p>
+                        </li>
+
+                        <li>
+                            <h6>Waldemarsudde</h6>
+
+                            <p>Direkt am Wasser, umgeben von einem großen Park, liegt diese stattliche Jugendstilvilla. Etwa 2500 Werke aus dem frühen 20. Jh. wie Gemälde, Skulpturen und Zeichnungen gehören zu der Sammlung des Prinzen Eugen, der selbst einer der führenden Landschaftsmaler Schwedens um 1900 war. Fast alle namhaften schwedischen Künstler seiner Zeit sind hier vertreten, etwa Karl Nordström, Ernst Josephsson oder auch Ivan Aguéli. Zu sehen sind auch einige der berühmtesten Bilder des Prinzen selbst.</p>
+                        </li>
+
+                        <li>
+                            <h6>Kungsträdgården</h6>
+
+                            <p>Der Renaissancepark aus dem 16. Jh. ist heute der älteste Park der Stadt und ein attraktiver Treffpunkt der Stockholmer. Hier kann man im Winter Schlittschuh laufen, im Sommer Eis essen, Schach spielen oder einfach mit einem Buch auf einer Bank sitzen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Skansen</h6>
+
+                            <p>Für das größte Freilichtmuseum der Welt (gegründet 1891) wurden in ganz Schweden rund 150 typische Bauernhäuser und Herrenhöfe abgetragen und hier wieder aufgebaut. Eine besondere Attraktion ist das Wildgehege mit typisch nordischen Tieren.</p>
+                        </li>
+
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Stockholms</h5>
+
+                    <img src="../../../img/stockholmVille1.jpg" alt="stockholmVille1">
+                    <img src="../../../img/stockholmVille2.jpg" alt="stockholmVille2">
+                    <img src="../../../img/stockholmVille3.jpg" alt="stockholmVille3">
+                    <img src="../../../img/stockholmVille4.jpg" alt="stockholmVille4">
+                    <img src="../../../img/stockholmVille5.jpg" alt="stockholmVille5">
+                    <img src="../../../img/stockholmVille6.jpg" alt="stockholmVille6">
+                    <img src="../../../img/stockholmVille7.jpg" alt="stockholmVille7">
+                    <img src="../../../img/stockholmVille8.jpg" alt="stockholmVille8">
+                    <img src="../../../img/stockholmVille9.jpg" alt="stockholmVille9">
+
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stockholmHotel1.jpg" alt="stockholmHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g189852-d233088-Reviews-Hotel_C_Stockholm-Stockholm.html">
+                                    Hotel C Stockholm
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 232 Bewertungen</div>
+                            <p>Nr. 1 von 158 Hotels in Stockholm</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d233088-r469798541-Hotel_C_Stockholm-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“gut platziert, nettes Personal” <span>25/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d233088-r452769267-Hotel_C_Stockholm-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Perfekter Aufenthalt” <span>17/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d233088-r459368178-Hotel_C_Stockholm-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Sehr praktisch” <span>13/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d233088-r457505171-Hotel_C_Stockholm-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Erstes Jahr in STOCKHOLM” <span>06/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g189852-d233088-Reviews-Hotel_C_Stockholm-Stockholm.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stockholmHotel2.jpg" alt="stockholmHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g189852-d236324-Reviews-Hotel_Tegnerlunden-Stockholm.html">
+                                    Hotel Tegnerlunden
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">796 Bewertungen</div>
+                            <p>Nr. 2 von 158 Hotels in Stockholm</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d236324-r421210802-Hotel_Tegnerlunden-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Einfach atemberaubend” <span>22/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d236324-r385859875-Hotel_Tegnerlunden-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Sehr schönes Hotel” <span>25/06/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d236324-r373950667-Hotel_Tegnerlunden-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“kleines ruhiges Hotel” <span>18/05/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d236324-r373618143-Hotel_Tegnerlunden-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“ich würde sagen, sehr gut!” <span>17/05/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g189852-d236324-Reviews-Hotel_Tegnerlunden-Stockholm.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stockholmHotel3.jpg" alt="stockholmHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g189852-d1342964-Reviews-Story_Hotel_Riddargatan-Stockholm.html">
+                                    Story Hotel Riddargatan
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 062 Bewertungen</div>
+                            <p>Nr. 4 von 158 Hotels in Stockholm</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d1342964-r400073090-Story_Hotel_Riddargatan-Stockholm.html#CHECK_RATES_CONT">
+                                <p>”Sehr gut” <span>01/08/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d1342964-r388919934-Story_Hotel_Riddargatan-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Virginie und Philippe Mirepoix” <span>04/07/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d1342964-r383250171-Story_Hotel_Riddargatan-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Gute platzierung” <span>16/06/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d1342964-r373785405-Story_Hotel_Riddargatan-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Nah an der U-Bahn” <span>17/05/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g189852-d1342964-Reviews-Story_Hotel_Riddargatan-Stockholm.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stockholmHotel4.jpg" alt="stockholmHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g189852-d677299-Reviews-Clarion_Hotel_Sign-Stockholm.html">
+                                    Clarion Hotel Sign
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">3 155 Bewertungen</div>
+                            <p>Nr. 5 von 158 Hotels in Stockholm</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d677299-r465086330-Clarion_Hotel_Sign-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Einfach nur tolles Hotel” <span>12/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d677299-r464819192-Clarion_Hotel_Sign-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Ein sehr gutes hotel!” <span>12/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d677299-r431581760-Clarion_Hotel_Sign-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“Super” <span>15/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g189852-d677299-r423606359-Clarion_Hotel_Sign-Stockholm.html#CHECK_RATES_CONT">
+                                <p>“gute und schlechte Punkte” <span>29/09/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g189852-d677299-Reviews-Clarion_Hotel_Sign-Stockholm.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/stockholm.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges</li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

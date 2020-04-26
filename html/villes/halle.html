@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Halle Westfalen | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../de/cities/halle.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="../en/cities/halle.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()" class="active">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../allemagne.html" class="active active2">Allemagne</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html" class="active active2">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italie.html">Italie</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venise.html">Venise</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russie.html">Russie</a>
+                            <ul>
+                                <li><a href="moscou.html">Moscou</a></li>
+                                <li><a href="stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../suede.html">Suède</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../angleterre.html">Angleterre</a>
+                            <ul>
+                                <li><a href="londres.html">Londres</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../notreEquipe.html">Notre equipe</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousSousDossier()">Aire Premium</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageHalleCity topImageCity">
+            <span>Allemagne</span>
+            <h3>Halle Westf.</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Bienvenue !</a></li>
+                    <li><a href="#aVoir" target="_self">À voir, à faire</a></li>
+                    <li><a href="#Decouvrir" target="_self">Découvrir</a></li>
+                    <li><a href="#Hebergement" target="_self">Hébergement</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Bienvenue à Halle Westfalen</h5>
+                    <p>Une ville pour tous les visiteurs de l'allemagne.</p>
+
+                    <p>Halle Westfalen est une ville de Rhénanie-du-Nord-Westphalie, située dans l'arrondissement de Gütersloh, dans le district de Detmold, dans le Landschaftsverband de Westphalie-Lippe.</p>
+
+                    <p>Elle a environ 21 000 habitants. Elle est célèbre pour son tournoi de tennis sur gazon qui s'y déroule chaque année en juin dans le 'Gerry Weber Stadion'.</p>
+
+                    <p>On y trouve également une importante fabrique de chocolats industriels. La firme s'appelle Storck et ses produits les plus célèbres portent le nom de « Toffifee » et « Merci ».</p>
+
+                    <p>Halle est jumelée avec Ronchin dans le Nord de la France.</p>
+
+
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Les lieux à visiter</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Storck</h6>
+
+                            <p>Symbole de Halle. August Storck est une entreprise agroalimentaire allemande. Elle produit notamment les Werther's Original. Selon l'International Cocoa Organization, l'entreprise se classe en 2014 à la dixième place des plus gros fabricants de chocolats au monde (2 272 de millions de chiffre d'affaires en dollar américain).</p>
+                        </li>
+
+                        
+                        <li>
+                            <h6>Gerry Weber Stadion</h6>
+
+                            <p>La Gerry-Weber-Stadion est un hall omnisports situé à Halle, en Rhénanie-du-Nord-Westphalie, où évolue le club de handball du TBV Lemgo lors de rencontres importantes.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Hermannsdenkmal</h6>
+
+                            <p>Le Hermannsdenkmal (monument d'Hermann) est un monument situé en Rhénanie-du-Nord-Westphalie en Allemagne dans le sud de la forêt de Teutberg, qui se trouve au sud-ouest de Detmold dans le district de Lippe. Il se dresse sur le mont densément boisé de Teutberg qui s'élève à 386 mètres, au centre de la fortification circulaire de Grotenburg.
+                            La statue mesure 24,82 mètres, auxquels s'ajoutent 28,62 mètres de socle, soit une hauteur totale de 53,44 mètres.
+                            Le monument célèbre le chef de guerre Cherusque Arminius (appelé Hermann en allemand) et la bataille de la forêt de Teutberg qui vit les tribus germaniques sous le commandement d'Arminius vaincre de manière décisive trois légions romaines de Varus en l'an 9 apr. J.-C.</p>
+                        </li>
+                        
+                        
+                        <li>
+                            <h6>Arminia Bielefeld</h6>
+
+                            <p>Le Arminia Bielefeld (nom complet: Deutscher Sportclub Arminia Bielefeld e. V.) est un club sportif basé à Bielefeld (à côté de Halle Westf.) en Allemagne. Outre le football, il propose le Hockey, le patinage artistique, le billard ou le sport sur fauteuils roulant. L'Arminia Bielefeld a actuellement 12.207 Membres (Mis à jour: Juli 2015). Les couleurs du club sont le Bleu, le Blanc et le Noir. Le nom du club vient du prince Arminius. L' Arminia Bielefelda connu sept promotions en 1. Bundesliga, pour sept relégations. Sa meilleure phase était les années 1920, où le club a remporté deux championnats de l'Ouest de l'Allemagne consécutifs </p>
+                        </li>
+
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Découvrez la beauté de Halle Westfalen</h5>
+
+                    <img src="../../img/halleVille1.jpg" alt="halleVille1">
+                    <img src="../../img/halleVille2.jpg" alt="halleVille2">
+                    <img src="../../img/halleVille3.jpg" alt="halleVille3">
+                    <img src="../../img/halleVille4.jpg" alt="halleVille4">
+                    <img src="../../img/halleVille5.jpg" alt="halleVille5">
+                    <img src="../../img/halleVille6.jpg" alt="halleVille6">
+                    <img src="../../img/halleVille7.jpg" alt="halleVille7">
+                    <img src="../../img/halleVille8.jpg" alt="halleVille8">
+                    <img src="../../img/halleVille9.jpg" alt="halleVille9">
+
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Hébergement</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/halleHotel1.jpg" alt="halleHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="http://fewofalke-halle.de/index.html">
+                                   Ferienwohnung Falke
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 119 avis</div>
+                            <p>N°1 sur 4 hôtels à Halle</p>
+                            <a href="http://fewofalke-halle.de/2.html">
+                                <p>“Super bien, super calme” <span>14/03/2017</span></p>
+                            </a>
+                            <a href="http://fewofalke-halle.de/2.html">
+                                <p>“Très gentil accueil” <span>17/02/2016</span></p>
+                            </a>
+                            <a href="http://fewofalke-halle.de/2.html">
+                                <p>“Super situé” <span>02/12/2016</span></p>
+                            </a>
+                            <a href="http://fewofalke-halle.de/2.html">
+                                <p>“J'y retournerai sans soucis” <span>19/08/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="http://fewofalke-halle.de/2.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/halleHotel2.jpg" alt="halleHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d281083-Reviews-Gerry_Weber_Sportpark_Hotel-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                    Gerry Weber Sportpark Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">101 avis</div>
+                            <p>N°2 sur 5 hôtels à Halle</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g1583784-d281083-r446787803-Gerry_Weber_Sportpark_Hotel-Halle_Westfalen_North_Rhine_Westphalia.html#CHECK_RATES_CONT">
+                                <p>“Visite de voyage pour le plaisir !" <span>26/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g1583784-d281083-r214091161-Gerry_Weber_Sportpark_Hotel-Halle_Westfalen_North_Rhine_Westphalia.html#CHECK_RATES_CONT">
+                                <p>“Pas de climatisation.” <span>07/07/2014</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g1583784-d281083-r178928047-Gerry_Weber_Sportpark_Hotel-Halle_Westfalen_North_Rhine_Westphalia.html#CHECK_RATES_CONT">
+                                <p>“Magnifique hôtel !” <span>28/09/2013</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g1583784-d281083-r130269622-Gerry_Weber_Sportpark_Hotel-Halle_Westfalen_North_Rhine_Westphalia.html#CHECK_RATES_CONT">
+                                <p>“Excellent” <span>20/05/2012</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g1583784-d281083-Reviews-Gerry_Weber_Sportpark_Hotel-Halle_Westfalen_North_Rhine_Westphalia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/halleHotel3.jpg" alt="halleHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d1020264-Reviews-Hotel_St_Georg-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                    Hotel St Georg
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">4 avis</div>
+                            <p>N°3 sur 5 hôtels à Halle</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g1583784-d1020264-r386215410-Hotel_St_Georg-Halle_Westfalen_North_Rhine_Westphalia.html#CHECK_RATES_CONT">
+                                <p>“Bel hôtel...” <span>26/06/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d1020264-Reviews-Hotel_St_Georg-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                <p>“Excellent accueil !” <span>03/02/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d1020264-Reviews-Hotel_St_Georg-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                <p>“Super séjour à Halle” <span>05/12/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d1020264-Reviews-Hotel_St_Georg-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                <p>”Grande Classe” <span>22/10/2015</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g1583784-d1020264-Reviews-Hotel_St_Georg-Halle_Westfalen_North_Rhine_Westphalia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../img/halleHotel4.jpg" alt="halleHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d2191399-Reviews-Gerry_Weber_Landhotel-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                   Gerry Weber Landhotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">11 avis</div>
+                            <p>N°4 sur 5 hôtels à Halle</p>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d2191399-Reviews-Gerry_Weber_Landhotel-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                <p>“Emplacement intéressant” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d2191399-Reviews-Gerry_Weber_Landhotel-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                <p>“Bon hotel neuf pas mal situé” <span>16/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d2191399-Reviews-Gerry_Weber_Landhotel-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                <p>“Super hotel, mais...” <span>05/11/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g1583784-d2191399-Reviews-Gerry_Weber_Landhotel-Halle_Westfalen_North_Rhine_Westphalia.html">
+                                <p>“Super situation pour un séjour” <span>16/06/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g1583784-d2191399-Reviews-Gerry_Weber_Landhotel-Halle_Westfalen_North_Rhine_Westphalia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/villes/halle.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="../allemagne.html">Allemagne</a></li>
+                    <li><a href="../suede.html">Suede</a></li>
+                    <li><a href="../russie.html">Russie</a></li>
+                    <li><a href="../angleterre.html">Angleterre</a></li>
+                    <li><a href="../italie.html">Italie</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres (Villes d'Allemagne)</li>
+                    <li><a href="munich.html">Munich</a></li>
+                    <li><a href="berlin.html">Berlin</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="../conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="../notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="../conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="../declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

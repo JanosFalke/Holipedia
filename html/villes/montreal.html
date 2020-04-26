@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Montréal | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/lireLaSuite.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../de/cities/montreal.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="../en/cities/montreal.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()" class="active">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../allemagne.html">Allemagne</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italie.html">Italie</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venise.html">Venise</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russie.html">Russie</a>
+                            <ul>
+                                <li><a href="moscou.html">Moscou</a></li>
+                                <li><a href="stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../suede.html">Suède</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../angleterre.html">Angleterre</a>
+                            <ul>
+                                <li><a href="londres.html">Londres</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html" class="active active2">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html" class="active active2">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../notreEquipe.html">Notre equipe</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousSousDossier()">Aire Premium</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageMontrealCity topImageCity">
+            <span>Canada</span>
+            <h3>Montréal</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Bienvenue !</a></li>
+                    <li><a href="#aVoir" target="_self">À voir, à faire</a></li>
+                    <li><a href="#Decouvrir" target="_self">Découvrir</a></li>
+                    <li><a href="#Hebergement" target="_self">Hébergement</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Bienvenue à Montréal</h5>
+
+
+                    <p>Ville historique et culturelle parmi les plus dynamiques d'Amérique du Nord, Montréal incarne l'esprit de la Belle Province à quiconque la visite : joie de vivre, ouverture d'esprit et détermination à suivre sa propre voie.</p>
+
+                    <p>La question de la souveraineté québécoise n'est sans doute plus un sujet aussi brûlant qu'autrefois. Montréal présente une double culture francophone et anglophone à laquelle s'ajoute une fascinante mosaïque de communautés originaires du monde entier. Sa scène musicale éclectique mêle chanson française, jazz et rock progressif, tandis que les arts visuels font l'objet d'expositions de premier ordre. Le cinéma n'est pas en reste, avec des salles d'art et d'essai et des festivals.</p>
+
+                    <p>Les bistrots français côtoient ainsi des traiteurs juifs, des trattorias italiennes, des steakhouses et des restaurants cantonais. Des tables de spécialités thaïes, vietnamiennes, libanaises et d'Afrique de l'Ouest, entre autres, procurent une note d'exotisme.</p>
+
+                    <p>Pour ceux qui aiment s'ébattre en plein air, des pistes cyclables sillonnent Montréal, un parc luxuriant couvre une bonne partie du mont Royal et le canal de Lachine se prête à la pratique du kayak.</p>
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Les lieux à visiter</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Vieux-Montréal</h6>
+
+                            <p>Le secteur historique du Vieux-Montréal, situé en bordure du fleuve St-Laurent et juste au sud du centre-ville, est celui qui fut à l’époque entouré de fortifications. C’est d’ailleurs là que fut fondée la ville en 1642. C’est le seul secteur de Montréal qui fait plus européen avec certaines de ses rues encore faites de pavés anciens, ses édifices d’époques, ses différentes places et ses monuments.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Basilique Notre-Dame</h6>
+                            <p>De style néo-gothique, la Basilique Notre-Dame est un des bâtiments du patrimoine religieux les plus précieux de Montréal. Construite entre 1824 et 1829, elle est réputée pour son décor intérieur polychrome et la richesse de ses ornements. Ne manquez pas son orgue Casavant datant de 1891, qui est un des plus imposants en Amérique. Ouvert du lundi au vendredi de 8h à 16h30, le samedi de 8h à 16h et le dimanche de 12h30 à16h.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Rue Saint-Paul</h6>
+                            <p>La rue Saint-Paul est une des principales rues du Vieux-Montréal mais aussi une des plus anciennes. Elle fut d’ailleurs la plus importante rue commerciale de la ville pendant de nombreuses années. Bordée de bâtiments datant du 19è siècle, certains de ses entrepôts d’autrefois ont même été transformés en ateliers d’artistes et en boutiques.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Place Jacques-Cartier</h6>
+                            <p>Place Jacques-CartierCette très fameuse place tient son nom du célèbre explorateur Jacques-Cartier, qui aurait mouillé son navire non loin de là en 1535. C’est le coeur du Vieux-Montréal et la place la plus animée avec ses artistes ambulants, ses kiosques de fleurs et sa multitude de restaurants et cafés qui occupent d’anciens édifices du début du 19è siècle.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Vieux-Port</h6>
+                            <p>À partir du Vieux-Port de Montréal et de ses nombreux quais, plusieurs activités de grand intérêt vous attendent dont : Croisière en bateau-mouche : Pour avoir une des plus belles vues de Montréal et de ses quartiers bordant le fleuve. Plusieurs départs en journée et même possibilité de dîner-croisière. Départs garantis de la mi-juin au début septembre.
+                                <p><a href="#nogo" onclick="lire()" id="laSuite1">Lire la suite...</a></p>
+                                <p id="lire1" class="lireSuite">Le Centre des Sciences de Montréal : Voici l’endroit par excellence pour comprendre, apprendre et explorer une multitude de sujets divers liés à la technologie et aux sciences, par le biais d’expositions ludiques et éducatives de très grande qualité. Plusieurs dispositifs interactifs sont à votre portée. Sur place, quatre salles d’expositions permanentes, une d’exposition temporaire et même un cinéma Imax. Ouvert du lundi au vendredi de 9h à 16h et le samedi et dimanche de 10h à 17h. Le cinéma Imax ouvre ses portes tous les jours dès 10h. Saute-Moutons : Si vous avez envie de vivre une aventure intense et palpitante, il vous faut embarquer à bord d’un des bateaux-jets de Saute-Moutons, qui vous amène à braver les majesteux rapides de Lachine, en plein coeur du fleuve Saint-Laurent. Vous recevrez quelques embruns à coup sûr ! Cœurs sensibles s’abstenir !</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Centre-Ville</h6>
+
+                            <p>MontréalLe centre-ville de Montréal est situé juste au sud de la montagne du Mont-Royal. C’est le secteur de la ville où l’on trouve les gratte-ciels, ce qui lui confère son côté très “nord-américain” par rapport aux autres quartiers. La célèbre rue Sainte-Catherine , l’artère commerciale longue de 15 kilomètres, est souvent identifiée au centre-ville.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Basilique-Cathédrale <br> Marie-Reine-Du-Monde</h6>
+                            <p>Construite à la fin du 19è siècle, cette cathédrale tout à fait unique est une réplique à plus petite échelle de la célèbre basilique Saint-Pierre-de-Rome. À l’intérieur, vous pourrez même y voir une reproduction du baldaquin de Bernini. Également, de nombreux tableaux relatant des moments d’histoire de la ville y sont exposés.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>La Ville Souterraine</h6>
+                            <p>On appelle “ville souterraine” le réseau piétonnier souterrain de 33 kilomètres situé sous le centre-ville de Montréal qui relie plusieurs centres commerciaux, édifices à bureaux, universités, hôtels, etc. C’est en fait la plus grande ville intérieure au monde et elle contient à elle seule près de 12% de tous les commerces du secteur. Elle offre l’énorme avantage de pouvoir se déplacer sans se soucier des intempéries et les différentes lignes de trains de banlieue, de métro et d’autobus y convergent.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Musée des Beaux-Arts</h6>
+                            <p>Voici un des musées les plus prestigieux du pays, mais surtout, le tout premier musée d’art au Canada. Ce dernier garde précieusement dans ses murs une collection de plus de 35 000 pièces des quatre coins du monde datant de l’Antiquité à aujourd’hui, dont une magnifique collection d’art inuit et canadien et aussi la plus importante collection de boîtes à encens japonaises au monde. Durant l’année, le musée reçoit également d’importantes expositions temporaires. Ouvert du mardi au dimanche de 10h à 17h.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Le Parc du Mont-Royal</h6>
+
+                            <p>Le parc du Mont-Royal, situé au cœur de Montréal, est le poumon de la ville et le terrain de jeux des Montréalais avec son lac (le lac aux castors), ses nombreux sentiers à travers les bois, ses deux belvédères d’observation et son chalet d’accueil. D’ailleurs, la montagne distingue la ville de plusieurs autres grandes villes nord-américaines de par sa présence en toile de fond dans le paysage. Le Belvédère du Chalet offre une des plus belles vue sur Montréal et son centre-ville, avec en arrière plan le fleuve St-Laurent et les collines Montérégiennes.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Plateau Mont-Royal</h6>
+
+                            <p>Escaliers du Plateau Mont-RoyalLe Plateau Mont-Royal est un des quartiers les plus populaires de la ville et il porte bien son nom car il est situé sur un plateau, en haut de la terrasse de la rue Sherbrooke, au nord-est du centre-ville. L’Avenue du Mont-Royal est d’ailleurs l’artère principale du quartier. Depuis quelques années, ce quartier très animé est reconnu pour être “branché” et il est d’ailleurs très populaire auprès des nouveaux arrivants de France qui veulent s’installer à Montréal.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Boulevard Saint-Laurent</h6>
+                            <p>Le boulevard Saint-Laurent, entre les rues Sherbrooke et Mont-Royal, est une des principales artères de Montréal, celle qui sépare l’Est et l’Ouest de la ville, et elle est communément appelée “la Main”(rue principale). C’est une rue très tendance avec ses multiples bars, restaurants et boutiques mais aussi un pôle multiculturel car elle s’est peuplée de nouveaux immigrants d’origines diverses dès le début du 19è siècle, qui ont ouvert sur “la Main” de nombreux commerces et restaurants.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Découvrez la beauté de Montréal</h5>
+
+                    <img src="../../img/montrealVille1.jpg" alt="montrealVille1">
+                    <img src="../../img/montrealVille2.jpg" alt="montrealVille2">
+                    <img src="../../img/montrealVille3.jpg" alt="montrealVille3">
+                    <img src="../../img/montrealVille4.jpg" alt="montrealVille4">
+                    <img src="../../img/montrealVille5.jpg" alt="montrealVille5">
+                    <img src="../../img/montrealVille6.jpg" alt="montrealVille6">
+                    <img src="../../img/montrealVille7.jpg" alt="montrealVille7">
+                    <img src="../../img/montrealVille8.jpg" alt="montrealVille8">
+                    <img src="../../img/montrealVille9.jpg" alt="montrealVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Hébergement</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/montrealHotel1.jpg" alt="montrealHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g155032-d259456-Reviews-Le_Square_Phillips_Hotel_Suites-Montreal_Quebec.html">
+                                    Le Square Phillips Hotel & Suites
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 108 avis</div>
+                            <p>N°1 sur 164 hôtels à Montréal</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d259456-r470059774-Le_Square_Phillips_Hotel_Suites-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Séjour agréable” <span>25/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d259456-r464898711-Le_Square_Phillips_Hotel_Suites-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Bien situé Bien logé” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d259456-r464241351-Le_Square_Phillips_Hotel_Suites-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Correct” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d259456-r462946899-Le_Square_Phillips_Hotel_Suites-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Bel espace” <span>26/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g155032-d259456-Reviews-Le_Square_Phillips_Hotel_Suites-Montreal_Quebec.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/montrealHotel2.jpg" alt="montrealHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g155032-d254348-Reviews-LHotel-Montreal_Quebec.html">
+                                LHotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 167 avis</div>
+                            <p>N°4 sur 164 hôtels à Montréal</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d254348-r468721940-LHotel-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Très belle prestation" <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d254348-r457350741-LHotel-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“À voir!” <span>05/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d254348-r455360850-LHotel-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Bel hôtel” <span>28/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d254348-r441508983-LHotel-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Au delà de mes attentes” <span>02/12/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g155032-d254348-Reviews-LHotel-Montreal_Quebec.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/montrealHotel3.jpg" alt="montrealHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g155032-d184305-Reviews-Hotel_Omni_Mont_Royal-Montreal_Quebec.html">
+                                    Hotel Omni Mont-Royal
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">2 360 avis</div>
+                            <p>N°5 sur 164 hôtels à Montréal</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d184305-r470208178-Hotel_Omni_Mont_Royal-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“tres beau hotel” <span>25/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d184305-r469295251-Hotel_Omni_Mont_Royal-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Belle découverte!” <span>21/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d184305-r469025011-Hotel_Omni_Mont_Royal-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Super” <span>20/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d184305-r456839447-Hotel_Omni_Mont_Royal-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>”Omni Mont-Royal Janvier 2017” <span>02/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g155032-d184305-Reviews-Hotel_Omni_Mont_Royal-Montreal_Quebec.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../img/montrealHotel4.jpg" alt="montrealHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g155032-d155206-Reviews-Novotel_Montreal_Center-Montreal_Quebec.html">
+                                  Novotel Montreal Center
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">1 558 avis</div>
+                            <p>N°8 sur 164 hôtels à Montréal</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d155206-r466803480-Novotel_Montreal_Center-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Hotel moderne et propre” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d155206-r464740595-Novotel_Montreal_Center-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Cordial & Efficace” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d155206-r463471485-Novotel_Montreal_Center-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“En travaux” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g155032-d155206-r461783410-Novotel_Montreal_Center-Montreal_Quebec.html#CHECK_RATES_CONT">
+                                <p>“Très corecte” <span>27/02/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g155032-d155206-Reviews-Novotel_Montreal_Center-Montreal_Quebec.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/villes/montreal.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="../allemagne.html">Allemagne</a></li>
+                    <li><a href="../suede.html">Suede</a></li>
+                    <li><a href="../russie.html">Russie</a></li>
+                    <li><a href="../angleterre.html">Angleterre</a></li>
+                    <li><a href="../italie.html">Italie</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres (Villes de Canada)</li>
+                    <li><a href="vancouver.html">Vancouver</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="../conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="../notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="../conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="../declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

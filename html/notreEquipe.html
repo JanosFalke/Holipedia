@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../img/favicon.png">
+
+    <title>Notre Equipe | Holipedia</title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/password.js"></script>
+    <script type="text/javascript" src="../js/nav.js"></script>
+    <script type="text/javascript" src="../js/navSelect.js"></script>
+    <script type="text/javascript" src="../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../js/lireLaSuite.js"></script>
+    <script type="text/javascript" src="../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="de/unserTeam.html"><img src="../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="en/abousus.html"><img src="../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="villes/newyork.html">New York</a></li>
+                                <li><a href="villes/lasvegas.html">Las Vegas</a></li>
+                                <li><a href="villes/washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="france.html">France</a>
+                            <ul>
+                                <li><a href="villes/paris.html">Paris</a></li>
+                                <li><a href="villes/larochelle.html">La Rochelle</a></li>
+                                <li><a href="villes/strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="allemagne.html">Allemagne</a>
+                            <ul>
+                                <li><a href="villes/berlin.html">Berlin</a></li>
+                                <li><a href="villes/halle.html">Halle Westfalen</a></li>
+                                <li><a href="villes/munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="italie.html">Italie</a>
+                            <ul>
+                                <li><a href="villes/rome.html">Rome</a></li>
+                                <li><a href="villes/venise.html">Venise</a></li>
+                                <li><a href="villes/milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="russie.html">Russie</a>
+                            <ul>
+                                <li><a href="villes/moscou.html">Moscou</a></li>
+                                <li><a href="villes/stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="suede.html">Suède</a>
+                            <ul>
+                                <li><a href="villes/stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="angleterre.html">Angleterre</a>
+                            <ul>
+                                <li><a href="villes/londres.html">Londres</a></li>
+                                <li><a href="villes/manchester.html">Manchester</a></li>
+                                <li><a href="villes/liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="canada.html">Canada</a>
+                            <ul>
+                                <li><a href="villes/vancouver.html">Vancouver</a></li>
+                                <li><a href="villes/montreal.html">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="notreEquipe.html" class="active">Notre equipe</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossier()">Aire Premium</a></li>
+
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main>
+        
+        
+        <section class="countryName">
+            <article>NOTRE EQUIPE</article>
+        </section>
+
+        <section class="teamMain">
+           
+            <section>
+                <video controls poster="../img/presentationPoster.jpg">
+                  <source src="../video/PresentationMP4.mp4" type="video/mp4">
+                  <source src="../video/PresentationOGV.ogv" type="video/ogg">
+                  <source src="../video/PresentationWebm.webm" type="video/webm">
+                  <track kind="subtitles" src="../video/PresentationSousTitresDeutsch.vtt" label="Deutsch" srclang="de">
+                  <track kind="subtitles" src="../video/PresentationSousTitresEnglish.vtt" label="Englisch" srclang="en">
+                </video>
+
+            </section>
+            <section>
+                <h3>Janos Falke</h3>
+                <h4>Fondateur & Designer</h4>
+                <article>
+                <p id="laSuite1" class="biographieLink"><a href="#nogo" onclick="lire()">A propos de sa biographie</a></p>
+                <p id="lire1" class="biographie">Né le 21.06.1996 à Bielefeld.<br>
+                Je vivait dans ma ville natale jusqu'à l'âge de 19. Avec mes parents, mon frère, ma soeur et mes grands-parents qui habitent juste en face de nous. J'ai fait mon baccalauréat en 2015 dans le Kreisgymnasium Halle et immédiatement après j'ai déménagé en France, à Poitiers.<br>
+                J'ai fait un an de LLCER Anglais à Poitiers et après, en 2016, j'ai déménagé à La Rochelle (Marsilly) où je me suis inscrit dans la licence d'informatique.<br>
+                En ce moment je suis en première année d'informatique à La Rochelle.</p>
+                </article>
+           
+               <aside></aside>
+           
+            </section>
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/notreEquipe.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="france.html">France</a></li>
+                    <li><a href="etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="allemagne.html">Allemagne</a></li>
+                    <li><a href="suede.html">Suede</a></li>
+                    <li><a href="russie.html">Russie</a></li>
+                    <li><a href="angleterre.html">Angleterre</a></li>
+                    <li><a href="italie.html">Italie</a></li>
+                    <li><a href="canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres</li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+
+</html>

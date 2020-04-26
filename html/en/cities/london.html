@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>London | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/londres.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/london.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html" class="active active2">England</a>
+                            <ul>
+                                <li><a href="london.html" class="active active2">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageLondresCity topImageCity">
+            <span>England</span>
+            <h3>London</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to London</h5>
+
+
+                    <p>One of the world's most visited cities, London has something for everyone: from history and culture to fine food and good times.</p>
+                    <p>Like most Londoners, I revel in all our familiar landmarks – Big Ben, Tower Bridge, the murky Thames, the London Eye. I still thank the former government that made some of the greatest museums and art galleries in the world free to one and all. The choice of restaurants, bars and clubs is legion, and what’s not to love about a city with more lush parkland than any other world capital? But the one thing that sets my adopted city apart from any other is its amazing tolerance. 'As long as you don’t scare the horses, mate, you’ll be all right here,’ I was told when I arrived here more than 20 years ago. Guess what…it still hasn’t happened. A tireless innovator of art and culture, London is a city of ideas and the imagination. Londoners have always been fiercely independent thinkers (and critics), but until not so long ago people were suspicious of anything they considered avant-garde. That’s in the past now, and the city’s creative milieu is streaked with left-field attitude, whether it's theatrical innovation, contemporary art, pioneering music, writing, poetry, architecture or design. Food is another creative arena that has become a tireless obsession in certain circles.</p>
+                    <p>This city is deeply multicultural, with one in three Londoners foreign-born, representing 270 nationalities and 300 tongues. What unites them and visitors alike is the English language, for this is both our lingo's birthplace and its epicentre. These cultures season the culinary aromas on London’s streets, the often exotic clothing people wear and the music they listen to. London’s diverse cultural dynamism makes it among the world’s most international cities. And diversity penetrates intrinsically British institutions too; the British Museum and Victoria and Albert Museum have collections as varied as they are magnificent, while flavours at centuries-old Borough Market run the full gourmet and cosmopolitan spectrum.</p>
+                    <p>London is as much about wide-open vistas and leafy landscape escapes as it is high-density, sight-packed urban exploration. Central London is where the major museums, galleries and most iconic sights congregate, but visit Hampstead Heath or the Queen Elizabeth Olympic Park to flee the crowds and frolic in wide open green expanses. You can also venture even further out to Kew Gardens, Richmond or Hampton Court Palace for beautiful panoramas of riverside London, followed by a pint in a quiet waterside pub.</p>
+                    <p>Immersed in history, London's rich seams of eye-opening antiquity are everywhere. The city's buildings are striking milestones in a unique and beguiling biography, and a great many of them – the Tower of London, Westminster Abbey, Big Ben – are instantly recognisable landmarks. There’s more than enough innovation (the Shard, the London Eye, the planned Garden Bridge) to put a crackle in the air, but it never drowns out London’s seasoned, centuries-old narrative. Architectural grandeur rises up all around you in the West End, ancient remains dot the City and charming pubs punctuate the historic quarters, leafy suburbs and river banks. Take your pick.</p>
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Westminster Abbey</h6>
+
+                            <p>A splendid mixture of architectural styles, Westminster Abbey is considered the finest example of Early English Gothic (1190–1300). It's not merely a beautiful place of worship – the Abbey also serves up the country's history cold on slabs of stone. For centuries the country's greatest have been interred here, including 17 monarchs from Henry III (died 1272) to George II (1760). Never a cathedral (the seat of a bishop), Westminster Abbey is what is called a 'royal peculiar', administered by the Crown.</p>
+                        </li>
+
+                        <li>
+                            <h6>The Tower of London</h6>
+
+                            <p>The unmissable Tower of London (actually a castle of 22 towers) offers a window into a gruesome and compelling history. This was where two kings and three queens met their death and countless others were imprisoned. Come here to see the colourful Yeoman Warders (or Beefeaters), the spectacular Crown Jewels, the soothsaying ravens and armour fit for a very large king.</p>
+                        </li>
+
+                        <li>
+                            <h6>Tate Modern</h6>
+
+                            <p>One of London's most amazing attractions, this outstanding modern- and contemporary-art gallery is housed in the creatively revamped Bankside Power Station south of the Millennium Bridge. A spellbinding synthesis of modern art and capacious industrial brick design, Tate Modern has been extraordinarily successful in bringing challenging work to the masses, both through its free permanent collection and fee-paying, big-name temporary exhibitions. A stunning new extension opened in 2016, increasing the available exhibition space by 60%.</p>
+                        </li>
+
+                        <li>
+                            <h6>Bristih Museum</h6>
+
+                            <p>The country's largest museum and one of the oldest and finest in the world, this famous museum boasts vast Egyptian, Etruscan, Greek, Roman, European and Middle Eastern galleries, among others. It is frequently London’s most-visited attraction, drawing over six million visitors annually. Don't miss the Rosetta Stone, the key to deciphering Egyptian hiero­glyphics, discovered in 1799; the controversial Parthenon Sculptures, taken from the Parthenon in Athens by Lord Elgin (the British ambassador to the Ottoman Empire); and the large collection of Egyptian mummies.</p>
+                        </li>
+
+                        <li>
+                            <h6>Natural History Museum</h6>
+
+                            <p>This colossal and magnificent-looking building is infused with the irrepressible Victorian spirit of collecting, cataloguing and interpreting the natural world. The Dinosaurs Gallery (Blue Zone) is a must for children, who gawp at the animatronic T-Rex, fossils and excellent displays. Adults for their part will love the intriguing Treasures exhibition in the Cadogan Gallery (Green Zone), which houses a host of unrelated objects each telling its own unique story, from a chunk of moon rock to a dodo skeleton.</p>
+                        </li>
+
+                        <li>
+                            <h6>National Gallery</h6>
+
+                            <p>With some 2300 European paintings on display, this is one of the world's great art collections, with seminal works from every important epoch in the history of art – from the mid-13th to the early 20th century, including masterpieces by Leonardo da Vinci, Michelangelo, Titian, Van Gogh and Renoir. Many visitors flock to the East Wing (1700–1900), where works by 18th-century British artists such as Gainsborough, Constable and Turner, and seminal Impressionist and post-Impressionist masterpieces by Van Gogh, Renoir and Monet await.</p>
+                        </li>
+
+                        <li>
+                            <h6>St Paul's Cathedral</h6>
+
+                            <p>Towering over Ludgate Hill, in a superb position that's been a place of Christian worship for over 1400 years, St Paul’s Cathedral is one of London’s most majestic and iconic buildings. For Londoners, the vast dome, which still manages to dominate the skyline, is a symbol of resilience and pride, standing tall for more than 300 years. Viewing Sir Christopher Wren’s masterpiece from the inside and climbing to the top for sweeping views of the capital is an exhilarating experience.</p>
+                        </li>
+
+                        <li>
+                            <h6>Buckingham Palace</h6>
+
+                            <p>Built in 1703 for the Duke of Buckingham, Buckingham Palace replaced St James's Palace as the monarch's official London residence in 1837. When she’s not delivering her trademark wave to far-flung parts of the Commonwealth, Queen Elizabeth II divides her time between here, Windsor and, in summer, Balmoral. If she’s at home, the yellow, red and blue standard is flying. Some 19 lavishly furnished State Rooms are open to visitors when HRH (Her Royal Highness) takes her holidays from late July to September.</p>
+                        </li>
+
+                        <li>
+                            <h6>Houses of Parliament</h6>
+
+                            <p>A visit here is a journey to the heart of UK democracy. Officially called the Palace of Westminster, the Houses of Parliament's oldest part is 11th-century Westminster Hall, one of only a few sections that survived a catastrophic fire in 1834. Its roof, added between 1394–1401, is the earliest-known example of a hammerbeam roof. The rest is mostly a neo-Gothic confection built by Charles Barry and Augustus Pugin (1840–58).</p>
+                        </li>
+
+                        <li>
+                            <h6>Hampton Court Palace</h6>
+
+                            <p>Built by Cardinal Thomas Wolsey in 1514 but coaxed from him by Henry VIII just before Wolsey (as chancellor) fell from favour, Hampton Court Palace is England's largest and grandest Tudor structure. It was already one of Europe's most sophisticated palaces when, in the 17th century, Christopher Wren designed an extension. The result is a beautiful blend of Tudor and 'restrained baroque' architecture. You could easily spend a day exploring the palace and its 24 hectares of riverside gardens, including a 300-year-old maze.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of London</h5>
+
+                    <img src="../../../img/londresVille1.jpg" alt="londresVille1">
+                    <img src="../../../img/londresVille2.jpg" alt="londresVille2">
+                    <img src="../../../img/londresVille3.jpg" alt="londresVille3">
+                    <img src="../../../img/londresVille4.jpg" alt="londresVille4">
+                    <img src="../../../img/londresVille5.jpg" alt="londresVille5">
+                    <img src="../../../img/londresVille6.jpg" alt="londresVille6">
+                    <img src="../../../img/londresVille7.jpg" alt="londresVille7">
+                    <img src="../../../img/londresVille8.jpg" alt="londresVille8">
+                    <img src="../../../img/londresVille9.jpg" alt="londresVille9">
+
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/londresHotel1.jpg" alt="londresHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d189735-Reviews-The_Nadler_Kensington-London_England.html">
+                                    The Nadler Kensington
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">3 535 reviews</div>
+                            <p>#1 of 1 089 Hotels in London</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r464849241-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“Familystay” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r460932106-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“Only this hotel in London” <span>18/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r458363894-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“What else !” <span>09/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r458357866-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“To recommand” <span>09/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186338-d189735-Reviews-The_Nadler_Kensington-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/londresHotel2.jpg" alt="londresHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d3437751-Reviews-South_Place_Hotel-London_England.html">
+                                    South Place Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">928 reviews</div>
+                            <p>#2 of 1 089 Hotels in London</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r461460331-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Great weekend !” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r461344640-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Service Premium" <span>20/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r455703069-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Awesome rooms” <span>29/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r447831709-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Boxing Day” <span>30/12/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186338-d3437751-Reviews-South_Place_Hotel-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/londresHotel3.jpg" alt="londresHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d672863-Reviews-Park_Plaza_County_Hall_London-London_England.html">
+                                    Park Plaza County Hall London
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">6 932 reviews</div>
+                            <p>#5 of 1 089 Hotels in London</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r467153439-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>“very good emplacement” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r465140057-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>“Excellent hotel” <span>12/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r464220868-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>“Tourism” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r462229919-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>”short journey” <span>26/02/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186338-d672863-Reviews-Park_Plaza_County_Hall_London-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/londresHotel4.jpg" alt="londresHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186338-d3199601-Reviews-CitizenM_London_Bankside-London_England.html">
+                                    citizenM London Bankside
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">3 159 reviews</div>
+                            <p>#6 of 1 089 Hotels in London</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r462972003-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“always TOP !!” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r459259528-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“My favorite!!” <span>13/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r453863460-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“Top” <span>21/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r452619279-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“Londontrip” <span>17/01/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186338-d3199601-Reviews-CitizenM_London_Bankside-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/london.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of England)</li>
+                    <li><a href="manchester.html">Manchester</a></li>
+                    <li><a href="liverpool.html">Liverpool</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

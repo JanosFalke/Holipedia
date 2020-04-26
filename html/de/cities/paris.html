@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Paris | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/paris.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/paris.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html" class="active active2">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html" class="active active2">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageParisCity topImageCity">
+            <span>Frankreich</span>
+            <h3>Paris</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Paris</h5>
+                    <p>Paris kommt einem seltsam bekannt vor, weil es mehr berühmte Wahrzeichen hat als jede andere Stadt der Welt. Der elegante, schmiedeeiserne Eiffelturm, der mächtige Arc de Triomphe, der den Eingang zu den prachtvollen Champs-Élysées bewacht, die Kathedrale Notre-Dame mit ihren Wasserspeiern, laternenbeschienene Seine-Brücken und Jugendstilcafés, die sich auf korbstuhlmöblierte Terassen erstrecken – an all das denken Paris-Besucher automatisch, auch jene, die (noch) nicht hier waren. Aber entgegen dem ersten Eindruck ist das Stadtbild nicht statisch: Es gibt in Paris auch faszinierende Symbole des Zeitgeistes zu entdecken.</p>
+
+                    <p>Egal, ob gemütliches Bistro, geheimer Supper- Club oder Drei-Sterne-Gastrotempel – jedes Pariser Etablissement schreibt sich die exquisite Zubereitung und Präsentation von Qualitätserzeugnissen auf die Fahne, die stets mit Wein serviert werden. Patisserien, boulangeries (Bäckereien), fromageries (Käseläden) und belebte, bunte Straßenmärkte sind perfekt, um sich für ein Picknick im Park einzudecken. Und einer der vielen kulinarischen Kurse passt bestimmt in den Terminplan, zum Kochniveau und ins Budget.</p>
+
+                    <p>Pariser sind ein Synonym für Stil – und Mode ist die Stärke der Stadt. Durch aufstrebende und etablierte Boutiquen, Designerläden und Flagshipstores für Haute Couture stöbern, gehört zu jedem Besuch. Dazu gibt’s superhippe Konzeptläden, verrückte Einrichtungs- und Gartengeschäfte und prächtige Jugendstilkaufhäuser neben Vintageläden und Flohmärkten, auch stimmungsvolle Antiquariate und die Stände der bouquinistes – Secondhand-Buchhändler – am Seine-Ufer, dazu reizende Läden für Kinderkleidung und Spielzeug, Kunst- und Antiquitätenhändler, ehrwürdige Haushaltswarengeschäfte und, na klar, reichlich Delikatessenläden und Weinhandlungen.</p>
+
+                    <p>Mit einem illustren Aufgebot an Künstlern – Renoir, Rodin, Picasso, Monet, Manet, Dalí und van Gogh, um nur einige zu nennen, die über die Jahre in Paris gelebt und gearbeitet haben – verfügt Paris über eine der wichtigsten Kunstsammlungen der Welt. Neben berühmten Museen wie dem Louvre, der bemerkenswerten impressionistischen Sammlung des Musée d’Orsay und der modernen und zeitgenössischen Kunst des Centre Pompidou zeigen eine Vielzahl kleinerer Museen Werke jeder vorstellbaren Kunstrichtung.</p>
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Eiffelturm</h6>
+                            <p>Heute könnte sich niemand mehr Paris ohne sein Wahrzeichen vorstellen. Aber Gustave Eiffel baute den grazilen Turm – damals mit 320 m der höchste der Welt – als temporäres Ausstellungsstück für die Weltausstellung 1889. Zum Glück sorgte die Beliebtheit des Turms dafür, dass er die Weltausstellung überlebte und sein elegantes Jugendstildesign zum bestimmenden Merkmal der Skyline der Stadt wurde. Die Abenddämmerung ist die beste Zeit, um die phantastische Aussicht auf die glitzernde Stadt zu genießen und in der nagelneuen Champagnerbar auf die erklommene Höhe anzustoßen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museum Rodin</h6>
+                            <p>Das schöne Musée Rodin ist das romantischste Museum von Paris. Auguste Rodins ehemaliges Atelier, das 1730 gebaute Hôtel Biron, ist randvoll mit Rodins eigenen Meisterwerken wie dem Marmordenkmal an die Liebe, Der Kuss, ebenso wie mit Arbeiten seiner Muse und Schülerin, der Bildhauerin Camille Claudel, sowie anderer Künstler, deren Werke Rodin sammelte, darunter van Gogh und Renoir. Höhepunkt ist der weitläufige Skulpturengarten der Villa, der eine hinreißende Kulisse für kontemplative Arbeiten wie Der Denker bildet.</p>
+                        </li>
+
+                        <li>
+                            <h6>Der Louvre</h6>
+                            <p>Die Mona Lisa und die Venus von Milo sind nur zwei der sagenhaften Schätze, mit denen das erste Nationalmuseum Frankreichs glänzt, dessen Mauern vorher zunächst als Festung und dann als Königspalast diente. Das größte Museum der Welt erstreckt sich sage und schreibe 700 m entlang der Seine und mag überwältigend wirken. Aber es gibt viele Möglichkeiten, es zu erleben, auch wenn man keine neun Monate Zeit hat, um jedes ausgestellte Werk zu betrachten. Eine der besten sind die thematischen Rundgänge – von der „Kunst zu essen“ bis zu „Liebe im Louvre“.</p>
+                        </li>
+
+                        <li>
+                            <h6>Triumphbogen</h6>
+                            <p>Wenn irgendetwas mit dem Eiffelturm als das Symbol für Paris konkurriert, so ist das dieses prunkvolle, 1836 gebaute Denkmal, das an Napoleons Sieg in Austerlitz 1805 erinnert und das er ein Jahr später in Auftrag gab. Der Triumphbogen mit seinen kunstvollen Reliefs steht im Zentrum des Étoile (Stern) Wache, des größten Kreisverkehrs der Welt – als Fußgänger benutzt man besser den Tunnel! Von oben bietet sich in alle Richtungen ein toller Blick, so auch in die von Luxusgeschäften gesäumte Avenue des Champs-Élysées, die prächtigste aller Prachtstraßen von Paris.</p>
+                        </li>
+
+                        <li>
+                            <h6>Basilique du Sacré-Coeur</h6>
+                            <p>Sacré-Coeur ist ein Wallfahrtsort und das in mehrfacher Hinsicht. Man folgt den efeugesäumten Stufen auf den Hügel des berühmten Künstlerviertels Montmartre oder gleitet mit der Standseilbahn zu den weißen Kuppeln der Basilique du Sacré-Coeur (Basilika des Heiligen Herzens) hinauf. Die kapellengesäumte Basilika – mit dem schimmernden Majestas-Domini-Mosaik in der Apsis – krönt den 130 m hohen Butte de Montmartre (Hügel von Montmartre). Ihre erhöhte Lage bietet atemberaubende Blicke über Parisvon der Treppe vor der Kirche aus und, vor allem, von oben aus ihrer Hauptkuppel.</p>
+                        </li>
+
+                        <li>
+                            <h6>Centre Pompidou</h6>
+                            <p>Das in Primärfarben gehaltene, von innen nach außen gekrempelte Gebäude beherbergt Frankreichs Nationalmuseum für moderne und zeitgenössische Kunst, das Musée National d’Art Moderne (MNAM). Es zeigt Werke ab 1905 bis zur Gegenwart, darunter eine phantastische Matisse-Sammlung. Zum innovativen Kulturangebot des Zentrums gehören Wechselaustellungen, eine Bibliothek, Kinos und Veranstaltungsräume. Gekrönt wird das Ganze vom spektakulären Panoramablick, den man auf dem Dach genießt.</p>
+                        </li>
+
+                        <li>
+                            <h6>Notre-Dame</h6>
+                            <p>Ein Traum von Buntglasfensterrosetten, schwebenden Stützpfeilern und furchterregenden Wasserspeiern – die prächtige Kathedrale auf der größeren der beiden innerstädtischen Seine-Inseln ist das geografische und spirituelle Herz der Stadt. Der Bau des gotischen Wunderwerks dauerte fast 200 Jahre und es wäre wegen Schäden aus der Französischen Revolution abgerissen worden, hätte nicht zur rechten Zeit der Erfolg des Romans Der Glöckner von Notre Dame von Victor Hugo eine Petition zur Rettung ausgelöst. Die herrliche Aussicht vom Dach entschädigt für 422 Stufen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Musée d’Orsay</h6>
+                            <p>Auch wenn sich die gefeierten Gemälde der impressionistischen und postimpressionistischen Meister wie Renoir, Gaugin, Cézanne, Sisley, Manet, Monet, Degas und Toulouse- Lautrec im Musée d’Orsay nicht verändert haben, die hervorragende Renovierung des Museums lassen sie nun erscheinen, als würden sie in einem privaten Heim hängen. Der stattliche ehemalige Bahnhof (Gare d’Orsay), der das Museum beherbergt, glänzt natürlich immer noch durch seine Jugendstilarchitektur, aber Frankreichs berühmte staatliche Sammlung von Meisterwerken aus den Jahren 1848 bis 1914 ist – mehr als je zuvor – der Star der Show.</p>
+                        </li>
+
+                        <li>
+                            <h6>Jardin du Luxembourg</h6>
+                            <p>Der Jardin du Luxembourg zeigt einen Schnappschuss des Pariser Lebens. Paare schlendern durch die Kastanienhaine. Kinder jagen hölzerne Segelboote um den achteckigen Teich und lachen über die Possen bezaubernder Marionetten. Alte Männer spielen an verwitterten Tischen Blitzschach. Studenten brüten zwischen Vorlesungen über ihren Büchern. Büroangestellte faulenzen in salbeigrünen Metallstühlen, um etwas Sonnenschein zu tanken. Musikanten spielen im Musikpavillion auf. Jogger drehen ihre Runden um die würdevollen Statuen. Und Freunde laufen sich hier regelmäßig über den Weg.</p>
+                        </li>
+
+                        <li>
+                            <h6>Cimetière du Père Lachaise</h6>
+                            <p>Paris ist wie eine Ansammlung von Dörfern, und auch dieses ausgedehnte Gelände mit gepflasterten Wegen und kunstvollen Grabmälern, mit einer Bevölkerung (gewissermaßen) von über einer Million, geht als ein Dorf durch. Der meistbesuchte Friedhof der Welt wurde 1804 gegründet. Anfangs fanden hier wegen der Entfernung zur Innenstadt nur wenige Begräbnisse statt. Die Behörden reagierten und ließen die sterblichen Überreste von Prominenten anderswo exhumieren und hierher umbetten. Der Marketingtrick funktionierte und der Cimetière du Père Lachaise ist seither die eleganteste letzte Adresse von ganz Paris.</p>
+                        </li>
+
+                        <li>
+                            <h6>Nationales Museum <br> des Mittelalters</h6>
+                            <p>Mittelalterliche Waffen, Rüstungen, Möbel und objets d’art aus Gold, Elfenbein und Emaille sind nicht der einzige Grund, um Frankreichs Nationalmuseum des Mittelalters zu besuchen. Auch nicht der grandiose Tapisseriezyklus Die Dame mit dem Einhorn aus dem späten 15. Jh. oder die Gärten, die mit Blumen, Kräutern und Sträuchern angelegt wurden und auf Meisterwerken des Museums abgebildet sind (darunter der Einhornwald). Hier kann man zugleich Frankreichs schönstes Beispiel mittelalterlicher Profanarchitektur, das Hôtel de Cluny, und die Überreste einer gallorömischen Therme aus der Zeit um 200 n. Chr. bewundern.</p>
+                        </li>
+
+                        <li>
+                            <h6>Canal St-Martin</h6>
+                            <p>Der charmante, 4,5 km lange Canal St-Martin, gesäumt von schattigen Treidelpfaden und gekreuzt von eisernen Fußgängerbrücken, sollte zubetoniert werden, als die Binnenschifffahrt an Boden verlor, bis Anwohner sich zusammentaten, um ihn zu retten. Die urige Kulisse lockte Künstler, Designer und Studenten an, die Künstlerkollektive, Secondhandläden und unkonventionelle Boutiquen sowie eine ganze Reihe von Neo-Retro-Cafés und -Bars eröffneten. Zum erhaltenen Schifffahrtserbe gehören alte Drehbrücken, die immer noch um 90 Grad aufschwenken, wenn Boote die Doppelschleusen des Kanals passieren. Eine Kanalfahrt ist die beste Art, um die weniger bekannten Wasserwege von Paris zu erleben.</p>
+                        </li>
+
+                        <li>
+                            <h6>Schick einkaufen</h6>
+                            <p>Paris hat, wie jede Großstadt, seine internationalen Ketten (darunter solche, die hier entstanden sind). Aber was Einkaufen in Paris wirklich besonders macht, ist die unglaubliche Auswahl an Spezialgeschäften. Kerzen vom ältesten Kerzenmacher der Welt, Pigmente vom Künstlerbedarf, der das „Klein Blue“ mit dem Künstler entwickelt hat, Lederhandtaschen aus dem hippen Haut Marais, grüne Stände der bouquinistes (Antiquaritatsbuchhändler) am Seine- Ufer und Mode unter der Glaskuppel der grande dame der Kaufhäuser, der Galeries Lafayette, sind nur ein paar Highlights.</p>
+                        </li>
+
+                        <li>
+                            <h6>Versailles</h6>
+                            <p>Kein Wunder, dass Revolutionäre die Palastwache des Château de Versailles massakrierten und König Ludwig XVI. und seine Königin Marie Antoinette zurück nach Paris zerrten. Dieser monumentale 700-Zimmer-Palast in einem ausufernden Park mit Springbrunnen, Teichen und Kanälen hätte damals keinen stärkeren Kontrast zu den durchschnittlichen Lebensbedingungen der Steuerzahler bilden können. Das Unesco-Welterbe Versailles ist aus der Pariser Innenstadt leicht erreichbar; es lohnt sich, einen Besuch so zu legen, dass man eine musikalische Fontänen- oder Pferdedressurshow miterlebt.</p>
+                        </li>
+
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Paris</h5>
+
+                    <img src="../../../img/parisVille1.jpg" alt="parisVille1">
+                    <img src="../../../img/parisVille2.jpg" alt="parisVille2">
+                    <img src="../../../img/parisVille3.jpg" alt="parisVille3">
+                    <img src="../../../img/parisVille4.jpg" alt="parisVille4">
+                    <img src="../../../img/parisVille5.jpg" alt="parisVille5">
+                    <img src="../../../img/parisVille6.jpg" alt="parisVille6">
+                    <img src="../../../img/parisVille7.jpg" alt="parisVille7">
+                    <img src="../../../img/parisVille8.jpg" alt="parisVille8">
+                    <img src="../../../img/parisVille9.jpg" alt="parisVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/parisHotel1.jpg" alt="parisHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187147-d777347-Reviews-Hotel_Le_Six-Paris_Ile_de_France.html">
+                                    Hotel Le Six</a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 746 Bewertungen</div>
+                            <p>Nr. 1 von 1 795 Hotels in Paris</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d777347-r463684813-Hotel_Le_Six-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Sehr angenehmer Aufenthalt” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d777347-r461900387-Hotel_Le_Six-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Eins der besten Hotels...” <span>01/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d777347-r460429787-Hotel_Le_Six-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Bevor dem sterben aufzusuchen !” <span>16/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d777347-r455354131-Hotel_Le_Six-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“TOP” <span>28/01/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187147-d777347-Reviews-Hotel_Le_Six-Paris_Ile_de_France.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/parisHotel2.jpg" alt="parisHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187147-d1633522-Reviews-Hotel_Design_Secret_de_Paris-Paris_Ile_de_France.html">
+                                    Hôtel Design Secret de Paris
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 549 Bewertungen</div>
+                            <p>Nr. 2 von 1 795 Hotels in Paris</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d1633522-r469247550-Hotel_Design_Secret_de_Paris-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Top secret :P” <span>21/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d1633522-r466238535-Hotel_Design_Secret_de_Paris-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“super schöner Aufenthalt” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d1633522-r466234756-Hotel_Design_Secret_de_Paris-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Super !" <span>16/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d1633522-r466193521-Hotel_Design_Secret_de_Paris-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“romantisches Wochenende” <span>10/03/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187147-d1633522-Reviews-Hotel_Design_Secret_de_Paris-Paris_Ile_de_France.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/parisHotel3.jpg" alt="parisHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187147-d678590-Reviews-Hotel_WO_Wilson_Opera-Paris_Ile_de_France.html">
+                                   Hotel WO - Wilson Opera
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 465 Bewertungen</div>
+                            <p>Nr. 6 von 1 795 Hotels in Paris</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d678590-r469686338-Hotel_WO_Wilson_Opera-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Was für eine Rezeption” <span>23/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d678590-r468736663-Hotel_WO_Wilson_Opera-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Super” <span>20/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d678590-r468108961-Hotel_WO_Wilson_Opera-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“2 TAGE IN PARIS” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d678590-r461948825-Hotel_WO_Wilson_Opera-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>”Rezeption: top!” <span>03/03/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187147-d678590-Reviews-Hotel_WO_Wilson_Opera-Paris_Ile_de_France.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/parisHotel4.jpg" alt="parisHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187147-d319955-Reviews-Hotel_du_Levant-Paris_Ile_de_France.html">
+                                    Hotel du Levant
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">1 040 Bewertungen</div>
+                            <p>Nr. 8 von 1 795 Hotels in Paris</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d319955-r468934063-Hotel_du_Levant-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Exzellente Rezeption !” <span>20/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d319955-r467136971-Hotel_du_Levant-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Super tolles hotel” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d319955-r465163448-Hotel_du_Levant-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Sehr guter Aufenthalt!” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187147-d319955-r445229325-Hotel_du_Levant-Paris_Ile_de_France.html#CHECK_RATES_CONT">
+                                <p>“Charmant und super platziert!” <span>19/12/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187147-d319955-Reviews-Hotel_du_Levant-Paris_Ile_de_France.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/paris.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere französische Städte)</li>
+                    <li><a href="strasburg.html">Strasburg</a></li>
+                    <li><a href="larochelle.html">La Rochelle</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

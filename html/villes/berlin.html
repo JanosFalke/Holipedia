@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Berlin | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body class="bodyCity">
+    <header>
+
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../de/cities/berlin.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="../en/cities/berlin.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()" class="active">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../allemagne.html" class="active active2">Allemagne</a>
+                            <ul>
+                                <li><a href="berlin.html" class="active active2">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italie.html">Italie</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venise.html">Venise</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russie.html">Russie</a>
+                            <ul>
+                                <li><a href="moscou.html">Moscou</a></li>
+                                <li><a href="stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../suede.html">Suède</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../angleterre.html">Angleterre</a>
+                            <ul>
+                                <li><a href="londres.html">Londres</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../notreEquipe.html">Notre equipe</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousSousDossier()">Aire Premium</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageBerlinCity topImageCity">
+            <span>Allemagne</span>
+            <h3>Berlin</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Bienvenue !</a></li>
+                    <li><a href="#aVoir" target="_self">À voir, à faire</a></li>
+                    <li><a href="#Decouvrir" target="_self">Découvrir</a></li>
+                    <li><a href="#Hebergement" target="_self">Hébergement</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+
+                <article>
+                    <h5 id="Guide">Bienvenue à Berlin</h5>
+                    <p>Malgré ses déboires fiscaux chroniques, la capitale allemande s'est imposée comme la référence en matière de mode, d'art, de design et de musique. Les créateurs y affluent du monde entier, la transformant en un creuset culturel rappelant le New York des années 1980. Tous sont attirés par le climat d'ouverture et d'expérimentation qui donne à cette ville “éternellement inachevée” son identité profondément urbaine. Et puis, les loyers sont très bon marché…</p>
+
+                    <p>Où que l'on aille pendant son voyage à Berlin, le passé est omniprésent. Le Reichstag, la porte de Brandebourg, Checkpoint Charlie et ce qui reste du Mur sont là pour rappeler le poids de l'Histoire.</p>
+
+                    <p>Est-ce à cause de ce lourd fardeau que Berlin se tourne vers l'avenir avec tant d'ardeur ? La ville semble par moments toute entière dédiée à la fête. Les cafés sont pleins à toute heure, les bars et les clubs, où l'alcool coule à flot, vibrent jusqu'au petit matin.</p>
+
+                    <p>En dépit de ce rythme trépidant, Berlin demeure une ville à taille humaine, agréable à vivre. La circulation y est fluide, les transports publics sont excellents, les rues sont sûres, les discothèques ouvertes à tous, et les notes de restaurant raisonnables.</p>
+
+                    <p>Préparez votre visite de Berlin avec nos adresses, conseils et bons plans pas cher dans la capitale allemande.</p>
+
+
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Les lieux à visiter</h5>
+                    <ul>
+                        <li>
+                            <h6>Reichstag</h6>
+
+                            <p>Symbole de Berlin, le Reichstag a été incendié, bombardé, laissé à l’abandon, puis emballé dans du tissu avant de renaître comme siège du Parlement allemand de l’Allemagne réunifiée. La salle plénière est visible seulement dans le cadre de visites guidées, mais vous pourrez sur réservation monter en ascenseur dans la coupole de verre conçue par Norman Foster. De là-haut, vous profiterez d’une vue imprenable et en saurez plus sur le bâtiment et les grands sites qui l’entourent grâce à un audioguide gratuit.</p>
+                        </li>
+
+                        <li>
+                            <h6>Porte de Brandenbourg</h6>
+
+                            <p>Les souverains prussiens, ainsi que Napoléon et Hitler ont franchi la porte de Brandenbourg, édifice néoclassique marquant l’entrée de la ville royale, longtemps isolée à l’est du Mur. Autrefois symbole de division et d’oppression, elle est devenue depuis 1989 l’image de l’Allemagne réunifiée. Le monument, qui trône parmi les ambassades et les banques de la Pariser Platz, en impose particulièrement de nuit, lorsque ses majestueuses colonnes et la sculpture de la déesse de la Victoire sont éclairées d’une lumière dorée.</p>
+                        </li>
+
+                        <li>
+                            <h6>L’Île des musées</h6>
+
+                            <p>Conçu comme un Louvre berlinois sur la Spree, cet imposant ensemble de cinq édifices surnommé l'île des musées est sans conteste le fleuron muséal de la ville. Ces musées inscrits au patrimoine mondial de l’Unesco présentent 6 000 années d’art et d’histoire culturelle. Contemplez les antiquités du musée de Pergame et de l’Ancien Musée, prenez un rendez-vous avec la reine Néfertiti au Nouveau Musée, imprégnez-vous des œuvres du XIXe siècle de l’Ancienne Galerie nationale et admirez les sculptures médiévales du musée Bode.</p>
+                        </li>
+
+                        <li>
+                            <h6>La vie nocturne</h6>
+
+                            <p>Quand la lune brille haut dans le ciel, Berlin vous ouvre plus que jamais les bras. Entre les pubs intimes, les terrasses de bord de rivière, les Biergärten, les rades underground, les DJ-bars, les luxueux bars-salons d’hôtel ou les temples du cocktail design, vous n’aurez que l’embarras du choix pour sortir. S’il ne vous dit rien de frayer dans les bars et clubs branchés, vous pourrez toujours revivre les années 1920 dans un cabaret, vibrer au son de grandes symphonies dans des salles mythiques ou passer une soirée à l’opéra.</p>
+                        </li>
+
+                        <li>
+                            <h6>Château de Charlottenburg</h6>
+
+                            <p>Le plus grand et le plus beau des palais royaux de Berlin, Charlottenburg ne manquera pas de vous inspirer. Influencé par Versailles, ce joyau baroque donne sur un magnifique parc agrémenté d’un étang à carpes, d’allées de rhododendrons, de deux palais plus modestes et d’un mausolée. L’édifice proprement dit, d’une subtile teinte de jaune caractéristique de la famille royale des Hohenzollern, est orné de colonnes élancées et de fenêtres à la disposition géométrique. Une tour coiffée d’une coupole domine l’avant-cour et l’imposante statue équestre du Grand Électeur Frédéric-Guillaume.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Potsdamer Platz</h6>
+
+                            <p>Construit autour de la zone de démarcation qui sépara Est et Ouest pendant 28 ans, Potsdamer Platz incarne mieux que tout autre le renouveau allemand. Après avoir été le plus vaste chantier du monde dans les années 1990, Potsdamer Platz est désormais un remake postmoderne d’un secteur qui fut jusqu’à la Seconde Guerre mondiale une sorte de Times Square berlinois. Ensemble de places, de bureaux, de musées, de cinémas, de théâtres, d’hôtels et d’appartements, il fournit un écrin au talent d’architectes majeurs de notre époque comme Helmut Jahn et Renzo Piano.</p>
+                        </li>
+
+                        <li>
+                            <h6>Mémoiral de l'holocauste</h6>
+
+                            <p>Vous ressentirez, dans le silence des lieux, la présence des disparus, à mesure que vous arpenterez l’immense labyrinthe qui tient lieu d’hommage rendu par l’Allemagne aux victimes juives du génocide nazi, situé tout près de la Potsdamer Platz. L’architecte new-yorkais Peter Eisenman a témoigné de l’indicible horreur au moyen d’un dédale de 2 711 stèles de hauteur inégale, semblables à autant de sarcophages, posées sur un sol irrégulier. Le caractère abstrait du mémorial contraste avec l’exposition, poignante et riche en images, du centre d’information au sous-sol.</p>
+                        </li>
+
+                        <li>
+                            <h6>Le Kulturforum</h6>
+
+                            <p>Construit dans les années 1950, le Kulturforum était la réponse de Berlin-Ouest à l’île des Musées. Son ensemble de musées et de salles de concerts est remarquable. Les bâtiments les plus spectaculaires sont la Nouvelle Galerie nationale, dans le temple de verre de Ludwig Mies van der Rohe, et la Philharmonie couleur miel de Hans Scharoun. De Rembrandt à Picasso, des grands maîtres médiévaux aux expressionnistes allemands des années 1920, en passant par des gravures de Dürer ou une flûte jouée par un roi prussien, tout est là.</p>
+                        </li>
+
+                        <li>
+                            <h6>Le mur de Berlin</h6>
+
+                            <p>Il est de ces événements dont on se rappelle immanquablement où on se trouvait au moment où ils se produisirent. La chute du mur de Berlin en 1989 est de ceux-là. Tous ceux qui ont assisté à la scène gardent un souvenir ému du spectacle de cette foule de badauds euphoriques dansant sous la porte de Brandebourg. S’il subsiste peu de vestiges du Mur en soi, l’ouvrage reste présent dans l’imaginaire berlinois et dans des lieux comme Checkpoint Charlie, le Mémorial du Mur de Berlin ou l’East Side Gallery et ses fresques murales colorées.</p>
+                        </li>
+
+                        <li>
+                            <h6>Prenzlauer Berg</h6>
+
+                            <p>Secteur autrefois négligé, Prenzlauer Berg a bénéficié d'un tel bain de jouvence depuis la réunification qu'il est devenu l'un des quartiers berlinois les plus en vogue. Il ne compte aucun site célèbre mais possède un charme indéniable, avec ses immeubles aux façades ornementées, remarquablement restaurés, ses cours tranquilles comme la Hirschhof (entrée entre les n°18 et 19 de l'Oderberger Strasse), dédiée à l'art, ses lieux alternatifs comme la Tuntenhaus (Kastanienallee 86), où vit une communauté de punks gays, ses boutiques de créateurs de la Kastanienallee et de l'Oderberger Strasse, rues chic et bohèmes, et ses nombreux cafés permettant de profiter du spectacle ambiant.</p>
+                        </li>
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Découvrez la beauté de Berlin</h5>
+
+                    <img src="../../img/berlinVille1.jpg" alt="berlinVille1">
+                    <img src="../../img/berlinVille2.jpg" alt="berlinVille2">
+                    <img src="../../img/berlinVille3.jpg" alt="berlinVille3">
+                    <img src="../../img/berlinVille4.jpg" alt="berlinVille4">
+                    <img src="../../img/berlinVille5.jpg" alt="berlinVille5">
+                    <img src="../../img/berlinVille7.jpg" alt="berlinVille6">
+                    <img src="../../img/berlinVille6.jpg" alt="berlinVille7">
+                    <img src="../../img/berlinVille8.JPG" alt="berlinVille8">
+                    <img src="../../img/berlinVille9.jpg" alt="berlinVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Hébergement</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/berlinHotel3.jpg" alt="berlinHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187323-d306038-Reviews-Hotel_Q-Berlin.html">Hotel Q!</a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 176 avis</div>
+                            <p>N°1 sur 633 hôtels à Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r464760096-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“J'y retournerai sans soucis” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r447240683-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Hôtel Design avec Spa” <span>28/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r426052869-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Une valeur sûre” <span>08/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d306038-r366362581-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Hôtel Q pour UN weekend” <span>22/04/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187323-d306038-Reviews-Hotel_Q-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/berlinHotel4.jpg" alt="berlinHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187323-d1307675-Reviews-The_Circus_Hotel-Berlin.html">The Circus Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 485 avis</div>
+                            <p>N°3 sur 633 hôtels à Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r447993897-The_Circus_Hotel-Berlin.html#review_447993897">
+                                <p>“Parfait !” <span>30/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r424764893-The_Circus_Hotel-Berlin.html#review_424764893">
+                                <p>“Super adresse pour visiter Berlin" <span>03/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r416325773-The_Circus_Hotel-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Une merveille” <span>09/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d1307675-r397461631-The_Circus_Hotel-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Hôtel charmant” <span>26/07/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187323-d1307675-Reviews-The_Circus_Hotel-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/berlinHotel2.jpg" alt="berlinHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187323-d230572-Reviews-Grand_Hyatt_Berlin-Berlin.html">Grand Hyatt Berlin</a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">2 743 avis</div>
+                            <p>N°23 sur 633 hôtels à Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r449004193-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Superbe Établissement...” <span>03/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r448239411-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Très bon hôtel” <span>01/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r442086535-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Efficacité allemande” <span>05/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d230572-r430520129-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>”Hotel de Grande Classe” <span>22/10/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187323-d230572-Reviews-Grand_Hyatt_Berlin-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../img/berlinHotel1.jpg" alt="berlinHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187323-d6896648-Reviews-Leonardo_Hotel_Berlin_Mitte-Berlin.html">Leonardo Hotel Berlin Mitte
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">870 avis</div>
+                            <p>No 109 sur 633 hôtels à Berlin</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r464198132-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“excellente situation dans Berlin” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r452350708-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Super situation pour un séjour” <span>16/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r449580011-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Bon hotel neuf bien situé” <span>05/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187323-d6896648-r436737949-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Emplacement intéressant” <span>13/01/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187323-d6896648-Reviews-Leonardo_Hotel_Berlin_Mitte-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/villes/berlin.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="../allemagne.html">Allemagne</a></li>
+                    <li><a href="../suede.html">Suede</a></li>
+                    <li><a href="../russie.html">Russie</a></li>
+                    <li><a href="../angleterre.html">Angleterre</a></li>
+                    <li><a href="../italie.html">Italie</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres (Villes d'Allemagne)</li>
+                    <li><a href="munich.html">Munich</a></li>
+                    <li><a href="halle.html">Halle Westfalen</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="../conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="../notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="../conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="../declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

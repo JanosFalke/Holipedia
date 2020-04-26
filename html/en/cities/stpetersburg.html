@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>St. Petersburg | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/stpetersbourg.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/stpetersburg.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html" class="active active2">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html" class="active active2">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageStPetersbourgCity topImageCity">
+            <span>Russia</span>
+            <h3>St. Petersburg</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to St. Petersburg</h5>
+                    <p>Once a desolate swamp, Russia's imperial capital is today a dazzling metropolis whose sheer grandeur never fails to amaze.</p>
+
+                    <p>There is something about St Petersburg that gets under your skin. Despite preferring Moscow when I first came to Russia almost two decades ago, St Petersburg lingered; its colours and incredible light stayed with me, its history haunted me. When I came to live in Russia in 2000, I didn’t hesitate in choosing St Petersburg. Today what excites me about the city is the growing underground art and music scene, the hedonistic atmosphere and the sense that great things are once again happening here. The city has emerged from Moscow’s shadow and will, I hope, show you a very different side to modern Russia.</p>
+
+                    <p>Built from nothing by westward-looking Peter the Great, St Petersburg was from its inception to be a display of imperial Russia’s growing status in the world. Fine-tuned by Peter’s successors, who employed a host of European architects to add fabulous palaces and cathedrals to the city’s layout, St Petersburg grew to be the Romanovs’ showcase capital and Russia’s first great, modern city, a status it has retained despite the capital moving back to Moscow following the revolution. Despite all that history has thrown at it, St Petersburg still feels every bit the imperial capital, a city largely frozen in time.</p>
+
+                    <p>Whether you’re cruising the elegant canals, crossing one of the 342 bridges in the city, or just watching them being raised over the mighty Neva River at night to allow ships to pass through, you’re never far from water in St Petersburg, which has earned the city unsurprising comparisons to Venice. The similarities don’t stop there, though: any wander in the historic centre will reveal canals lined by Italianate mansions and broken up by striking plazas adorned with baroque and neoclassical palaces.</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+                        <li>
+                            <h6>State Hermitage Museum</h6>
+
+                            <p>Mainly set in the magnificent Winter Palace and adjoining buildings, the Hermitage fully lives up to its sterling reputation. You can be absorbed by its treasures for days and still come out wanting more. The enormous collection (over three million items, only a fraction of which are on display in 360 rooms) almost amounts to a comprehensive history of Western European art. Viewing it demands a little planning, so choose the areas you’d like to concentrate on before you arrive.</p>
+                        </li>
+
+                        <li>
+                            <h6>Grand Palace</h6>
+
+                            <p>The Grand Palace is an imposing building, although with just 30-something rooms, it is not nearly as large as your typical tsarist palace. From the start of June to the end of September it is open to foreign tourists only between 10.30am and noon, and again from 2.30pm until 4.15pm, due to guided tours being only in Russian at other times (it is quite possible to leave your group, however).</p>
+                        </li>
+
+                        <li>
+                            <h6>Kunstkamera</h6>
+
+                            <p>Also known as the Museum of Ethnology and Anthropology, the Kunstkamera is the city’s first museum and was founded in 1714 by Peter himself. It is famous largely for its ghoulish collection of monstrosities, preserved ‘freaks’, two-headed mutant foetuses, deformed animals and odd body parts, all collected by Peter with the aim of educating the notoriously superstitious Russian people. While most rush to see these sad specimens, there are also very interesting exhibitions on native peoples from around the world.</p>
+                        </li>
+
+                        <li>
+                            <h6>Yusupov Palace</h6>
+
+                            <p>This spectacular palace on the Moyka River has some of best 19th-century interiors in the city, in addition to a fascinating and gruesome history. The palace’s last owner was the eccentric Prince Felix Yusupov, a high-society darling and at one time the richest man in Russia. Most notoriously, the palace is the place where Grigory Rasputin was murdered in 1916, and the basement where this now infamous plot unravelled can be visited as part of a guided tour.</p>
+                        </li>
+
+                        <li>
+                            <h6>Mariinsky Theatre</h6>
+
+                            <p>The Mariinsky Theatre has played a pivotal role in Russian ballet ever since it was built in 1859 and remains one of Russia's most loved and respected cultural institutions. Its pretty green-and-white main building on aptly named Teatralnaya pl (Theatre Sq) is a must for any visitor wanting to see one of the world's great ballet and opera stages, while its brand-new second stage, the Mariinsky II, is a state-of-the-art opera house for the 21st century.</p>
+                        </li>
+
+                        <li>
+                            <h6>Catherine Palace</h6>
+
+                            <p>The centrepiece of Tsarskoe Selo, created under Empresses Elizabeth and Catherine the Great between 1744 and 1796, is the vast baroque Catherine Palace, designed by Rastrelli and named after Peter the Great’s second wife. The palace can only be visited by individuals between noon and 2pm, and 4pm and 4.45pm, otherwise it's reserved for pre-booked tour groups, such is its rightful popularity. The audioguide is well worth taking, as it gives detailed explanation of what you'll see in each room.</p>
+                        </li>
+
+                        <li>
+                            <h6>Catherine Park</h6>
+
+                            <p>Around the Catherine Palace extends the lovely Catherine Park. The main entrance is on Sadovaya ul, next to the Palace Chapel. The park extends around the ornamental Great Pond and contains an array of interesting buildings, follies and pavilions. Near the Catherine Palace, the Cameron Gallery normally has rotating exhibitions. Between the gallery and the palace, notice the south-pointing ramp that Cameron added for the ageing empress to walk down into the park.</p>
+                        </li>
+
+                        <li>
+                            <h6>Hermitage Storage Facility</h6>
+
+                            <p>Guided tours of the Hermitage’s state-of-the-art restoration and storage facility are highly recommended. This is not a formal exhibition as such, but the guides are knowledgable and the examples chosen for display (paintings, furniture and carriages) are wonderful. The storage facility is directly behind the big shopping centre opposite the metro station – look for the enormous golden-yellow glass facility decorated with shapes inspired by petroglyphs.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of St. Peterburg</h5>
+
+                    <img src="../../../img/stPetersbourgVille1.jpg" alt="stPetersbourgVille1">
+                    <img src="../../../img/stPetersbourgVille2.jpg" alt="stPetersbourgVille2">
+                    <img src="../../../img/stPetersbourgVille3.jpg" alt="stPetersbourgVille3">
+                    <img src="../../../img/stPetersbourgVille4.jpg" alt="stPetersbourgVille4">
+                    <img src="../../../img/stPetersbourgVille5.jpg" alt="stPetersbourgVille5">
+                    <img src="../../../img/stPetersbourgVille6.jpg" alt="stPetersbourgVille6">
+                    <img src="../../../img/stPetersbourgVille7.jpg" alt="stPetersbourgVille7">
+                    <img src="../../../img/stPetersbourgVille8.jpg" alt="stPetersbourgVille8">
+                    <img src="../../../img/stPetersbourgVille9.jpg" alt="stPetersbourgVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stPetersbourgHotel1.jpg" alt="stPetersbourgHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g298507-d6557703-Reviews-Akyan_Saint_Petersburg-St_Petersburg_Northwestern_District.html">
+                                    Akyan Saint Petersburg
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">442 reviews</div>
+                            <p>#1 of 331 Hotels in St. Petersburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d6557703-r449818411-Akyan_Saint_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Excellent reception” <span>06/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d6557703-r444148749-Akyan_Saint_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Very good hotel” <span>14/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d6557703-r434555289-Akyan_Saint_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“One of my favourite” <span>04/11/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d6557703-r430701889-Akyan_Saint_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Just of excellent!” <span>22/10/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g298507-d6557703-Reviews-Akyan_Saint_Petersburg-St_Petersburg_Northwestern_District.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stPetersbourgHotel2.jpg" alt="stPetersbourgHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g298507-d2033602-Reviews-Staybridge_Suites_St_Petersburg-St_Petersburg_Northwestern_District.html">
+                                    Staybridge Suites St. Petersburg
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">315 reviews</div>
+                            <p>#2 of 331 Hotels in St. Petersburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2033602-r342080450-Staybridge_Suites_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“TOP” <span>23/01/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2033602-r281469587-Staybridge_Suites_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Unforgettable stay” <span>19/06/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2033602-r258324748-Staybridge_Suites_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“One of the best hotels” <span>08/03/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2033602-r189912663-Staybridge_Suites_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Perfect hotel” <span>06/01/2015</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g298507-d2033602-Reviews-Staybridge_Suites_St_Petersburg-St_Petersburg_Northwestern_District.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stPetersbourgHotel3.jpg" alt="stPetersbourgHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g298507-d10040675-Reviews-DOM_Boutique_Hotel-St_Petersburg_Northwestern_District.html">
+                                    DOM Boutique Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">69 reviews</div>
+                            <p>#3 of 331 Hotels in St. Petersburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d10040675-r469673383-DOM_Boutique_Hotel-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>”THE PERFECTION” <span>23/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d10040675-r468512034-DOM_Boutique_Hotel-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Nice stay” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d10040675-r465577240-DOM_Boutique_Hotel-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“very good hotel” <span>11/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d10040675-r463809061-DOM_Boutique_Hotel-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“magnificient Hotel” <span>04/03/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g298507-d10040675-Reviews-DOM_Boutique_Hotel-St_Petersburg_Northwestern_District.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/stPetersbourgHotel4.jpg" alt="stPetersbourgHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g298507-d2569226-Reviews-Domina_Prestige_St_Petersburg-St_Petersburg_Northwestern_District.html">
+                                    Domina Prestige St.Petersburg
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 060 reviews</div>
+                            <p>#4 of 331 Hotels in St. Petersburg</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2569226-r460179534-Domina_Prestige_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“very good emplacement” <span>15/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2569226-r459069811-Domina_Prestige_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Super !” <span>13/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2569226-r456691537-Domina_Prestige_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Super hotel” <span>02/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g298507-d2569226-r415405138-Domina_Prestige_St_Petersburg-St_Petersburg_Northwestern_District.html#CHECK_RATES_CONT">
+                                <p>“Next to citycentre” <span>06/09/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g298507-d2569226-Reviews-Domina_Prestige_St_Petersburg-St_Petersburg_Northwestern_District.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/stpetersburg.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of Russia)</li>
+                    <li><a href="moscow.html">Moscow</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

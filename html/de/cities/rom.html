@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Rom | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/rome.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/rome.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html" class="active active2">Italien</a>
+                            <ul>
+                                <li><a href="rom.html" class="active active2">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageRomeCity topImageCity">
+            <span>Italien</span>
+            <h3>Rom</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Rom</h5>
+                    <p>Das künstlerische Erbe dieser weltberühmten Kulturmetropole reicht bis in die Zeiten der Etrusker zurück. Stets hat Rom eine bedeutende Rolle in der Entwicklung der abendländischen Kunst gespielt, und die Resultate dieser Kreativität sind allgegenwärtig: verblüffende klassische Statuen, überwältigende Renaissancefresken oder der atemberaubende Schmuck der Barockzeit. Wer durchs Stadtzentrum schlendert, muss sich nicht einmal darum bemühen – er stößt zwangsläufig auf herausragende Meisterwerke der bildenden Kunst: Skulpturen von Michelangelo, Gemälde von Caravaggio, Fresken von Raffael und Brunnen von Bernini. In Rom werden große Kunstwerke nicht versteckt und weggeschlossen – sie sind buchstäblich Teil der Stadtkulisse.</p>
+
+                    <p>Rom galt lange Zeit als Mittelpunkt der Welt: zunächst als caput mundi, als „Hauptstadt der Erde“ und glamouröse Kapitale des gewaltigen Römischen Reiches; später dann als Zentrum der katholischen Christenheit. Rom war stets Schauplatz der Geschichte, und das ist bis heute unübersehbar: Das Kolosseum erinnert an die glanzvollen Tage antiker Caesaren, die Engelsburg gemahnt an grausame Zeiten roher Gewalt, und der Petersdom zeugt vom Können genialer Baumeister ebenso wie vom Sendungsbewusstsein damaliger Päpste. Antike Ruinen, halb zerfallene Häuser oder Marienaltäre legen Zeugnis ab vom Alltagsleben der Menschen und ihrer Frömmigkeit.</p>
+
+                    <p>Eine Reise nach Rom – das ist nicht nur ein Kunstgenuss, sondern auch das Erlebnis eines Lebensstils. Den erfährt am besten, wer sich in Rom eine gut zubereitete Mahlzeit bestellt. Das Essen und ein guter Wein spielen nämlich im gesellschaftlichen Leben der Römer eine wichtige Rolle, und die unzähligen Pizzerias, Trattorias, Restaurants und Eisdielen der Stadt werden von den Einheimischen ebenso gern aufgesucht wie von Besuchern und Touristen. Am besten also, man macht es genau wie die Römer selbst und lässt sich eine köstliche Pizza aus dem Holzofen schmecken, und zwar in einer überfüllten Pizzeria oder an einem der Tische unter freiem Himmel auf einer Piazza im Zentrum der prachtvollen Stadt.</p>
+
+                    <p>Rom ist aber noch mehr als Geschichte, Kunst und köstliches Essen. Rom ist die Hauptstadt Italiens und die größte Stadt des Landes, und auch wenn die Vergangenheit dort allgegenwärtig ist, stecken die Menschen dort natürlich mitten im Leben des 21. Jhs. Rom ist das politische und religiöse Zentrum des Landes, und die Präsenz von Regierung und Kirche prägt das Stadtbild. In vielen palazzi der Innenstadt sind Behörden untergebracht, und die Kuppel des Petersdoms drüben im Vatikan überragt die Silhouette der Stadt und erinnert an die Anwesenheit des Papstes. Und während die Touristen arglos ihre Mahlzeit genießen, stecken die Politiker in den Restaurants die Köpfe zusammen und spinnen bei Pasta und Kaffee ihre Intrigen.</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Kolosseum</h6>
+                            <p>Roms berühmtestes Wahrzeichen, das Kolosseum, ist tatsächlich überwältigend. Natürlich kennt man es von unzähligen Fotos, aber der wirkliche Anblick ist durch nichts zu ersetzen. Seit 2000 Jahren gilt die imposante Arena als Symbol römischer Macht, die die Welt in Erstaunen versetzte. Wer die Sitzreihen hinaufsteigt, sollte sich einmal ausmalen, wie die Arena damals ausgesehen hat – randvoll mit lärmenden Zuschauern, die Blut sehen wollten. Ein wahrhaft alptraumhaftes Bild!</p>
+                        </li>
+
+                        <li>
+                            <h6>Palatin</h6>
+                            <p>Die sieben Hügel von Rom sind wirklich großartige Aussichtspunkte. Einer der besten ist der Palatin (Palatino), ein grüner Hügel mit stimmungsvollen Ruinen, mächtigen Pinien und einem herrlichen Blick auf das Forum Romanum. Hier fing alles an: Hier soll Romulus seinen Bruder Remus getötet haben, hier gründete er 753 v. Chr. die Stadt, und hier schwelgten die römischen Kaiser in unvorstellbarem Luxus. Wenn man heute über die Kieswege wandert, spürt man förmlich die Geister der Vergangenheit.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museo e Galleria Borghese</h6>
+                            <p>Jeder kennt Michelangelo und die Sixtinische Kapelle, doch die Kunst des Barock ist in Rom mindestens ebenso gut vertreten wie die der Renaissance – und im hübschen Museo e Galleria Borghese ist einiges davon zu bewundern. Die Besuchszeit muss man vorab reservieren, der Preis ist aber erträglich, zumal man Kostbarkeiten wie die verblüffenden Skulpturen von Bernini sowie Arbeiten von Canova, Caravaggio, Raffael und Tizian präsentiert bekommt. Anschließend kann man dann im angrenzenden Park der Villa Borghese über das Gesehene nachdenken.</p>
+                        </li>
+
+                        <li>
+                            <h6>Pantheon</h6>
+                            <p>Das besterhaltene antike Monument Roms ist ein bemerkenswerter Bau. Der Portikus mit den mächtigen Säulen und den gedrungenen Mauern ist schon recht beeindruckend, doch ein wirkliches Bild vom Pantheon bekommt man erst, wenn man das Innere betreten hat. Der umbaute Raum ist gewaltig, und beim Blick in die Kuppel fühlt man sich winzig und unbedeutend. Verstärkt wird der Eindruck durch die Sonnenstrahlen, die durch den Oculus, die zentrale Öffnung im Scheitelpunkt, hereinströmen und die Königsgräber an den marmorverkleideten Wänden beleuchten.</p>
+                        </li>
+
+                        <li>
+                            <h6>Vatikanische Museen</h6>
+                            <p>Rom steckt randvoll mit großer Kunst, doch nur wenige Werke sind so atemberaubend wie die Fresken Michelangelos in der Sixtinischen Kapelle. Diese Fresken, ein wahres Kaleidoskop aus Farben und Motiven, bilden das Finale der Vatikanischen Museen – des größten und beliebtesten Kunstmuseums der Stadt. In diesem riesigen Komplex säumen klassische Skulpturen, Gemälde und Gobelins kilometerlange Korridore; all diese Flure führen zu den Stanzen des Raffael, vier von Raffael brillant ausgestalteten Räumen, und zur Sixtinischen Kapelle.</p>
+                        </li>
+
+                        <li>
+                            <h6>Petersdom</h6>
+                            <p>Nicht nur Christen erliegen dem Zauber von St. Peter, der größten und spektakulärsten unter den römischen Kirchen. Alles ist hier staunenerregend, vom Auftakt, dem weitläufig geschwungenen Petersplatz, über die grandiose Fassade bis hin zum reich geschmückten Inneren. Höhepunkt ist Michelangelos außergewöhnliche Kuppel, ein Meisterwerk der Renaissancearchitektur und eines der Wahrzeichen der Ewigen Stadt. Dieser gewaltige Bau sollte Ehrfurcht einflößen, – und selbst in einer Stadt der Kirchen stellt er alles andere in den Schatten.</p>
+                        </li>
+
+                        <li>
+                            <h6>Ostia Antica</h6>
+                            <p>Nicht allzu viele Besucher machen sich auf den Weg nach Ostia Antica, Roms Pendant zu Pompeji. Doch wer sich aufrafft und hinfährt, wird feststellen, dass die wunderbar erhaltenen antiken Ruinen den berühmteren Stätten in der Innenstadt in nichts nachstehen. Und die Besichtigung fällt hier leichter: Man folgt einfach dem zentralen Weg, dem Decumanus Maximus, oder bewundert das Thermopolium, ein antikes Café, und bekommt einen weit besseren und anschaulicheren Einblick in eine Römerstadt als beim Besuch des Forum Romanum.</p>
+                        </li>
+
+                        <li>
+                            <h6>Speisen unter freiem Himmel</h6>
+                            <p>Essen zu gehen ist eine der großen Vergnügungen in Rom, vor allem im Sommer, wenn man im Freien sitzen kann und die Menschen bis weit nach Mitternacht die Straßen bevölkern. Was kann schöner sein, als an einem Tisch auf einer hübschen Kopfsteinpflastergasse edle italienische Speisen und guten heimischen Wein zu genießen, während das turbulente Großstadtleben ringsum vorbeizieht? Und da man hier alles findet – von vornehm-romantischen Restaurants bis zu lärmenden Pizzerias oder gehobenen Eiscafés –, kommt eigentlich jeder auf seine Kosten.</p>
+                        </li>
+
+                        <li>
+                            <h6>Kapitolinische Museen</h6>
+                            <p>In der Antike standen auf dem Kapitol (Campidoglio) die beiden wichtigsten Tempel von Rom. Heute nimmt man den kurzen, steilen Aufstieg eher auf sich, um die Aussicht zu genießen und um die Kapitolinischen Museen an der Piazza del Campidoglio zu besuchen. Die ältesten öffentlichen Museen der Welt besitzen einige fantastische klassische Statuen, darunter die Lupa Capitolina (Kapitolinische Wölfin), Beispiele für frühe etruskische Kunst und herrliche Gemälde. Und die Kamera nicht vergessen – für die Steinmetzarbeiten im Hof beim Eingang.</p>
+                        </li>
+
+                        <li>
+                            <h6>Forum Romanum</h6>
+                            <p>Wer zwischen den verstreuten Ruinen auf dem Forum Romanum umherschlendert, folgt unweigerlich den Fußstapfen großer Gestalten der römischen Geschichte. Julius Caesar etwa und Pompeius marschierten im Triumphzug die Via Sacra entlang, die zentrale Achse des Forums. Heute gehört das Forum zu den meistbesuchten Plätzen der Stadt, doch sind Menschenmassen diesem Ort keineswegs fremd: Schon in der Antike war dies das lebhafte, ja chaotische Zentrum der Stadt, und jedermann – vom Senator bis zum Sklaven – ging hier seinen Alltagsgeschäften nach.</p>
+                        </li>
+
+                        <li>
+                            <h6>Römische Piazzas</h6>
+                            <p>Die Stimmung auf den Piazzas, den Bühnen des römischen Lebens, aufzusaugen ist ein wichtiger Teil des Alltags. Man genießt sein Eis in einem Straßencafé an der Piazza Navona, betrachtet das Treiben auf der Piazza del Popolo oder reiht sich in die Schlange auf dem Petersplatz ein – all dies sind typisch römische Erfahrungen. Die Plätze dieser Stadt sind schon seit Jahrtausenden ein Schauplatz des Lebens; hier fanden Märkte statt, kultische Handlungen, Spiele und sogar Hinrichtungen, – und bis auf den heutigen Tag locken sie die Menschen an: Einheimische, Touristen, Jugendliche, Restaurantbesucher und Straßenkünstler.</p>
+                        </li>
+
+                        <li>
+                            <h6>Viterbo</h6>
+                            <p>Wer nach dem Trubel der Stadt ein wenig Ruhe sucht, fährt nach Viterbo. Hier geht das Leben einen gemächlicheren Gang, und keine Besuchermassen stören das Bild der hübschen mittelalterlichen Gassen. Im Mittelalter war Viterbo ein wichtiges Zentrum, und viele Bauten erinnern an die päpstliche Residenz im 13. Jh. Die Stadt eignet sich für einen Tagesausflug; wer etwas länger bleibt, kann von hier aus den Norden von Latium erkunden.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Roms</h5>
+
+                    <img src="../../../img/romeVille1.jpg" alt="romeVille1">
+                    <img src="../../../img/romeVille2.jpg" alt="romeVille2">
+                    <img src="../../../img/romeVille3.jpg" alt="romeVille3">
+                    <img src="../../../img/romeVille4.jpg" alt="romeVille4">
+                    <img src="../../../img/romeVille5.jpg" alt="romeVille5">
+                    <img src="../../../img/romeVille6.jpg" alt="romeVille6">
+                    <img src="../../../img/romeVille7.jpg" alt="romeVille7">
+                    <img src="../../../img/romeVille8.jpg" alt="romeVille8">
+                    <img src="../../../img/romeVille9.jpg" alt="romeVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/romeHotel1.jpg" alt="romeHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187791-d1051216-Reviews-SuiteDreams_Hotel-Rome_Lazio.html">
+                                    SuiteDreams Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 442 Bewertungen</div>
+                            <p>Nr. 1 von 1 292 Hotels in Rom</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d1051216-r460869108-SuiteDreams_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Gut und sehr schönes Umfeld” <span>20/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d1051216-r458412019-SuiteDreams_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Originalität und Sauberkeit” <span>10/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d1051216-r445887017-SuiteDreams_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Super in allen Punkten” <span>21/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d1051216-r439594068-SuiteDreams_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Sehr angenehme Zimmer” <span>23/11/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187791-d1051216-Reviews-SuiteDreams_Hotel-Rome_Lazio.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/romeHotel2.jpg" alt="romeHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187791-d203085-Reviews-Hotel_Napoleon-Rome_Lazio.html">
+                                    Hotel Napoleon
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">2 562 Bewertungen</div>
+                            <p>Nr. 6 von 1 292 Hotels in Rom</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203085-r468340340-Hotel_Napoleon-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“UNFASSBAR !” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203085-r461094222-Hotel_Napoleon-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Mein Lieblingshotel” <span>25/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203085-r452317554-Hotel_Napoleon-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“schönes Gebäude” <span>16/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203085-r451907914-Hotel_Napoleon-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Super Platzierung” <span>14/01/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187791-d203085-Reviews-Hotel_Napoleon-Rome_Lazio.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/romeHotel3.jpg" alt="romeHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187791-d597288-Reviews-Hotel_Diocleziano-Rome_Lazio.html">
+                                   Hotel Diocleziano
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">2 167 Bewertungen</div>
+                            <p>Nr. 7 von 1 292 Hotels in Rom</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d597288-r468460953-Hotel_Diocleziano-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Perfekt” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d597288-r463942511-Hotel_Diocleziano-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Ruhig und schön...” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d597288-r454190897-Hotel_Diocleziano-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“FAST PERFEKT” <span>23/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d597288-r452135627-Hotel_Diocleziano-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>”Richtig geil !” <span>15/01/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187791-d597288-Reviews-Hotel_Diocleziano-Rome_Lazio.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/romeHotel4.jpg" alt="romeHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187791-d203181-Reviews-Condotti_Hotel-Rome_Lazio.html">
+                                    Condotti Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">1 151 Bewertungen</div>
+                            <p>Nr. 9 von 1 292 Hotels in Rom</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203181-r465467647-Condotti_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“toller toller Aufenthalt” <span>11/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203181-r460895088-Condotti_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Super platziert” <span>18/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203181-r444900819-Condotti_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“Absolut parfekt” <span>17/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187791-d203181-r437438714-Condotti_Hotel-Rome_Lazio.html#CHECK_RATES_CONT">
+                                <p>“La dolce vita pur” <span>15/11/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187791-d203181-Reviews-Condotti_Hotel-Rome_Lazio.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/rom.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere italienische Städte)</li>
+                    <li><a href="mailand.html">Mailand</a></li>
+                    <li><a href="venedig.html">Venedig</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

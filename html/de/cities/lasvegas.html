@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Las Vegas | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/lasvegas.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/lasvegas.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html" class="active active2">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html" class="active active2">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageLasVegasCity topImageCity">
+            <span>Vereinigte Staaten</span>
+            <h3>Las Vegas</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Las Vegas</h5>
+                    <p>Las Vegas ist eigentlich keine Stadt, sondern die Verkörperung des amerikanischen Traums vom schnellen Glück, eine neonbunte Fata Morgana in der Wüste. Las Vegas lebt vom Traum und von der Sucht der Menschen nach schnellem Reichtum. Nur deshalb konnte inmitten der öden, glutheißen Steinwüste im Süden Nevadas eine Großstadt aus dem Sand wachsen, die Weltmetropole des Spiels. Rund um die Uhr, 365 Tage im Jahr inszeniert sich die Spielerstadt als glitzernde Phantasiewelt, in der für die Besucher der Alltag in unwirkliche Ferne rückt.</p>
+                    <p>Raum und Zeit werden in der Neonoase Las Vegas bedeutungslos. Die Kasinoparadiese in der Downtown und am Las Vegas Boulevard, dem legendären „Strip“, entführen in klimaanlagengekühlte Kunstwelten. Hier finden Sie sich staunend im alten Rom wieder, dort spazieren Sie durch New York, Venedig, Paris, durch eine altägyptisch anmutende Pyramide oder durch mittelalterliche Märchenschlösser. Und selbst zu Zeiten der Rezession werden immer neue und spektakuläre Kasinopaläste gebaut, immer aufwendigere Shows und Illusionen geboten.</p>
+                    <p>Fast 40 Millionen Besucher überfluten jährlich die glitzernde Metropole mitten in der Mojavewüste – allerdings hat die Immobilien- und Finanzkrise der letzten Jahre die Aufenthaltsdauer der Besucher etwas beschnitten, und sie zeigen sich nicht mehr so spendabel an den Spieltischen. Die meisten bleiben heute drei bis vier Nächte – und diese Zeit braucht man auch, will man als Urlauber die Stadt in ihrer ganzen Vielfalt kennenlernen.</p>
+
+
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Luxor</h6>
+
+                            <p>Die gläserne Pyramide, zusammengesetzt aus 39.000 Fenstern, ist die viertgrößte Pyramide der Welt. Eine zehn Stockwerke hohe Sphinx bewacht den Eingang zu diesem Hotel, dessen Außen- und Innenwände mit authentischen Hieroglyphen bedeckt sind. Innen sitzen (halb so hoch und immer noch riesig) steinerne Pharaonen, flankiert von majestätischen Löwen, an subtil beleuchteten Teichen. Bemerkenswert ist selbst eine Fahrt mit einem der Fahrstühle, denn diese passen sich dem schrägen Verlauf der Pyramide an. Besondere Attraktionen im Hotel sind u.a. "Titanic: The Artifact Exhibition" oder die pathologische Ausstellung "Bodies - The Exhibition".</p>
+                        </li>
+
+                        <li>
+                            <h6>Paris Las Vegas</h6>
+
+                            <p>"Bonjour, Messieurs!", grüßt hier das Personal im schönsten Schulfranzösisch die Gäste. Von innen und außen eine Puppenhausversion der Stadt des Lichts, lädt das Paris ein zur Besichtigung des detailgetreu nachgebauten Arc de Triomphe und zum Spaziergang auf der Rue de la Paix. Auch die Fassaden des Louvre, des Opern- und des Rathauses sehen den Pariser Originalen täuschend ähnlich (von der Größe einmal abgesehen). Die Kopie des Eiffelturms ist genau halb so groß wie das französische Vorbild, konstruiert nach den Originalzeichnungen von 1887. Gläserne Aufzüge bringen Besucher zur Aussichtsplattform, wo ihnen die Glitzerstadt im wahrsten Sinne des Wortes zu Füßen liegt.</p>
+                        </li>
+
+                        <li>
+                            <h6>Mit dem Hubschrauber <br> über den Grand Canyon</h6>
+
+                            <p>"Wenn jemand ein Büro mit einer besseren Aussicht hat, würde ich es gern sehen", sagt Pilot John Harvey und deutet mit einem Kopfnicken auf die Landschaft unter ihm. Dort leuchtet die Mojave-Wüste in Kupfertönen, ihr trockener, rissiger Boden ist wellenförmig gefaltet wie ein gewaltiger Blätterteig aus Ton, der darauf wartet, in der glühenden Sonne knusprig gebacken zu werden. Gestreifte Felswände bauen sich auf, dann plötzlich faltet sich die Sache wieder dreidimensional auseinander, bis man zwischen den Rändern des Canyons das schlammbraune Wasser des Colorado Revers erspäht, der sich tief in die Wüste gefressen hat. Ab und zu leuchten Seen wie türkisfarbene Fata Morganen. Weiß umrandet liegt der Mead Lake in der Landschaft, der seit der Dürreperiode immer mehr schrumpft.</p>
+                        </li>
+
+                        <li>
+                            <h6>Fremont Street Experience</h6>
+
+                            <p>Die vier Blocks lange Fußgängerzone ist eine preiswerte Alternative zum Strip mit Straßencafés, Geschäften und den vielfältigen Möglichkeiten ihres elektronischen Baldachins, der die Straße an glühend heißen Sommertagen kühlt, während er im Winter für Wärme sorgt. Die Überdachung ist bestückt mit über 12 Mio. LED-Lämpchen und einem Soundsystem, das es mit jeder Konzertanlage aufnehmen kann. Die nächtliche, mit Musik untermalte Lightshow Viva Vision Show wirkt so noch gewaltiger. Und wer das Erlebnis noch steigern will, kann mit der Zipline Slotzilla knapp 500 m weit unter dem Lichterdach durchsausen. Da manche der alten, etwas schäbigen Glitter Gulch (Glitzerschlucht) hinterher weinen, hat man begonnen, einige klassische Neonlichter zu restaurieren und als Outdoor Gallery entlang der Promenade aufzustellen, darunter auch jenen 1967 kreierten, überdimensionalen Cowboy Vegas Vic, der in vielen Hollywoodstreifen die City symbolisierte.</p>
+                        </li>
+
+                        <li>
+                            <h6>Bellagio</h6>
+
+                            <p>Romantisch, elegant und komfortabel gehört dieses Luxushotel zu den attraktivsten auf dem Boulevard. Von außen gleicht es dem idyllischen italienischen Dorf am Comer See, wobei natürlich auch der See selbst nicht fehlt. Auf diesem veranstalten die Springbrunnen nachmittags und abends ihr Wasserballett zu Melodien vom Broadway, aus der Oper oder von Frank Sinatra. Den besten Blick darauf hat man vom Eiffelturm gegenüber. Innen setzt sich die italienische Eleganz fort: Bögen, Säulen und Marmor. Selbst die mit Stoff überzogenen Spielautomaten im Kasino wirken elegant. Die Decke in der Lobby ziert ein Bouquet aus mehr als 2000 handgemachten Glasblumen des amerikanischen Künstlers Dale Chihuly. Unbedingt sollte man durch den botanischen Garten spazieren, in dem Tausende von Pflanzen - je nach Jahreszeit unterschiedlich - fotogen arrangiert sind, oder einen Blick auf den mediterranen Swimmingpool zu werfen. Im Bellagio befindet sich auch die Gallery of Fine Art mit wechselnden Ausstellungen vom Feinsten in eleganten Räumen.</p>
+                        </li>
+
+                        <li>
+                            <h6>New York-New York</h6>
+
+                            <p>Das Kasinohotel New York-New York wirbt für sich als die großartigste Stadt in Las Vegas. Das Empire State Building (hier nur 47 Stockwerke hoch) und elf andere bekannte Wolkenkratzer bilden eine perfekte Miniaturausgabe der Skyline von Manhattan. Millionen von Besuchern überqueren jährlich die Brooklyn Bridge in Las Vegas, während das fünfmal so große Original deutlich weniger Fußgänger über den East River bringt. Die kopierte Freiheitsstatue erhielt sogar ihre eigene Insel. "The Park" ist eine Las-Vegas-Version des Central Park, die bis zum Monte-Carlo-Kasino nebenan reicht und mit Palmen und Wüstenpflanzen begrünt ist. Weitere Bereiche des Hotels gleichen dem Rockefeller Center, dem geschäftigen Time Square oder dem charmanten Greenwich Village. Auch die typischen Graffiti fehlen nicht, weder an den Eingängen zur Metro noch in den Telefonzellen. The Big Apple Coaster, eine Achterbahn, die sich rund um den gesamten Hotelkomplex windet, hört sich von drinnen an wie eine gerade in den Bahnhof fahrende U-Bahn. Mit über 100 km/h rast man um die Silhouette der Weltstadt. Gehört zu den älteren, aber keineswegs langweiligen Achterbahnen.</p>
+                        </li>
+
+                        <li>
+                            <h6>The Venetian</h6>
+
+                            <p>Markusplatz, Dogenpalast, Campanile und Canal Grande - alles (fast) wie im echten Venedig. Statuen, Mosaike und Fliesen gleichen ihren Original-Vorbildern aufs Haar. Das Sicherheitspersonal trägt die Uniformen der venezianischen Polizei, Gondolieri bringen ihre Passagiere von Ufer zu Ufer. Auf dem Markusplatz schmettern kostümierte Sänger Opernarien, Artisten jonglieren, während lebende Statuen nur mal mit der Wimper zucken.</p>
+                        </li>
+
+                        <li>
+                            <h6>Golden Gate</h6>
+
+                            <p>Vor fast 100 Jahren erbaut und damit das älteste Hotel und Kasino auf der Fremont Street. Ein großer Teil der originalen Holzvertäfelungen blieb erhalten. Hier bekommen man einen Eindruck davon, wie es in den Kasinos Mitte des 20. Jhs. zuging.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Las Vegas</h5>
+
+                    <img src="../../../img/lasvegasVille1.jpg" alt="lasVegasVille1">
+                    <img src="../../../img/lasvegasVille2.jpeg" alt="lasVegasVille2">
+                    <img src="../../../img/lasvegasVille3.jpg" alt="lasVegasVille3">
+                    <img src="../../../img/lasvegasVille4.jpg" alt="lasVegasVille4">
+                    <img src="../../../img/lasvegasVille5.jpeg" alt="lasVegasVille5">
+                    <img src="../../../img/lasvegasVille6.jpg" alt="lasVegasVille6">
+                    <img src="../../../img/lasvegasVille7.jpg" alt="lasVegasVille7">
+                    <img src="../../../img/lasvegasVille8.jpg" alt="lasVegasVille8">
+                    <img src="../../../img/lasvegasVille9.jpg" alt="lasVegasVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/lasvegasHotel1.jpg" alt="lasVegasHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g45963-d91904-Reviews-New_York_New_York_Hotel_and_Casino-Las_Vegas_Nevada.html">
+                                    New York Hotel and Casino
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">15 748 Bewertungen</div>
+                            <p>Nr. 1 von 264 Hotels in Las Vegas</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91904-r465552311-New_York_New_York_Hotel_and_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>Eine schöne Entdeckung” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91904-r463877390-New_York_New_York_Hotel_and_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Road trip in den USA” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91904-r459401473-New_York_New_York_Hotel_and_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“SUPER BOWL in Vegas” <span>13/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91904-r459398339-New_York_New_York_Hotel_and_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Super toll!” <span>13/02/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g45963-d91904-Reviews-New_York_New_York_Hotel_and_Casino-Las_Vegas_Nevada.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/lasvegasHotel2.jpg" alt="lasVegasHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g45963-d143336-Reviews-Paris_Las_Vegas-Las_Vegas_Nevada.html">
+                                   Paris Las Vegas
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">20 537 Bewertungen</div>
+                            <p>Nr. 2 von 264 Hotels in Las Vegas</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d143336-r469411990-Paris_Las_Vegas-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“top, top, top” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d143336-r468980789-Paris_Las_Vegas-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Einfach nur schön" <span>20/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d143336-r464479054-Paris_Las_Vegas-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Super abend gehabt!!” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d143336-r459552376-Paris_Las_Vegas-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Toll platziert am 'strip'” <span>14/02/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g45963-d143336-Reviews-Paris_Las_Vegas-Las_Vegas_Nevada.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/lasvegasHotel3.jpg" alt="lasVegasHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g45963-d97737-Reviews-The_Mirage_Hotel_Casino-Las_Vegas_Nevada.html">
+                                   The Mirage Hotel & Casino
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">17 101 Bewertungen</div>
+                            <p>Nr. 4 von 264 Hotels in Las Vegas</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d97737-r468588711-The_Mirage_Hotel_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Gutes Hotel am 'Strip'” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d97737-r463968729-The_Mirage_Hotel_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“gut platziert” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d97737-r457812887-The_Mirage_Hotel_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Sehr gutes Hotel” <span>07/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d97737-r456855191-The_Mirage_Hotel_Casino-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>”Super Preis/Leistungs-V.” <span>03/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g45963-d97737-Reviews-The_Mirage_Hotel_Casino-Las_Vegas_Nevada.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/lasvegasHotel4.jpg" alt="lasVegasHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g45963-d91828-Reviews-Golden_Nugget_Hotel-Las_Vegas_Nevada.html">
+                                   Golden Nugget Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">10 096 Bewertungen</div>
+                            <p>Nr. 24 von 264 Hotels in Las Vegas</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91828-r468679395-Golden_Nugget_Hotel-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Geiles hotel” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91828-r452518901-Golden_Nugget_Hotel-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Super nah der Freemont St.” <span>17/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91828-r446391558-Golden_Nugget_Hotel-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Super Hotel” <span>24/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g45963-d91828-r444167552-Golden_Nugget_Hotel-Las_Vegas_Nevada.html#CHECK_RATES_CONT">
+                                <p>“Tolles Hotel, toll platzeirt” <span>14/12/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g45963-d91828-Reviews-Golden_Nugget_Hotel-Las_Vegas_Nevada.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/lasvegas.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere amerikanische Städte)</li>
+                    <li><a href="newyork.html">New York</a></li>
+                    <li><a href="washington.html">Washington</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

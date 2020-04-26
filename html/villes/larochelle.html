@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>La Rochelle | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../de/cities/larochelle.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="../en/cities/larochelle.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()" class="active">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html" class="active active2">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html" class="active active2">La Rochelle</a></li>
+                                <li><a href="strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../allemagne.html">Allemagne</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italie.html">Italie</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venise.html">Venise</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russie.html">Russie</a>
+                            <ul>
+                                <li><a href="moscou.html">Moscou</a></li>
+                                <li><a href="stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../suede.html">Suède</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../angleterre.html">Angleterre</a>
+                            <ul>
+                                <li><a href="londres.html">Londres</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../notreEquipe.html">Notre equipe</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousSousDossier()">Aire Premium</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageLaRochelleCity topImageCity">
+            <span>France</span>
+            <h3>La Rochelle</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Bienvenue !</a></li>
+                    <li><a href="#aVoir" target="_self">À voir, à faire</a></li>
+                    <li><a href="#Decouvrir" target="_self">Découvrir</a></li>
+                    <li><a href="#Hebergement" target="_self">Hébergement</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5>Bienvenue à La Rochelle</h5>
+                    <p>La Rochelle est toute entière tournée vers la mer, à la manière des deux tours du Vieux Port qui en sont le symbole. Elle possède les avantages de la ville, avec son histoire ancienne, son architecture, ses commerces, ses nombreux restaurants, sa vie nocturne, et ceux de la station balnéaire avec les plages, le nautisme, les promenades en bord de mer... Dynamique, des évènements d'importance s'y déroulent, les Francofolies pour la musique, le Grand Pavois et ses navires. Calme également, il est toujours agréable de prendre un verre sur les quais, ou de partir bronzer à la plage.</p>
+                    <p>Situé au fond d'une baie étroite, cet ancien port de pêche est gardé par deux tours médiévales, celle de laChaîne et celle deSaint-Nicolas . Cette vue la plus célèbre de la cité fut immortalisée par les peintresJoseph Vernet, Corot, Signac . Aujourd'hui, le Vieux Port est uniquement dédié aux navires de plaisance. Depuis 2015, ses abords sont quant à eux réservés aux piétons et aux cyclistes.</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Les lieux à visiter</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Vieux Port</h6>
+
+                            <p>La Rochelle, c'est avant tout le Vieux Port. C'est grâce à celui-ci que la ville s'est développée à partir du Moyen-Age. Il a été le théâtre du siège orchestré par Richelieu contre cette ville protestante en 1627-28, ou encore un acteur tristement important du commerce triangulaire. rnAujourd'hui, le port se consacre à la plaisance : la promenade autour du bassin change de physionomie selon la saison, la marée, l'heure de la journée... rnLe quai Duperré est une succession de cafés et bistrots dont les terrasses bondées les jours de beau temps offrent une vue imprenable sur les deux tours emblématiques qui marquent la sortie du port. Les prix des consomations s'en ressentent mais la qualité est bien là. Le quai est fermé à la circulation le dimanche, le rendant bien plus agréable dans une atmosphère de détente absolue.rnLe cours des Dames, ombragé grâce à ses arbres, parsemé de bancs, est parcouru par des promeneurs tranquilles. Des artistes de rue, dresseur de chien, peintres, proposent des animations quasiment toute l'année. Restaurants de fruits de mer et cinéma en sont les activités nocturnes.rnDe l'autre côté du bassin, quai du Carénage, un vieux manège amusera les enfants tandis que quelques vieux navires mouillent vers la tour Saint-Nicolas.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>La Tour de la Chaîne</h6>
+
+                            <p>La tour de la Chaîne, la plus petite des deux tours du Vieux Port de La Rochelle, date du XIVe siècle : elle servait d'attache à la chaîne qui barrait l'accès du port. Cette chaîne est aujourd'hui conservée au pied de la tour. Une exposition s'y déroule depuis 2008, "La Rochelle - Québec : embarquez vers la Nouvelle France". Le prix du billet d'entrée donne droit à visiter également la tour Saint-Nicolas. Avec la tour Saint-Nicolas, la tour de la Chaîne est l'élément clef de la défense du Vieux port de La Rochelle. Construite dans les années 1370-1380, après la tour Saint-Nicolas, elle se composait en fait de deux tours. La plus petite abrite un cabestan permettant de tendre une chaîne ancrée dans la tour Saint-Nicolas et ainsi de fermer l'entrée du Vieux port. Elle était reliée par une galerie couverte à la seconde, plus grande, destinée à abriter la garnison. Comme la tour Saint-Nicolas, la tour de la Chaîne fut endommagée pendant la fronde et perdit alors sa toiture et son chemin de ronde. La petite tour fut détruite en 1827, lors de l'élargissement de l'entrée du port.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Les Halles de La Rochelle</h6>
+
+                            <p>En plein coeur de la vieille ville, la place du marché de La Rochelle est un lieu fourmillant d'activité les mercredi, samedi et dimanche matin, jours de grand marché. Les halles, bâtiment datant du XIXe siècle, couvrent les étales qui proposent tous les produits du terroir régional, dont bien évidemment les produits de la mer. Les poissoniers n'hésitent pas à hausser la voie et à baisser les prix avant de remballer, vers 14 heure. La place du marché est entourée de maisons anciennes à colombage, de petits commerces, et de plusieurs cafés dont les terrasses exposées au soleil attirent toujours une clientèle hétéroclite et décontractée.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Au 33 rue Thiers</h6>
+
+                            <p>Dans un ancien hôtel particulier du vieux centre de La Rochelle, "Au 33 rue Thiers" est une maison d'hôte ouverte toute l'année. 5 minutes de marche la sépare du marché couvert ou du vieux port : autant dire au coeur de la ville. Six suites indépendantes, aux décors variés selon leurs thèmes, sont réparties sur les trois étages de cette bâtisse datant de 1745. On peut prendre le petit déjeuner, fait maison, dans le jardin intérieur pour profiter du soleil ou autour de la grande table de la salle à manger, pour faire connaissance avec les autres résidents et les hôtes eux-même. On appréciera le côté "chez soi" qu'offre un séjour ici, histoire de changer des hôtels trop souvent impersonnels.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Le Musée Maritime</h6>
+
+                            <p>A côté de l'Aquarium, situé dans le bassin des Chalutiers se trouve le Musée Marirtime de La Rochelle. Le musée gère une flotte de huit navires : le plus remarquable, le France 1, est un ancien navire météorologique. La visite vous entraine jusque dans les salles des machines, les cabines, le poste de pilotage. On peut églement visiter l'Angoumois, un ancien chalutiers, ou voir le Joshua, voilier de 12 mètres qui a servi au navigateur et écrivain Bernard Moitessier à faire le premier tour du monde sans escale et en solitaire. rnOuvert d'avril à septembre.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Rue Saint-Nicolas</h6>
+
+                            <p>La rue Saint-Nicolas, ancien repère de marins, est parcourue de nombreux bars qui s'anîment le soir d'une clientèle principalement étudiante.rnVéritable institution de La Rochelle, la Guignette est une cave à vin qui a su garder son décor dépouillé et chaleureux de vieil établissement. On y boit des spécialités de vins mélangés attablé à un tonneau, dans une ambiance surchargée et festive entre 18H et la fermeture à 20H. Autrefois bon marché, on ne peut malheureusement plus en dire la même chose aujourd'hui.rnOn notera le marché aux puces qui se déroule dans toute la rue ainsi que sur la place de la Fourche, dite de 'l'arbre magique", le samedi matin.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Pars Charruyer</h6>
+
+                            <p>Le parc Charruyer est plus communément appelé par les Rochelais "les Parcs". Le parc occupe l'ancien emplacement des remparts ouest de la ville. Il est traversé dans sa longueur par un petit cours d'eau habité par des canards et des cygnes que nourrissent les passants, sans oublier les ragondins, moins plaisants. Des plaques explicatives donnent des renseignements sur les nombreuses espèces d'arbres. Tout le parc est doté de pistes cyclables. La promenade vaut la peine si l'on recherche le calme. A noter, pour les enfants, la partie "zoo", où les charmants bambins peuvent nourrir les chèvres, les ânes ou les oies, ainsi que monter sur des poneys. Comme dans nombre de villes françaises, la destruction de l'enceinte de La Rochelle, au début du XIXe siècle, laissa de vastes espaces vides entre ville et faubourgs, longtemps laissés à l'abandon. C'est un don de Mademoiselle Charruyer, à la fin du XIXe siècle, qui permit d'aménager le vaste jardin paysagé qui forme le parc Charruyer. Animé par deux ruisseaux se jetant dans la mer, c'est un joli parc tout en longueur, aménagé à l'anglaise, avec des sentiers sinueux abrités par les arbres.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Tour Saint-Nicolas</h6>
+
+                            <p>La tour Saint-Nicolas est la plus massive des deux tours qui gardent l'entrée du Vieux Port de La Rochelle. Edifiée afin de protéger le port de tout danger venu de la mer, la tour Saint-Nicolas était reliée par une chaine bloquant l'accès du bassin à sa voisine plus petite, la tour de la Chaine. La visite de ce donjon austère et gothique, datant du XIVe siècle, vous fera traverser de grandes salles de pierres reliées par des escaliers serrés et parfois abruptes, basés sur un plan de communication complexe. Mais l'ascencion des 42 mètres de l'édifice vaut le détour pour le magnifique panorama observable de son sommet, sur toute l'étendue de la ville et bien sûr l'océan.rnLa tour est ouverte tous les jours de la semaine, pour une visite qui durera environ une heure. Construite à partir de 1345 environ, la tour Saint-Nicolas ferme le port de la Rochelle. Elle s'appuie sur un radier destiné à compenser la nature marécageuse du terrain. Les travaux s'étant interrompus pendant la période de l'occupation anglaise (1360-1372), elle ne fut achevée qu'en 1376. Elle se composait à l'origine de quatre grandes salles superposées recouvertes d'un toit en poivrière, mais le niveau supérieur fut détruit pendant la Fronde.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>Le café des Deux Tours</h6>
+
+                            <p>En plein sur le Vieux Port, le café des 2 Tours propose une terrasse en plein soleil très agréable. Moins fréquenté que les terrasses bondées des cafés du quai Duperré, moins cher aussi, l'ambiance y est totalement détendue, la clientèle hétéroclite. On peut aussi manger le plat du jour, cuisine de bistrot simple mais bonne. Des petits concerts sont parfois organisés le weekend. Un endroit parfait pour prendre l'apéro tout en regardant le soleil se coucher derrière les tours du port de La Rochelle.</p>
+                        </li>
+
+
+                        <li>
+                            <h6>La Grosse Horloge</h6>
+
+                            <p>Ancienne porte de la ville, elle fait la jonction entre le Vieux Port et le centre ville commerçant et piéton. Le massif monument est mis en valeur par un jeu de projecteurs la nuit. La Grosse Horloge ne se visite que lors des journées du patrimoine, mais une tablette explicative retrace son histoire qui remonte au XIVe siècle.</p>
+                        </li>
+
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Découvrez la beauté de La Rochelle</h5>
+
+                    <img src="../../img/laRochelleVille1.jpg" alt="laRochelleVille1">
+                    <img src="../../img/laRochelleVille2.jpg" alt="laRochelleVille2">
+                    <img src="../../img/laRochelleVille3.jpg" alt="laRochelleVille3">
+                    <img src="../../img/laRochelleVille4.jpg" alt="laRochelleVille4">
+                    <img src="../../img/laRochelleVille5.jpg" alt="laRochelleVille5">
+                    <img src="../../img/laRochelleVille6.jpg" alt="laRochelleVille6">
+                    <img src="../../img/laRochelleVille7.jpg" alt="laRochelleVille7">
+                    <img src="../../img/laRochelleVille8.jpg" alt="laRochelleVille8">
+                    <img src="../../img/laRochelleVille9.jpg" alt="laRochelleVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Hébergement</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/laRochelleHotel1.jpg" alt="laRochelleHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187206-d285246-Reviews-La_Monnaie_Art_Spa_Hotel-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html">
+                                    La Monnaie Art & Spa Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">529 avis</div>
+                            <p>N°1 sur 48 hôtels à La Rochelle</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d285246-r466440295-La_Monnaie_Art_Spa_Hotel-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Excellent séjour” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d285246-r464124012-La_Monnaie_Art_Spa_Hotel-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Bel établissement” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d285246-r463870003-La_Monnaie_Art_Spa_Hotel-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Un très bon séjour” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d285246-r463260974-La_Monnaie_Art_Spa_Hotel-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Très bonne situation et agréable” <span>02/03/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187206-d285246-Reviews-La_Monnaie_Art_Spa_Hotel-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/laRochelleHotel2.jpg" alt="laRochelleHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187206-d1744279-Reviews-Un_Hotel_en_Ville-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html">
+                                    Un Hotel en Villes
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">48 avis</div>
+                            <p>N°2 sur 48 hôtels à La Rochelle</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d1744279-r468597997-Un_Hotel_en_Ville-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“À refaire !!” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d1744279-r468223165-Un_Hotel_en_Ville-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“excellent week-end” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d1744279-r467454933-Un_Hotel_en_Ville-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Très bonne adresse" <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d1744279-r466434673-Un_Hotel_en_Ville-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Une excellente adresse” <span>16/03/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187206-d1744279-Reviews-Un_Hotel_en_Ville-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/laRochelleHotel3.jpg" alt="laRochelleHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187206-d198328-Reviews-BEST_WESTERN_Hotel_Champlain_France_Angleterre-La_Rochelle_Charente_Maritime_Nouvelle_A.html">
+                                    BEST WESTERN Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">644 avis</div>
+                            <p>N°5 sur 48 hôtels à La Rochelle</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d198328-r469681713-BEST_WESTERN_Hotel_Champlain_France_Angleterre-La_Rochelle_Charente_Maritime_Nouv.html#CHECK_RATES_CONT">
+                                <p>“Comme à la maison...” <span>23/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d198328-r465252107-BEST_WESTERN_Hotel_Champlain_France_Angleterre-La_Rochelle_Charente_Maritime_Nouv.html#CHECK_RATES_CONT">
+                                <p>“Parfait !” <span>10/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d198328-r464220826-BEST_WESTERN_Hotel_Champlain_France_Angleterre-La_Rochelle_Charente_Maritime_Nouv.html#CHECK_RATES_CONT">
+                                <p>“Comment dire...Juste parfait” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d198328-r459888995-BEST_WESTERN_Hotel_Champlain_France_Angleterre-La_Rochelle_Charente_Maritime_Nouv.html#CHECK_RATES_CONT">
+                                <p>”Excellent sejour” <span>15/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187206-d198328-Reviews-BEST_WESTERN_Hotel_Champlain_France_Angleterre-La_Rochelle_Charente_Maritime_Nouvelle_A.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../img/laRochelleHotel4.jpg" alt="laRochelleHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187206-d280159-Reviews-Hotel_Francois_1er_Urban_Style-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html">
+                                    Hôtel François 1er Urban Style
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">352 avis</div>
+                            <p>N°6 sur 48 hôtels à La Rochelle</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d280159-r469536626-Hotel_Francois_1er_Urban_Style-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Un séjour sur-mesure” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d280159-r469434922-Hotel_Francois_1er_Urban_Style-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Rétro culture” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d280159-r469040966-Hotel_Francois_1er_Urban_Style-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Exceptionnel” <span>21/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187206-d280159-r469024550-Hotel_Francois_1er_Urban_Style-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html#CHECK_RATES_CONT">
+                                <p>“Hors du commun” <span>20/03/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187206-d280159-Reviews-Hotel_Francois_1er_Urban_Style-La_Rochelle_Charente_Maritime_Nouvelle_Aquitaine.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/villes/larochelle.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="../allemagne.html">Allemagne</a></li>
+                    <li><a href="../suede.html">Suede</a></li>
+                    <li><a href="../russie.html">Russie</a></li>
+                    <li><a href="../angleterre.html">Angleterre</a></li>
+                    <li><a href="../italie.html">Italie</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres (Villes de France)</li>
+                    <li><a href="strasbourg.html">Strasbourg</a></li>
+                    <li><a href="paris.html">Paris</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="../conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="../notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="../conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="../declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

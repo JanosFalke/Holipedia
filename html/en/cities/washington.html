@@ -1,0 +1,468 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Washington | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/washington.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/washington.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html" class="active active2">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html" class="active active2">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageWashingtonCity topImageCity">
+            <span>United States</span>
+            <h3>Washington</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to Washington</h5>
+                    <p>The USA’s capital teems with iconic monuments, vast museums and the corridors of power where visionaries and demagogues roam.</p>
+
+                    <p>It begins with the Mall. How sweet is it to have a walkable strip of museums where you can see nuclear missiles, cursed diamonds and exquisite Asian ceramics in cool underground galleries – for free? Further down the path the notes and photos people leave at the Vietnam Veterans Memorial will break your heart, and the Lincoln Memorial just kills with its grandness and sweeping view. Shaw wins my affection for its neighborhoody beer halls and cafes. Most of all, I love how Ben’s Chili Bowl makes you feel like a local even if you’re not.</p>
+
+                    <p>The president, Congress and the Supreme Court are here, the three pillars of US government. In their orbit float the Pentagon, State Department, World Bank and embassies from most corners of the globe. If you hadn’t got the idea, power is why Washington exerts such a palpable buzz.</p>
+                    <p>As a visitor, there’s a thrill in seeing the action up close – to walk inside the White House, to sit in the Capitol chamber while senators argue about Arctic drilling, and to drink in a bar alongside congresspeople likely determining your newest tax hike over their single-malt Scotch.</p>
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Washington National Cathedral</h6>
+
+                            <p>This Gothic cathedral, as dramatic as its European counterparts, blends both the spiritual and the profane in its architectural treasures. The stained-glass windows are stunning (check out the 'Space Window' with an embedded lunar rock); you'll need binoculars to spy the Darth Vader gargoyle on the exterior. Specialized tours delve deeper into the esoteric; call or go online for the schedule. There's also an excellent cafe here.</p>
+                        </li>
+
+                        <li>
+                            <h6>Capitol</h6>
+
+                            <p>Since 1800, this is where the legislative branch of American government – ie Congress – has met to write the country's laws. The lower House of Representatives (435 members) and upper Senate (100) meet respectively in the south and north wings of the building. Enter via the underground visitor center below the East Plaza. Guided tours of the building are free, but you need a ticket. Get one at the information desk, or reserve online in advance (there’s no fee).</p>
+                        </li>
+
+                        <li>
+                            <h6>White House</h6>
+
+                            <p>The White House has survived both fire (the Brits torched it in 1814) and insults (Jefferson groused that it was 'big enough for two emperors, one Pope and the grand Lama'). Tours must be arranged in advance. Americans must apply via one of their state's members of Congress, and non-Americans must apply through either the US consulate in their home country or their country's consulate in DC. Applications are taken from 21 days to six months in advance; three months ahead is the recommended sweet spot.</p>
+                        </li>
+
+                        <li>
+                            <h6>Holocaust Memorial Museum</h6>
+
+                            <p>For a deep understanding of the Holocaust – its victims, perpetrators and bystanders – this harrowing museum is a must-see. The main exhibit gives visitors the identity card of a single Holocaust victim, whose story is revealed as you take a winding route into a hellish past marked by ghettos, rail cars and death camps. It also shows the flip side of human nature, documenting the risks many citizens took to help the persecuted.</p>
+                        </li>
+
+                        <li>
+                            <h6>Reynolds Center for <br> American Art & Portraiture</h6>
+
+                            <p>If you only visit one art museum in DC, make it the Reynolds Center, which combines the National Portrait Gallery and the American Art Museum. There is, simply put, no better collection of American art in the world than at these two Smithsonian museums. Famed works by Edward Hopper, Georgia O’Keeffe, Andy Warhol, Winslow Homer and loads more celebrated artists fill the galleries.</p>
+                        </li>
+
+                        <li>
+                            <h6>Library of Congress</h6>
+
+                            <p>The world's largest library – with 29 million books and counting – awes in both scope and design. The centerpiece is the 1897 Jefferson Building. Gawk at the Great Hall, done up in stained glass, marble and mosaics of mythical characters, then seek out the Gutenberg Bible (c 1455), Thomas Jefferson's round library and the reading room viewing area. Free tours of the building take place between 10:30am and 3:30pm on the half-hour.</p>
+                        </li>
+
+                        <li>
+                            <h6>Corcoran Gallery of Art</h6>
+
+                            <p>DC's oldest art museum has always been terrific, but it had a tough time standing up to the free, federal competition around the block. In mid-2014 it gave up and let the National Gallery of Art take possession. The Corcoran's historic beaux-arts building will close for renovations into 2016 (at least). It will then reopen as a National Gallery annex showcasing modern and contemporary works from the merged collection.</p>
+                        </li>
+
+                        <li>
+                            <h6>Washington Monument</h6>
+
+                            <p>Just peaking at 555ft (and 5in), the Washington Monument is the tallest building in the district. It took two phases of construction to complete; note the different hues of the stone. A 70-second elevator ride whisks you to the observation deck for the city's best views. Same-day tickets for a timed entrance are available at the kiosk by the monument. Arrive early.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of Washington</h5>
+
+                    <img src="../../../img/washingtonVille1.jpg" alt="washingtonVille1">
+                    <img src="../../../img/washingtonVille2.jpg" alt="washingtonVille2">
+                    <img src="../../../img/washingtonVille3.jpeg" alt="washingtonVille3">
+                    <img src="../../../img/washingtonVille4.jpg" alt="washingtonVille4">
+                    <img src="../../../img/washingtonVille5.jpg" alt="washingtonVille5">
+                    <img src="../../../img/washingtonVille6.jpg" alt="washingtonVille6">
+                    <img src="../../../img/washingtonVille7.jpg" alt="washingtonVille7">
+                    <img src="../../../img/washingtonVille8.jpg" alt="washingtonVille8">
+                    <img src="../../../img/washingtonVille9.jpg" alt="washingtonVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/washingtonHotel1.jpg" alt="washingtonHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g28970-d84087-Reviews-Omni_Shoreham_Hotel-Washington_DC_District_of_Columbia.html">
+                                    Omni Shoreham Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">6 125 reviews</div>
+                            <p>#1 of 140 Hotels in Washington</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84087-r432640286-Omni_Shoreham_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Super super!!!!” <span>29/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84087-r380743142-Omni_Shoreham_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“To recommand” <span>07/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84087-r410514932-Omni_Shoreham_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Very beautiful hotel” <span>25/08/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84087-r408567718-Omni_Shoreham_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“My favourite hotel” <span>22/08/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g28970-d84087-Reviews-Omni_Shoreham_Hotel-Washington_DC_District_of_Columbia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/washingtonHotel2.jpg" alt="washingtonHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g28970-d84122-Reviews-Loews_Madison_Hotel-Washington_DC_District_of_Columbia.html#photos;geo=28970&detail=84122">
+                                    Loews Madison Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 102 reviews</div>
+                            <p>#2 of 140 Hotels in Washington</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84122-r447549820-Loews_Madison_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“A place to go” <span>29/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84122-r419232473-Loews_Madison_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Super hotel" <span>16/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84122-r332314796-Loews_Madison_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Beautiful building” <span>12/12/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84122-r302667694-Loews_Madison_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“good service” <span>23/08/2015</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g28970-d84122-Reviews-Loews_Madison_Hotel-Washington_DC_District_of_Columbia.html#photos;geo=28970&detail=84122" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/washingtonHotel3.jpg" alt="washingtonHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g28970-d84100-Reviews-The_River_Inn-Washington_DC_District_of_Columbia.html#photos;geo=28970&detail=84100">
+                                    The River Inn
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 544 reviews</div>
+                            <p>#7 of 140 Hotels in Washington</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84100-r412913573-The_River_Inn-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Nice emplacement” <span>30/08/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84100-r331092869-The_River_Inn-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“cool weekend” <span>06/12/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84100-r324109528-The_River_Inn-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“so lovely personal” <span>03/11/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d84100-r295949293-The_River_Inn-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>”So awwesome stay” <span>05/08/2015</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g28970-d84100-Reviews-The_River_Inn-Washington_DC_District_of_Columbia.html#photos;geo=28970&detail=84100" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/washingtonHotel4.jpg" alt="washingtonHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g28970-d120556-Reviews-The_Kimpton_George_Hotel-Washington_DC_District_of_Columbia.html">
+                                    The Kimpton George Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">2 090 reviews</div>
+                            <p>#22 of 140 Hotels in Washington</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d120556-r433663016-The_Kimpton_George_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“American standard” <span>01/11/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d120556-r398700390-The_Kimpton_George_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Magnificient hotel” <span>29/07/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d120556-r393622522-The_Kimpton_George_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Very good” <span>17/07/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g28970-d120556-r354004704-The_Kimpton_George_Hotel-Washington_DC_District_of_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Best hotel in Washington” <span>09/03/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g28970-d120556-Reviews-The_Kimpton_George_Hotel-Washington_DC_District_of_Columbia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/washington.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of the USA)</li>
+                    <li><a href="lasvegas.html">Las Vegas</a></li>
+                    <li><a href="newyork.html">New York</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

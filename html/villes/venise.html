@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Venise | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../de/cities/venedig.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="../en/cities/venice.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()" class="active">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../allemagne.html">Allemagne</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italie.html" class="active active2">Italie</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venise.html" class="active active2">Venise</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russie.html">Russie</a>
+                            <ul>
+                                <li><a href="moscou.html">Moscou</a></li>
+                                <li><a href="stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../suede.html">Suède</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../angleterre.html">Angleterre</a>
+                            <ul>
+                                <li><a href="londres.html">Londres</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../notreEquipe.html">Notre equipe</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousSousDossier()">Aire Premium</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageVeniseCity topImageCity">
+            <span>Italie</span>
+            <h3>Venise</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Bienvenue !</a></li>
+                    <li><a href="#aVoir" target="_self">À voir, à faire</a></li>
+                    <li><a href="#Decouvrir" target="_self">Découvrir</a></li>
+                    <li><a href="#Hebergement" target="_self">Hébergement</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Bienvenue à Venise</h5>
+                    <p>À l'approche de la basilique Saint-Marc, un bourdonnement se dégage de la foule. Touristes, étudiants en art ou nonnes, tous se laissent bientôt happer par l'atmosphère si particulière de la cité des Doges.</p>
+
+                    <p>Venise est un théâtre aux multiples décors : I Frari, les Gallerie dell'Accademia, la Scuola Grande di San Rocco ou encore La Fenice… Après avoir fait le tour de ces splendeurs, passez dans les coulisses et découvrez, à l'arrière du décor, un dédale de sottoporteghi (passages). C'est dans les calli (rues), en retrait des axes principaux de San Marco, que se joue le véritable spectacle de Venise : artisans s'activant dans leurs studios, cuisiniers préparant de succulents cicheti (tapas vénitiennes), musiciens se rendant à leurs répétitions de musique de chambre… Les rues résonnent des bruits étouffés de voisins se faisant la bise ou du trottinement de petits chiens.</p>
+
+                    <p>Les Vénitiens ont peint des chefs-d'œuvre, imaginé de nouveaux styles architecturaux et musicaux. La montée des eaux est une chose, mais les vagues de touristes constituent un nouveau fléau. Chaque année, des millions de visiteurs débarquent pour « faire » Venise en trois heures. S'ils demandaient tous le chemin pour la place Saint-Marc, chaque Vénitien serait interpellé 333 fois par an !</p>
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Les lieux à visiter</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Basilique Saint-Marc</h6>
+
+                            <p>La question n'est pas de savoir si vous devez visiter la célèbre basilique, mais quand. Certains ne jurent que par le matin, quand les millions de tesselles s'illuminent. Les romantiques préfèrent le crépuscule, lorsque les mosaïques du portail s'embrasent sous les rayons du soleil couchant et que la place Saint-Marc résonne des rythmes de tango provenant de l'orchestre du Caffè Florian. La solution ? Allez-y sans attendre et revenez souvent. La basilique dégage à toute heure une magie que les meilleurs effets spéciaux hollywoodiens seraient bien incapables d'imiter. L'origine de l'édifice remonte à 828, quand des marchands vénitiens s'emparèrent des restes de saint Marc et les emportèrent hors d'Égypte. Venise avait alors tout pour devenir une grande puissance marchande : quantité de ports, un emplacement inexpugnable, et un saint patron pour veiller sur les transactions… Il manquait juste à la cité le monument qui l'imposerait sur l'échiquier mondial. </p>
+                        </li>
+
+                        <li>
+                            <h6>Gallerie dell'Accademia</h6>
+
+                            <p>Battant le pavé dans la queue pour entrer aux Gallerie dell'Accademia, vous vous demanderez sans doute si l'attente en vaut la peine. Patience : bientôt, les groupes d'étudiants se disperseront et laisseront place au fier Saint Georges d'Andrea Mantegna (1466) et à l'Autoportrait de Rosalba Carriera (1730), d'un réalisme sans concession. Malgré son nom, l'Accademia n'est pas un temple de l'académisme. Au contraire, c'est le théâtre d'histoires rocambolesques aux personnages inoubliables, de sombres complots et de scandales croustillants. La ravissante Vierge de Giovanni Bellini est auréolée de chérubins écarlates. Une élégante couverte de bijoux vole la vedette à la Madone dans la Présentation de la Vierge au temple de Titien. L'illustration par le Tintoret de la création des animaux, inspirée de l'Ancien Testament, est très vénitienne avec ses lions (symbole de saint Marc) et ses poissons mutants que les marchands de la Pescheria vendraient sans aucun doute au rabais !</p>
+                        </li>
+
+                        <li>
+                            <h6>Marchés en plein air</h6>
+
+                            <p>Les chefs vénitiens ont un secret : utiliser exclusivement des produits frais, saisonniers et locaux. La Pescheria (marché aux poissons) ravira les gourmets et les curieux, qui s'amuseront à repérer le moscardino (petit poulpe) ou, dans l'incroyable choix de crabes, les minuscules moeche (crabes à carapace molle) et les granseole (araignées), et saliveront devant les seppie (encornets) de toutes les tailles. Les produits cultivés en Vénétie et vendus sur les étals des marchés du Rialto et près des canaux n'ont bien évidemment rien à voir avec les fruits et légumes calibrés des supermarchés. Les petits castraure (jeunes artichauts) de couleur pourpre, les asperges blanches de Bassano et le radicchio di Treviso présentent des formes et des teintes surprenantes. Même les légumes et les fruits les plus familiers sont méconnaissables… et tellement savoureux ! Des tomates aux piments rouges en passant par les petites fraises juteuses, à Venise, tout est meilleur !</p>
+                        </li>
+
+                        <li>
+                            <h6>Le Tintoret</h6>
+
+                            <p>Les coups de pinceau du Tintoret illuminent de l'intérieur les scènes les plus classiques plus sûrement qu'un éclair. Si ses sujets lui étaient imposés par ses commanditaires (scènes bibliques, allégories mythiques, apologie de la grandeur de Venise…), le peintre les personnalisait par un éclairage particulier, des fonds orageux et des perspectives vertigineuses. La découverte de l'œuvre du Tintoret commence dans son atelier (Bottega del Tintoretto). Elle se poursuit dans son église paroissiale, la Chiesa della Madonna dell'Orto, dont l'édifice en brique offre un cadre serein à son Jugement dernier (1546). En authentique Vénitien, le Tintoret représente la scène comme une marée turquoise que les âmes en peine cherchent vainement à retenir, figurant une sorte de version humaine et prémonitoire du projet MOSE.</p>
+                        </li>
+
+                        <li>
+                            <h6>Titien</h6>
+
+                            <p>Pour admirer l'art de Titien à Venise, inutile de chercher bien longtemps. La moindre petite ruelle dissimule un chef-d'œuvre du maître incontesté de la peinture vénitienne. Son œuvre d'une grande intensité dramatique connut beaucoup de succès de son vivant et influença des générations de peintres. Le retable de Saint Marc entouré de saint Côme, saint Damien, saint Roch et saint Sébastien (1510), dans l'église Santa Maria della Salute, montre un Titien mesuré et méthodique, dont la souplesse du pinceau et le rouge vermillon insufflent à cette scène classique un dynamisme indéniable. La vision des corps contorsionnés du Jugement dernier de Michel-Ange va bouleverser Titien, qui laisse alors s'exprimer toute la violence de son génie. Cela est très perceptible dans la Pietà (1576), œuvre pour laquelle il appliqua la peinture à mains nues. L'Assomption de la Vierge, dans l'église I Frari (photo ci-dessus) se distingue comme le chef-d'œuvre absolu de Titien. L'artiste représente la Vierge s'élevant au-dessus des mortels, soutenue par des anges. Sa robe rouge illumine le retable et rayonne dans toute la nef. Son poignet pâle, dénudé par un glissement de la manche, troublait apparemment les prêtres au point de les distraire de leurs prières…</p>
+                        </li>
+
+                        <li>
+                            <h6>La Biennale</h6>
+
+                            <p>La Biennale d'art contemporain de Venise fut créée en 1895 en réaction à la révolution industrielle pour réaffirmer l'autorité du bon goût vénitien. À l'origine, la Biennale était une institution conservatrice. Un imposant pavillon offrait une présentation inoffensive des dernières tendances artistiques italiennes. La Fondation de la Biennale autorisa d'autres nations à ouvrir des pavillons en 1907, tout en conservant un droit de regard sur les œuvres. C'est ainsi que Picasso fut retiré du pavillon espagnol en 1910 pour épargner un choc au public. Après l'atrocité des deux guerres mondiales, ces scrupules disparurent. La Biennale organisée au lendemain de la Première Guerre mondiale présenta les œuvres d'Amedeo Modigliani : ses femmes aux yeux vides firent beaucoup parler d'elles. Venise n'adopta pas immédiatement le modernisme, mais se découvrit un intérêt pour la controverse artistique, alimentée par l'avant-garde artistique et architecturale présentée dans les nouveaux pavillons coréen, japonais et canadien. Les deux événements très attendus que constituent l'exposition d'architecture avant-gardiste de l'automne, qui se tient les années paires dans les locaux historiques de l'Arsenal, et celle d'art contemporain, qu'accueillent l'été des années impaires les pavillons de la Biennale et l'Arsenal, sont accompagnés d'expositions satellites un peu partout en ville.</p>
+                        </li>
+
+                        <li>
+                            <h6>La Mostra</h6>
+
+                            <p>Lorsque le comité de la Biennale de Venise annonça la création d'un festival de cinéma en 1932, il dut subir les sarcasmes de ceux qui méprisaient cette concession à un genre populaire. Mais la présence de Greta Garbo, Joan Crawford ou Clark Gable sur le tapis rouge, et les quelque 25 000 personnes présentes aux projections, fit de la première édition du festival aux Lions d'or un succès artistique, populaire et mondain. Depuis lors, la Mostra s'est attachée à maintenir exigence artistique et aura internationale. Juste après le festival de Cannes, c'est l'une des principales célébrations du cinéma dans le monde. Sans jamais avoir été une vitrine pour les films indépendants, la Mostra se plaît à distinguer des réalisateurs créatifs. Les jurys successifs ont ainsi décerné le prestigieux Lion d'or à John Cassavetes (Gloria), Robert Altman (Short Cuts) ou Sofia Coppola (Somewhere), et primé des monstres du cinéma comme Woody Allen, Takeshi Kitano, Martin Scorsese ou encore Zhang Yimou.</p>
+                        </li>
+
+                        <li>
+                            <h6>Le Ghetto</h6>
+
+                            <p>En observant la place centrale du Ghetto, avec son sol irrégulier et ses façades délabrées, il est difficile de croire que ce fut jadis le centre financier d'un empire. Selon un décret de 1516 de la république de Venise, les prêteurs juifs finançaient le commerce vénitien le jour et étaient consignés dans le Ghetto la nuit et durant les fêtes chrétiennes. Lorsque les marchands juifs fuyant l'Inquisition espagnole affluèrent à Venise en 1541, il fallut construire, faute d'espace. Des étages furent ajoutés aux immeubles existants du Ghetto, où l'on logea les nouveaux arrivants et l'on aménagea des synagogues. De l'autre côté de la ville, grâce aux prêteurs et aux artisans juifs, la Renaissance était en marche et remplissait les palais et les églises de trésors inestimables. De restrictions papales en épidémie de peste, le Ghetto ne comptait plus que 3 000 habitants en 1670.</p>
+                        </li>
+
+                        <li>
+                            <h6>Une nuit à l'Opéra</h6>
+
+                            <p>Quel que soit le spectacle, La Fenice promet du grand théâtre. Avant même que les portes s'ouvrent, les artistes ébouriffés et les mondains coiffés de chapeaux se pressent dans les cafés de la place pour avaler un verre de prosecco suivi d'un expresso. Après avoir rejoint leur place, les spectateurs des premières loges ôtent leur manteau, révélant bijoux et perles en verre de Murano. Plus haut, aux balcons (loggie), moins coûteux, les loggione (critiques d'opéra) échangent des pronostics : quel chanteur est en voix, quelles doublures seront promues. Entre les amateurs d'architecture, les débats font rage : la rénovation réalisée après l'incendie de 1998, d'un montant de 90 millions d'euros, est-elle fidèle ? Le style baroque en « pièce montée inversée » aurait-il dû être modernisé par l'architecte Gae Aulenti, comme cela était prévu à l'origine ? Dès les premières notes, le silence se fait et l'excitation devient palpable. Personne ne veut perdre une note d'un spectacle qui entrera peut-être dans les annales, à l'instar des premières de Stravinsky, Rossini, Prokofiev, Britten et, bien entendu, Giuseppe Verdi.</p>
+                        </li>
+
+                        <li>
+                            <h6>En coulisses</h6>
+
+                            <p>Comment ne pas plaindre les groupes lâchés dans San Marco avec trois heures pour « faire » Venise, alors que cela suffit à peine à contempler la place Saint-Marc, sans parler du reste de la cité, dont ils ne verront que les portails gothiques ? Même en quittant les itinéraires balisés, des panneaux jaunes vous indiquent la direction de San Marco depuis le Rialto, les Gallerie dell'Accademia et la gare ferroviaire. L'aventure vous attend dans le réseau de rues (calli), passages (sottoporteghi) et canaux, à condition de respecter une consigne : ignorez les pancartes. Avec un soupçon d'intrépidité et une bonne carte, vous découvrirez l'envers du décor et saurez ce que cachent les façades qui bordent le Grand Canal. Vous dénicherez d'authentiques restaurants dans les cours (cortili) secrètes, passerez la nuit dans un palais et vous réveillerez aux cris des gondoliers manœuvrant leur embarcation. Accoudé à un bar (bacaro), vous verrez les visiteurs d'un jour se presser pour attraper un train, un avion ou un bus. Ayez donc une pensée pour eux en savourant votre café.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Découvrez la beauté de Venise</h5>
+
+                    <img src="../../img/veniseVille1.jpg" alt="veniseVille1">
+                    <img src="../../img/veniseVille2.jpg" alt="veniseVille2">
+                    <img src="../../img/veniseVille3.jpg" alt="veniseVille3">
+                    <img src="../../img/veniseVille4.jpg" alt="veniseVille4">
+                    <img src="../../img/veniseVille5.jpg" alt="veniseVille5">
+                    <img src="../../img/veniseVille6.jpg" alt="veniseVille6">
+                    <img src="../../img/veniseVille7.jpg" alt="veniseVille7">
+                    <img src="../../img/veniseVille8.jpg" alt="veniseVille8">
+                    <img src="../../img/veniseVille9.jpg" alt="veniseVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Hébergement</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/veniseHotel1.jpg" alt="veniseHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187870-d613798-Reviews-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html">
+                                   Hilton Molino Stucky Venice Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">6 422 avis</div>
+                            <p>N°1 sur 386 hôtels à Venise</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r469464838-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Géniale” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r462183546-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Expérience féerique.” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r463008155-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Bel hôtel mais pas waw” <span>21/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d613798-r462715015-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Carneval de Venise” <span>20/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187870-d613798-Reviews-Hilton_Molino_Stucky_Venice_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/veniseHotel2.jpg" alt="veniseHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187870-d1013704-Reviews-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html">
+                                    Hotel Ca' Zusto Venezia
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">790 avis</div>
+                            <p>N°2 sur 386 hôtels à Venise</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r463706248-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“nous reviendrons !” <span>03/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r463024002-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Divin” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r442105284-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Au top !” <span>05/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1013704-r434635641-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Un moment agréable” <span>04/11/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187870-d1013704-Reviews-Hotel_Ca_Zusto_Venezia-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/veniseHotel3.jpg" alt="veniseHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187870-d1057391-Reviews-Ruzzini_Palace_Hotel-Venice_Veneto.html">
+                                    Ruzzini Palace Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 287 avis</div>
+                            <p>N°4 sur 386 hôtels à Venise</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r468894644-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Superbe établissement” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r465517662-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Un weekend romantique à Venise” <span>11/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r461945574-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>”SEJOUR MAGNIFIQUE” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d1057391-r423931213-Ruzzini_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“La classe” <span>30/09/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187870-d1057391-Reviews-Ruzzini_Palace_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../img/veniseHotel4.jpg" alt="veniseHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g187870-d2558563-Reviews-Carnival_Palace_Hotel-Venice_Veneto.html">
+                                    Carnival Palace Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">2 019 avis</div>
+                            <p>N°6 sur 386 hôtels à Venise</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r468841349-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Agréable Séjour” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r468372885-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“La classe !” <span>18/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r467619664-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Séjour genial” <span>17/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187870-d2558563-r467136823-Carnival_Palace_Hotel-Venice_Veneto.html#CHECK_RATES_CONT">
+                                <p>“Excellent” <span>17/03/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g187870-d2558563-Reviews-Carnival_Palace_Hotel-Venice_Veneto.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/villes/venise.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="../allemagne.html">Allemagne</a></li>
+                    <li><a href="../suede.html">Suede</a></li>
+                    <li><a href="../russie.html">Russie</a></li>
+                    <li><a href="../angleterre.html">Angleterre</a></li>
+                    <li><a href="../italie.html">Italie</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres (Villes d'Italie)</li>
+                    <li><a href="milan.html">Milan</a></li>
+                    <li><a href="rome.html">Rome</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="../conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="../notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="../conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="../declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

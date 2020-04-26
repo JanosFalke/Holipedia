@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../img/favicon.png">
+
+    <title>Londres | Holipedia</title>
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../js/password.js"></script>
+    <script type="text/javascript" src="../../js/nav.js"></script>
+    <script type="text/javascript" src="../../js/blur.js"></script>
+    <script type="text/javascript" src="../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../../index.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../img/francais.png" alt="Francais"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../de/cities/london.html"><img src="../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                        <li>
+                            <a href="../en/cities/london.html"><img src="../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../../index.html">Accueil</a></li>
+                <li><a id="menu" onClick="toggleMenu()" class="active">Découvrir &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../etatsunis.html">Etats-Unis</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasbourg.html">Strasbourg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../allemagne.html">Allemagne</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italie.html">Italie</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venise.html">Venise</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russie.html">Russie</a>
+                            <ul>
+                                <li><a href="moscou.html">Moscou</a></li>
+                                <li><a href="stpetersbourg.html">St. Pétersbourg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../suede.html">Suède</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../angleterre.html" class="active active2">Angleterre</a>
+                            <ul>
+                                <li><a href="londres.html" class="active active2">Londres</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montréal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../notreEquipe.html">Notre equipe</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousSousDossier()">Aire Premium</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageLondresCity topImageCity">
+            <span>Angleterre</span>
+            <h3>Londres</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Bienvenue !</a></li>
+                    <li><a href="#aVoir" target="_self">À voir, à faire</a></li>
+                    <li><a href="#Decouvrir" target="_self">Découvrir</a></li>
+                    <li><a href="#Hebergement" target="_self">Hébergement</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Bienvenue à Londres</h5>
+
+
+                    <p>Le surnom de « ville-monde » donné à Londres s'appuie sur une réalité, si bien que chacun devrait la visiter au moins une fois. La ville ne cesse d'absorber les influences et les cultures de ses immigrants, véritables moteurs de la cité, mais elle n'en est pas moins la quintessence de l'âme britannique avec ses célèbres taxis noirs, ses bus rouges à impériale ou ces bâtiments emblématiques que sont Westminster, Tower Bridge ou, plus récemment, le London Eye, dont les silhouettes se reflètent sur les eaux troubles de la Tamise.</p>
+
+                    <p>Ne manquez pas ces sites, bien sûr, mais il serait aussi dommage de quitter Londres sans avoir dégusté une pinte de bière et une assiette de fish and chips près du fleuve, passé une journée à Hyde Park et une soirée à Soho ou à Shoreditch, comme un véritable londonien. Prenez une grande bouffée d'air et apprêtez-vous à succomber aux charmes de la capitale britannique.</p>
+
+                    <p>De son centre d'origine romaine à ses marges olympiques, de ses abbayes anciennes à ses gratte-ciel et son architecture contemporaine, Londres convie à un extraordinaire voyage dans l'histoire, à travers une mosaïque d'influences provenant des peuples du monde entier. Découvrez nos balades pour visiter Londres autrement, en famille, de village en village ou hors des sentiers battus.</p>
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Les lieux à visiter</h5>
+                    <ul>
+
+                        <li>
+                            <h6>National Gallery</h6>
+
+                            <p>En plein Londres, ce musée d’art pictural antérieur à 1900 renferme l’une des collections les plus importantes et remarquables du monde. Aux cimaises sont accrochés des chefs-d’oeuvre de Léonard de Vinci, de Michel-Ange, de Titien ou de Velázquez, mais aussi des paysagistes anglais (Gainsborough, Constable ou Turner) ou des impressionnistes et des postimpressionnistes (Van Gogh, Cézanne, Monet et Renoir notamment). Les restaurants et les cafés du musée, remarquables, permettent de conclure la visite en beauté. le musée est un des sites gratuits de Londres : aucune raison de le rater.</p>
+                        </li>
+
+                        <li>
+                            <h6>British Museum</h6>
+
+                            <p>Avec 5 millions de visiteurs par an, le British Museum constitue le site touristique le plus populaire de Londres. Vous pourriez passer votre vie à déambuler dans cette vaste collection d’oeuvres millénaires sans en faire complètement le tour. Elle donne un fabuleux aperçu de la richesse de civilisations antiques – Égypte, Grèce ou Orient ancien par exemple – ou méconnues, comme les cultures africaines. L’entrée, gratuite, invite à revenir et une visite guidée (eyeOpener) cible les pièces maîtresses du musée.</p>
+                        </li>
+
+                        <li>
+                            <h6>Tate Modern</h6>
+
+                            <p>Musée préféré des Londoniens (voire du reste du monde !), cette galerie d’art moderne bénéficie d’un emplacement exceptionnel au pied de la Tamise. Située dans l’ancienne Bankside Power Station, la Tate Modern affiche crânement sa modernité, son génie de la réhabilitation et son accessibilité. L’accès à la collection permanente est gratuit mais il est recommandé d’emprunter la rampe menant à la Turbine Hall, où les remarquables expositions temporaires repoussent les limites conceptuelles et satisferont les amateurs d’art les plus exigeants.</p>
+                        </li>
+
+                        <li>
+                            <h6>Tour de Londres</h6>
+
+                            <p>Peu de lieux au Royaume-Uni sont autant imprégnés d’histoire, de légendes et de superstitions que les murs de cette forteresse. Candidate à la place de monument phare de la capitale, ce château ne se limite pas à son architecture grandiose. On peut aussi y admirer un diamant gros comme le poing, profiter d’une visite gratuite sous la conduite des Yeoman Warders (ou beefeaters), ces guides fièrement sanglés dans leur uniforme Tudor, et écouter en frissonnant le récit de son histoire sanglante.</p>
+                        </li>
+
+                        <li>
+                            <h6>Le Londres sportif</h6>
+
+                            <p>Si vous ne pouvez pas assister à la finale de la FA Cup, le championnat d’Angleterre de football, à Wembley ou à celle du 100m lors des Jeux olympiques de 2012, Londres saura malgré tout vous consoler. L’offre sportive y est conséquente, qu’il s’agisse d’assister à une partie de tennis à Wimbledon, d’encourager les participants du marathon en avril, d’enfourcher un vélo en libre-service pour éviter les embouteillages ou de faire le tour de Battersea Park en petites foulées. Vous pourrez aussi visiter le parc olympique, l’extraordinaire Aquatics Centre et le futuriste vélodrome.</p>
+                        </li>
+
+                        <li>
+                            <h6>Natural History Museum</h6>
+
+                            <p>Un Tyrannosaurus Rex mécanisé, le féérique Wildlife Garden, l’exceptionnel Darwin Centre et une architecture sortie tout droit d’un conte gothique… Voici quelques-uns des éléments qui font le succès du Muséum d’histoire naturelle. Si les enfants en sont la cible privilégiée, les adultes n’en demeureront pas moins bouche bée. Lors des fameuses Nuits blanches du musée, des bambins s’endorment à l’ombre d’un gigantesque diplodocus et, l’hiver, la glace de la patinoire de l’East Lawn (pelouse est) est littéralement prise d’assaut.</p>
+                        </li>
+
+                        <li>
+                            <h6>National Maritime Museum</h6>
+
+                            <p>Au sud de Londres, près de Greenwich et de ses charmants cours d’eau, ce musée relate la tradition maritime de la Grande-Bretagne. L’endroit vous invite à tourner les pages de l’histoire de la grande île vue de la mer : explorateurs au long cours et vaillants marins mais aussi embarcations insolites, comme une péniche d’or de 1732, ou préoccupations environnementales bien contemporaines. L’accueil des enfants est parfaitement assuré, avec engins à manoeuvrer pour occuper les jeunes loups de mer.</p>
+                        </li>
+
+                        <li>
+                            <h6>London Eye</h6>
+
+                            <p>Envie de voir Londres et ses monuments du ciel ? Vous en aurez tout le loisir du haut de cette grande roue érigée au bord de la Tamise. Certes, la file d’attente progresse aussi lentement que le London Eye mais vous n’en savourerez que davantage le moment où la ville se déroulera à vos pieds. Un conseil : évitez les jours de grisaille, ce qui n’est pas simple quand on connaît la météorologie locale. Si vous ne restez que quelques jours, faites-en votre priorité : ainsi, vous pourrez dire sans mentir que vous avez vu toute la ville !</p>
+                        </li>
+
+                        <li>
+                            <h6>Abbaye de Westminster</h6>
+
+                            <p>Les passionnés d’architecture médiévale seront au paradis devant le plus bel exemple du style gothique anglais. Tout comme les fervents admirateurs des têtes couronnées puisque l’abbaye est aussi le lieu consacré du sacre des souverains anglais et des autres grands événements de la famille royale (mariages et enterrements). Ici, chaque recoin raconte une histoire, mais voici nos préférés : la Henry VII Chapel, la plus ancienne porte du Royaume-Uni, le Poet’s Corner, le Coronation Chair, les cloîtres du XIVe siècle, le jardin vieux de 900 ans et les tombes royales. Venez de bonne heure afin d’éviter une trop longue file d’attente.</p>
+                        </li>
+
+                        <li>
+                            <h6>Hyde Park et Kensington Gardens</h6>
+
+                            <p>Le patrimoine végétal de Londres est incomparable. À lui seul, Hyde Park s’étend sur 142 ha ; si l’on ajoute Kensington Gardens, il y a là tout ce dont l’on pourrait rêver : un palais royal dans un cadre victorien d’exception, l’occasion de faire du canotage, d’écouter des concerts en plein air, de visiter une galerie d’art, d’admirer des arbres somptueux ou de se recueillir devant un délicat mémorial de granit dédié à la princesse Diana, le tout en plein centre-ville.</p>
+                        </li>
+
+                        <li>
+                            <h6>Shakespeare’s Globe</h6>
+
+                            <p>Peu d’expériences londoniennes surpassent la découverte de la scène du Globe, le théâtre du XVIe siècle fidèlement recréé. On peut même acquérir un billet pour une place debout, dans le plus pur style élisabéthain. Si vous souhaitez davantage de confort, offrez-vous un siège en galerie. Ce théâtre est un petit miracle d’authenticité, jusqu’à sa structure totalement dénuée de clous, ses poutres de chêne anglais et son toit de chaume identiques à l’original (les extincteurs apportent une touche plus moderne...). Si vous avez un faible pour le célèbre dramaturge, l’architecture et le climat britannique, vous serez aux anges.</p>
+                        </li>
+
+                        <li>
+                            <h6>Carnaval de Notting Hill</h6>
+
+                            <p>Chaque mois d’août, le quartier branché de Notting Hill accueille une immense fête bigarrée. Le plus grand festival de rue d’Europe célèbre 3 jours durant la musique, le mode de vie et la cuisine afro-caribéennes. Plus d’un million de personnes envahissent les rues chaque année, dans une ambiance très caliente. Un événement incontournable pour tous ceux qui souhaitent découvrir Londres la cosmopolite et ses cultures métisses.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Découvrez la beauté de Londres</h5>
+
+                    <img src="../../img/londresVille1.jpg" alt="londresVille1">
+                    <img src="../../img/londresVille2.jpg" alt="londresVille2">
+                    <img src="../../img/londresVille3.jpg" alt="londresVille3">
+                    <img src="../../img/londresVille4.jpg" alt="londresVille4">
+                    <img src="../../img/londresVille5.jpg" alt="londresVille5">
+                    <img src="../../img/londresVille6.jpg" alt="londresVille6">
+                    <img src="../../img/londresVille7.jpg" alt="londresVille7">
+                    <img src="../../img/londresVille8.jpg" alt="londresVille8">
+                    <img src="../../img/londresVille9.jpg" alt="londresVille9">
+
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Hébergement</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/londresHotel1.jpg" alt="londresHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g186338-d189735-Reviews-The_Nadler_Kensington-London_England.html">
+                                    The Nadler Kensington</a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">3 535 avis</div>
+                            <p>N°1 sur 1 089 hôtels à Londres</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r464849241-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“Excellent rapport qualité prix” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r460932106-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“Visite mémorable” <span>18/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r458363894-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“What else !” <span>09/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d189735-r458357866-The_Nadler_Kensington-London_England.html#CHECK_RATES_CONT">
+                                <p>“Mitigé” <span>09/02/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g186338-d189735-Reviews-The_Nadler_Kensington-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/londresHotel2.jpg" alt="londresHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g186338-d3437751-Reviews-South_Place_Hotel-London_England.html">
+                                    South Place Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">928 avis</div>
+                            <p>N°2 sur 1 089 hôtels à Londres</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r461460331-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Great week-end !” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r461344640-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Service Premium" <span>20/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r455703069-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Chambre” <span>29/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3437751-r447831709-South_Place_Hotel-London_England.html#CHECK_RATES_CONT">
+                                <p>“Boxing Day” <span>30/12/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g186338-d3437751-Reviews-South_Place_Hotel-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../img/londresHotel3.jpg" alt="londresHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g186338-d672863-Reviews-Park_Plaza_County_Hall_London-London_England.html">
+                                    Park Plaza County Hall London
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">6 932 avis</div>
+                            <p>N°5 sur 1 089 hôtels à Londres</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r467153439-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>“hôtel très bien situé” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r465140057-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>“Excellent hôtel” <span>12/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r464220868-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>“Tourisme” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d672863-r462229919-Park_Plaza_County_Hall_London-London_England.html#CHECK_RATES_CONT">
+                                <p>”Court séjour” <span>26/02/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g186338-d672863-Reviews-Park_Plaza_County_Hall_London-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../img/londresHotel4.jpg" alt="londresHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.fr/Hotel_Review-g186338-d3199601-Reviews-CitizenM_London_Bankside-London_England.html">
+                                    citizenM London Bankside
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">3 159 avis</div>
+                            <p>N°6 sur 1 089 hôtels à Londres</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r462972003-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“Toujours au top !!” <span>26/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r459259528-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“Au top!!” <span>13/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r453863460-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“Au top” <span>21/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186338-d3199601-r452619279-CitizenM_London_Bankside-London_England.html#CHECK_RATES_CONT">
+                                <p>“Bel hôtel connecté à Londres” <span>17/01/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.fr/Hotel_Review-g186338-d3199601-Reviews-CitizenM_London_Bankside-London_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Voir les prix</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../../index.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/villes/londres.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../img/shareFB.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destination</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../etatsunis.html">Etats-Unis</a></li>
+                    <li><a href="../allemagne.html">Allemagne</a></li>
+                    <li><a href="../suede.html">Suede</a></li>
+                    <li><a href="../russie.html">Russie</a></li>
+                    <li><a href="../angleterre.html">Angleterre</a></li>
+                    <li><a href="../italie.html">Italie</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Réservation</li>
+                    <li><a href="http://tripadvisor.com">Recherche d'un restaurant</a></li>
+                    <li><a href="http://kayak.com">Partir en avion</a></li>
+                    <li><a href="http://booking.com">Trouver un hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Autres (Villes d'Angleterre)</li>
+                    <li><a href="manchester.html">Manchester</a></li>
+                    <li><a href="liverpool.html">Liverpool</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../plandusite.html">Plan du site</a></li>
+                </ul>
+                <ul>
+                    <li>Conditions</li>
+                    <li><a href="../conditionutilisation.html">Conditions générales</a></li>
+                    <li><a href="../notreEquipe.html">A propos d'Holipedia</a></li>
+                    <li><a href="../conditionutilisation.html">Conditions d'utilisation</a></li>
+                    <li><a href="../declarConfiden.html">Déclaration de confidentialité</a></li>
+                </ul>
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Tous droits réservés.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

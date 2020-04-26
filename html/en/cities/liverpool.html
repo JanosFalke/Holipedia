@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Liverpool | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/liverpool.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/liverpool.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html" class="active active2">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html" class="active active2">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageLiverpoolCity topImageCity">
+            <span>England</span>
+            <h3>Liverpool</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to Liverpool</h5>
+
+
+                    <p>Few English cities are as shackled by reputation as Liverpool, and none has worked so hard to outgrow the clichés that for so long have been used to define it.</p>
+                    <p>A hardscrabble town with a reputation for wit and an obsessive love of football, Liverpool also has an impressive cultural heritage: it has more listed buildings than any other city outside London, its galleries and museums are among the best in the country, and its ongoing program of urban regeneration is slowly transforming the city centre into one of the most pleasant cities in northern England to have a wander in. And then there are the Beatles: Liverpool cherishes them not because they're wedded to the past but because the Beatles are such a central part of the tourist experience that it would be crazy not to do so.</p>
+                    <p>The main attractions are Albert Dock (west of the city centre) and the trendy Ropewalks area (south of Hanover St and west of the two cathedrals). Lime St station, the bus station and the Cavern Quarter – a mecca for Beatles fans – lie just to the north.</p>
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+                        <li>
+                            <h6>International Slavery Museum</h6>
+
+                            <p>Museums are, by their very nature, like a still of the past, but the extraordinary International Slavery Museum resonates very much in the present. It reveals slavery's unimaginable horrors – including Liverpool's own role in the triangular slave trade – in a clear and uncompromising manner. It does this through a remarkable series of multimedia and other displays, and it doesn't baulk at confronting racism, slavery's shadowy ideological justification for this inhumane practice.</p>
+                        </li>
+
+                        <li>
+                            <h6>Liverpool Cathedral</h6>
+
+                            <p>Liverpool's Anglican cathedral is a building of superlatives. Not only is it Britain's largest church, it's also the world's largest Anglican cathedral. It is the work of Sir Gilbert Scott, who also gave us the red telephone box and the Southwark Power Station in London, now the Tate Modern. The central bell is the world's third largest (with the world's highest and heaviest peal), while the organ, with its 9765 pipes, is likely the world's largest operational model.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museum of Liverpool</h6>
+
+                            <p>Liverpool's storied past is explored through an interactive exploration of the city's cultural and historical milestones: the railroad, poverty, wealth, Brookside (a popular '80s TV soap opera set in the city), the Beatles and football (the film on the meaning of the game to the city is worth the 15 minutes). The desire to tell all of the city's rich story means there isn't a huge amount of depth, but the kids will love it.</p>
+                        </li>
+
+                        <li>
+                            <h6>Beatles Story</h6>
+
+                            <p>Liverpool's most popular museum won't illuminate any dark, juicy corners in the turbulent history of the world's most famous foursome – there's ne'er a mention of internal discord, drugs or Yoko Ono – but there's plenty of genuine memorabilia to keep a Beatles fan happy. Your ticket also gets you entry to the exhibit at the Beatles Story extension on Pier Head.</p>
+                        </li>
+
+                        <li>
+                            <h6>Walker Art Gallery</h6>
+
+                            <p>The city's foremost art gallery is the national gallery for northern England, housing an outstanding collection of art from the 14th to the 21st centuries. Its strong suits are Pre-Raphaelite art, modern British art and sculpture – not to mention the rotating exhibits of contemporary expression. It's a family-friendly place too: the ground-floor Big Art for Little People gallery is designed for under-eights and features interactive exhibits and games that will (hopefully) result in a lifelong love affair with art.</p>
+                        </li>
+
+                        <li>
+                            <h6>World Museum</h6>
+                            <p>Natural history, science and technology are the themes of the oldest museum in town, which opened in 1853. Its exhibits range from live bugs to human anthropology. This vastly entertaining and educational museum is spread across five themed floors, from the live fish aquarium on the 1st floor to the planetarium on the 5th, where you'll also find exhibits dedicated to space (moon rocks, telescopes etc) and time (clocks and timepieces from the 1500s to 1960). Highly recommended.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of Liverpool</h5>
+
+                    <img src="../../../img/liverpoolVille1.jpg" alt="liverpoolVille1">
+                    <img src="../../../img/liverpoolVille2.jpg" alt="liverpoolVille2">
+                    <img src="../../../img/liverpoolVille3.jpg" alt="liverpoolVille3">
+                    <img src="../../../img/liverpoolVille4.jpg" alt="liverpoolVille4">
+                    <img src="../../../img/liverpoolVille5.jpg" alt="liverpoolVille5">
+                    <img src="../../../img/liverpoolVille6.jpg" alt="liverpoolVille6">
+                    <img src="../../../img/liverpoolVille7.jpg" alt="liverpoolVille7">
+                    <img src="../../../img/liverpoolVille8.jpg" alt="liverpoolVille8">
+                    <img src="../../../img/liverpoolVille9.jpg" alt="liverpoolVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/liverpoolHotel1.jpg" alt="liverpoolHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186337-d619492-Reviews-Malmaison_Liverpool-Liverpool_Merseyside_England.html">
+                                    Malmaison Liverpool
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 586 reviews</div>
+                            <p>#1 of 99 Hotels in Liverpool</p>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g186337-d619492-r222678414-Malmaison_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Weekendtrip with Friends” <span>28/08/2014</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d619492-r117400725-Malmaison_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Hotel cosy” <span>29/08/2011</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d619492-r16918132-Malmaison_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“What a journey” <span>27/05/2008</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d619492-r16918163-Malmaison_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Fantastic hotel!” <span>14/04/2008</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186337-d619492-Reviews-Malmaison_Liverpool-Liverpool_Merseyside_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/liverpoolHotel2.jpg" alt="liverpoolHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186337-d1485059-Reviews-Novotel_Liverpool-Liverpool_Merseyside_England.html">
+                                    Novotel Liverpool
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 187 reviews</div>
+                            <p>#2 of 99 Hotels in Liverpool</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1485059-r444853786-Novotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Very cool and quite” <span>17/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1485059-r408100054-Novotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Things to see" <span>21/08/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1485059-r393616157-Novotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Very good” <span>17/07/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1485059-r346524060-Novotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“awesome Hotel” <span>10/02/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186337-d1485059-Reviews-Novotel_Liverpool-Liverpool_Merseyside_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/liverpoolHotel3.jpg" alt="liverpoolHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186337-d6033831-Reviews-Titanic_Hotel_Liverpool-Liverpool_Merseyside_England.html">
+                                    Titanic Hotel Liverpool
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">2 813 reviews</div>
+                            <p>#3 of 99 Hotels in Liverpool</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d6033831-r469467151-Titanic_Hotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Luxus in Liverpool” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d6033831-r469455089-Titanic_Hotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Nice hotel in Liverpool” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d6033831-r394426121-Titanic_Hotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“a beautiful adress” <span>19/07/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d6033831-r272669463-Titanic_Hotel_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>”Very good, but ...” <span>18/05/2015</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186337-d6033831-Reviews-Titanic_Hotel_Liverpool-Liverpool_Merseyside_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/liverpoolHotel4.jpg" alt="liverpoolHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g186337-d1131579-Reviews-Staybridge_Suites_Liverpool-Liverpool_Merseyside_England.html">
+                                    Staybridge Suites Liverpool
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">1 682 reviews</div>
+                            <p>#5 of 99 Hotels in Liverpool</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1131579-r468088448-Staybridge_Suites_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Fantastic” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1131579-r353673771-Staybridge_Suites_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“Awesome” <span>07/03/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1131579-r214940858-Staybridge_Suites_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“My favorite hotel” <span>12/07/2014</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g186337-d1131579-r19353848-Staybridge_Suites_Liverpool-Liverpool_Merseyside_England.html#CHECK_RATES_CONT">
+                                <p>“A lovely personal” <span>25/08/2008</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g186337-d1131579-Reviews-Staybridge_Suites_Liverpool-Liverpool_Merseyside_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/liverpool.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of England)</li>
+                    <li><a href="manchester.html">Manchester</a></li>
+                    <li><a href="london.html">London</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

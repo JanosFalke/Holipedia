@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Manchester | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/manchester.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/manchester.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul id="villes">
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html" class="active active2">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html" class="active active2">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageManchesterCity topImageCity">
+            <span>England</span>
+            <h3>Manchester</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Manchester</h5>
+
+
+                    <p>Manchester (460000 Ew.) ist weltweit immer noch als Industriestadt bekannt, die ihren Zenit im 19. Jh. erlebte.</p>
+                    <p>Dieses Image ist jedoch lange überholt. In den letzten Jahren hat sich Manchester mächtig gemausert. Das Einkaufsviertel um St. Ann's Square wird immer schicker, die Gastronomieszene immer besser. Neue Museen wurden eröffnet und alte renoviert, die neu herausgeputzte Stadtmitte überrascht mit Architektur aus dem 19. Jh. (z.B. das Rathaus am Albert Square). Vor allem aber ist Manchester Heimat des legendären Fußballclubs Manchester United, dessen Stadion Touristenmagnet ist. Inselweit ist Manchester ebenso berühmt für sein Gayviertel um die Canal Street. Hier wurden Lagerhallen in hypermoderne Apartments umgebaut. Entlang dem Kanal haben sich in den letzten Jahren viele moderne Cafés, Clubs und Restaurants angesiedelt, die bis in den frühen Morgen geöffnet haben. Am Wochenende geht hier die Post ab, so beliebt ist das „pinke Viertel“ inzwischen.</p>
+
+                    <p>Das Stadtbild wird von Gebäuden aus unterschiedlichen Stilepochen von der Viktorianischen Architektur bis zur Moderne geprägt. Außerhalb des Stadtzentrums sind Fabriken der Baumwollindustrie erhalten geblieben, die heute als Wohnungen oder Büros genutzt werden. Charakteristisch für Manchester ist die häufige Verwendung von rotem Backstein als Baustoff. Sehenswerte Gebäude sind die gotische Kathedrale von Manchester (erbaut 1421 im Perpendikular-Stil; Turm 1876 wiederaufgebaut), die Getreidebörse (Corn Exchange, erbaut 1897, heute das Einkaufszentrum The Triangle) und das neugotische Rathaus von Manchester, das 1877 von Alfred Waterhouse entworfen wurde. Das 1830 erbaute Empfangsgebäude des 1839 erbauten Bahnhofs Liverpool Road ist das älteste erhaltene der Welt.</p>
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Museum of Science and Industry</h6>
+
+                            <p>Das Industriemuseum wurde an der Stelle des ältesten Bahnhofs der Welt errichtet. In zwölf Galerien werden zahlreiche technische Entwicklungen ausgestellt: Wasser- und Dampfkraft betriebene Maschinen aus der Zeit der Textilindustrie, alte Dampfloks, Oldtimer sowie Computer der ersten Generation.</p>
+                        </li>
+
+                        <li>
+                            <h6>Manchester United Football Club</h6>
+
+                            <p>Der Fußballclub gehört weltweit zu den berühmtesten Markennamen. Spielt die Mannschaft in der Stadt, kommen Tausende Besucher aus der ganzen Welt zum Match. Es gibt ein Clubmuseum, und es werden Führungen durch das Stadion angeboten. Museum und Führungen tgl. 9.30-17 Uhr | Kombiticket £ 10 | Reservierung empfohlen, Tickets für Spiele und Führungen unter <a href="http://www.manutd.com">www.manutd.com</a></p>
+                        </li>
+
+                        <li>
+                            <h6>Salford Quays</h6>
+
+                            <p>Der alte Binnenhafen im Stadtteil Salford hat mit zwei Attraktionen ein ganz neues Image bekommen. Das Imperial War Museum North (Tel. 0161/8364000 | www.iwm.org.uk | Eintritt frei), ein spektakuläres Werk des international renommierten Daniel Libeskind, beschäftigt sich auf sensible Weise mit dem Thema „Mensch und Krieg“.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museum of Science <br> and Technology</h6>
+
+                            <p>Erbaut um die 1975 stillgelegte älteste Eisenbahnstation der Welt. Der Knüller der Ausstellung ist die Power Hall mit der weltgrößten Sammlung von Dampfmaschinen. Ein Museum zum Anfassen und Ausprobieren. Tgl. 10-17 Uhr | Eintritt frei | Lower Byron Street | <a href="http://www.msim.org.uk">www.msim.org.uk</a></p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Manchesters</h5>
+
+                    <img src="../../../img/manchesterVille1.jpg" alt="manchesterVille1">
+                    <img src="../../../img/manchesterVille2.jpg" alt="manchesterVille2">
+                    <img src="../../../img/manchesterVille3.jpg" alt="manchesterVille3">
+                    <img src="../../../img/manchesterVille4.jpg" alt="manchesterVille4">
+                    <img src="../../../img/manchesterVille5.jpg" alt="manchesterVille5">
+                    <img src="../../../img/manchesterVille6.jpg" alt="manchesterVille6">
+                    <img src="../../../img/manchesterVille7.jpg" alt="manchesterVille7">
+                    <img src="../../../img/manchesterVille8.jpg" alt="manchesterVille8">
+                    <img src="../../../img/manchesterVille9.jpg" alt="manchesterVille9">
+
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/manchesterHotel1.jpg" alt="manchesterHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187069-d209369-Reviews-Jurys_Inn_Manchester_City_Centre-Manchester_Greater_Manchester_England.html">
+                                    Jurys Inn Manchester City Centre
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 601 Bewertungen</div>
+                            <p>Nr. 1 von 115 Hotels in Manchester</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d209369-r364754592-Jurys_Inn_Manchester_City_Centre-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Sehr gut platziert” <span>17/04/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d209369-r321441998-Jurys_Inn_Manchester_City_Centre-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Modern, neu und schön” <span>24/10/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d209369-r319925151-Jurys_Inn_Manchester_City_Centre-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Zum Wiederkommen !” <span>18/10/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d209369-r261193698-Jurys_Inn_Manchester_City_Centre-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Preis/Leistung naja naja !” <span>23/03/2015</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187069-d209369-Reviews-Jurys_Inn_Manchester_City_Centre-Manchester_Greater_Manchester_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/manchesterHotel2.jpg" alt="manchesterHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187069-d1627207-Reviews-Roomzzz_Manchester_City-Manchester_Greater_Manchester_England.html">
+                                    Roomzzz Manchester City
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 289 Bewertungen</div>
+                            <p>Nr. 2 von 115 Hotels in Manchester</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d1627207-r387187353-Roomzzz_Manchester_City-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Sehr guter Aufenthalt” <span>28/06/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d1627207-r352564783-Roomzzz_Manchester_City-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Geil" <span>03/03/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d1627207-r343060753-Roomzzz_Manchester_City-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Super Hotel” <span>27/01/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d1627207-r322568200-Roomzzz_Manchester_City-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Perfekt!” <span>28/10/2015</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187069-d1627207-Reviews-Roomzzz_Manchester_City-Manchester_Greater_Manchester_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/manchesterHotel3.jpg" alt="manchesterHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187069-d193189-Reviews-The_Principal_Manchester-Manchester_Greater_Manchester_England.html">
+                                    The Principal Manchester
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">363 Bewertungen</div>
+                            <p>Nr. 3 von 115 Hotels in Manchester</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d193189-r469490581-The_Principal_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Super toll und schön” <span>22/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d193189-r469189515-The_Principal_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Fabelhaft” <span>21/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d193189-r467536856-The_Principal_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Aufenthalt super beendet” <span>19/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d193189-r451017750-The_Principal_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>”Ein 5* Palast” <span>10/01/2017</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187069-d193189-Reviews-The_Principal_Manchester-Manchester_Greater_Manchester_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/manchesterHotel4.jpg" alt="manchesterHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187069-d7905598-Reviews-INNSIDE_Manchester-Manchester_Greater_Manchester_England.html">
+                                    INNSIDE Manchester
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">1 373 Bewertungen</div>
+                            <p>Nr. 5 von 115 Hotels in Manchester</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d7905598-r453945407-INNSIDE_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Tolles hotel” <span>22/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d7905598-r446876112-INNSIDE_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Super Preise” <span>27/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d7905598-r431699997-INNSIDE_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“Toller Aufenthalt” <span>26/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g187069-d7905598-r431695082-INNSIDE_Manchester-Manchester_Greater_Manchester_England.html#CHECK_RATES_CONT">
+                                <p>“ein fantastisches Hotel” <span>26/10/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187069-d7905598-Reviews-INNSIDE_Manchester-Manchester_Greater_Manchester_England.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/manchester.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere englische Städte)</li>
+                    <li><a href="london.html">London</a></li>
+                    <li><a href="liverpool.html">Liverpool</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

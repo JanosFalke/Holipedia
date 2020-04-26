@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Vancouver | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+
+        <article>
+            <a href="../indexEnglish.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/english.png" alt="English"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/vancouver.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../de/cities/vancouver.html"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexEnglish.html">Home</a></li>
+                <li><a id="menu" onClick="toggleMenuEnglish()" class="active">Discover &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../usa.html">United States</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../france.html">France</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../germany.html">Germany</a>
+                            <ul>
+                                <li><a href="berlin.html">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munich.html">Munich</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italy.html">Italy</a>
+                            <ul>
+                                <li><a href="rome.html">Rome</a></li>
+                                <li><a href="venice.html">Venice</a></li>
+                                <li><a href="milan.html">Milan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russia.html">Russia</a>
+                            <ul>
+                                <li><a href="moscow.html">Moscow</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../sweden.html">Sweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../canada.html" class="active active2">Canada</a>
+                            <ul>
+                                <li><a href="vancouver.html" class="active active2">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../destinations.html">Destinations</a></li>
+                <li><a href="../abousus.html">Our Team</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a class="password" onClick="passWordsousDossierEN()">Premium Area</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article class="imageVancouverCity topImageCity">
+            <span>Canada</span>
+            <h3>Vancouver</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Welcome!</a></li>
+                    <li><a href="#aVoir" target="_self">Sights</a></li>
+                    <li><a href="#Decouvrir" target="_self">Discover</a></li>
+                    <li><a href="#Hebergement" target="_self">Lodging</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Welcome to Vancouver</h5>
+                    <p>Walkable neighborhoods, drink-and-dine delights and memorable cultural and outdoor activities framed by dramatic vistas – there's a glassful of great reasons to love this lotusland metropolis.</p>
+
+                    <p>Don't tell Toronto or Montreal but Vancouver is the real culinary capital of Canada. Loosen your belt and dive right into North America's best Asian dining scene, from chatty Chinese restaurants to authentic izakayas (Japanese neighborhood pubs), or taste a rich smorgasbord of fresh-caught seafood, including seasonal spot prawns and juicy wild salmon. The farm-to-table movement has also revitalized the notion of West Coast cuisine – anyone for succulent Fraser Valley duck and a side dish of foraged morels? And we haven't even started on the nation-leading craft-beer scene, plus the city's emerging craft liquor producers.</p>
+
+                    <p>Eagles whirling overhead, sunset-framed beaches, and the unfurling ocean and mountain diorama from Stanley Park's breathtaking seawall. Although I moved here in the 1990s, I've never stopped gaping at Vancouver's natural charms. For me, it's this astonishing backdrop that sets the glass-towered metropolis apart. But I'm a city boy at heart and I'm also delighted that Vancouver is continuing to develop as it grows up. From amazing dining to a thriving art scene, this young West Coast city keeps moving forward – and I don't just mean the gratifying excellent craft-beer scene (although, personally, that really helps).</p>
+
+                    <p>Downtown is just the start of Vancouver. Walk or hop public transit and within minutes you'll be hanging with the locals in one of the city's many diverse and distinctive 'hoods. Whether discovering the coffee shops of Commercial Dr or the hipster haunts of Main St, the indie bars and restaurants of Gastown or the heritage-house beachfronts and browsable stores of Kitsilano, you'll find this city perfect for easy-access urban exploration. Just be sure to chat to the locals wherever you go: they might seem shy or aloof at first, but Vancouverites love talking up their town.</p>
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Top experiences</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Museum of Anthropology</h6>
+
+                            <p>Vancouver's best museum is studded with spectacular First Nations totem poles and breathtaking carvings – but it's also teeming with artifacts from cultures around the world, from Polynesian instruments to Cantonese opera costumes. Take one of the free daily tours (check ahead for times) for some context, but give yourself at least a couple of hours to explore on your own. It's easy to immerse yourself here.</p>
+                        </li>
+
+                        <li>
+                            <h6>Stanley Park</h6>
+
+                            <p>This magnificent 404-hectare park combines excellent attractions with a mystical natural aura. Don’t miss a stroll or cycle (rentals near the W Georgia St entrance) around the 8.8km seawall: a kind of visual spa treatment fringed by a 150,000-tree temperate rainforest, it’ll take you past the park’s popular totem poles.</p>
+                        </li>
+
+                        <li>
+                            <h6>Science World</h6>
+
+                            <p>Under Vancouver's favorite geodesic dome (okay, its only one), this ever-popular science and nature showcase has tons of exhibition space and a cool outdoor park crammed with hands-on fun (yes, you can lift 2028kg). Inside, there are two floors of educational play, from a walk-in hamster wheel to an air-driven ball maze.</p>
+                        </li>
+
+                        <li>
+                            <h6>Bloedel Conservatory</h6>
+
+                            <p>Cresting the hill in Queen Elizabeth Park, this balmy, triodetic-domed conservatory is an ideal rainy-day warm-up spot, as well as Vancouver's best-value attraction. For little more than the price of a latte, you'll find tropical trees and plants bristling with hundreds of free-flying, bright-plumaged birds. Look for the resident parrots but also keep your eyes peeled for rainbow-hued Gouldian finches, shimmering African superb starlings and maybe even a sparkling Lady Amherst pheasant, snaking through the undergrowth. The attendants might even let you feed the smaller birds from a bowl.</p>
+                        </li>
+
+                        <li>
+                            <h6>Granville Island Public Market</h6>
+
+                            <p>Granville Island's highlight is the covered Public Market, a multisensory smorgasbord of fish, cheese, fruit and bakery treats. Pick up some fixings for a picnic at nearby Vanier Park or hit the international food court (dine off-peak and you're more likely to snag a table). From June to September, there's also an alfresco farmers market outside where, depending on the harvest, you'll find BC cherries, peaches and blueberries.</p>
+                        </li>
+
+                        <li>
+                            <h6>Hot Art Wet City</h6>
+
+                            <p>Possibly the most fun you can have at a private gallery in Vancouver, trip up the stairs at this funky little space and you're guaranteed some eye-popping art to look at. Lowbrow and pop art is the usual focus, and mostly local artists are showcased. There's a new exhibition every month or so and past themes have ranged from art on bike saddles and beer bottles to the annual, highly popular, button-art show.</p>
+                        </li>
+
+                        <li>
+                            <h6>Vancouver Art Gallery</h6>
+
+                            <p>The VAG has dramatically transformed since 2000, becoming a vital part of the city's cultural scene. Contemporary exhibitions – often showcasing Vancouver's renowned photoconceptualists – are now combined with blockbuster international traveling shows. Check out FUSE, a quarterly late-night party where you can hang out with the city's young arties over wine and live music.</p>
+                        </li>
+
+                        <li>
+                            <h6>Stanley Park Seawall</h6>
+
+                            <p>Built between 1917 and 1980, the 8.8km seawall trail is Vancouver's favorite outdoor hangout. Encircling the entire park, it offers spectacular waterfront, mountain-fringed vistas on one side and dense forest canopy on the other. You can walk the whole thing in around three blister-triggering hours or rent a bike from Denman St near the park entrance to cover the route far faster.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Discover the beauty of Vancouver</h5>
+
+                    <img src="../../../img/vancouverVille1.jpg" alt="vancouverVille1">
+                    <img src="../../../img/vancouverVille2.jpg" alt="vancouverVille2">
+                    <img src="../../../img/vancouverVille3.jpg" alt="vancouverVille3">
+                    <img src="../../../img/vancouverVille4.jpg" alt="vancouverVille4">
+                    <img src="../../../img/vancouverVille5.jpg" alt="vancouverVille5">
+                    <img src="../../../img/vancouverVille6.jpg" alt="vancouverVille6">
+                    <img src="../../../img/vancouverVille7.jpg" alt="vancouverVille7">
+                    <img src="../../../img/vancouverVille8.jpg" alt="vancouverVille8">
+                    <img src="../../../img/vancouverVille9.jpg" alt="vancouverVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Lodging</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/vancouverHotel1.jpg" alt="vancouverHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g154943-d182513-Reviews-Blue_Horizon_Hotel-Vancouver_British_Columbia.html">
+                                    Blue Horizon Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 394 reviews</div>
+                            <p>#2 of 89 Hotels in Vancouver</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182513-r461140170-Blue_Horizon_Hotel-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Magnificent stay” <span>23/02/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182513-r431412448-Blue_Horizon_Hotel-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Excellent” <span>25/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182513-r416818427-Blue_Horizon_Hotel-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Very nice hotel” <span>10/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182513-r415969864-Blue_Horizon_Hotel-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Good emplacement !” <span>08/09/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g154943-d182513-Reviews-Blue_Horizon_Hotel-Vancouver_British_Columbia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/vancouverHotel2.jpg" alt="vancouverHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g154943-d182528-Reviews-Hyatt_Regency_Vancouver-Vancouver_British_Columbia.html">
+                                    Hyatt Regency Vancouver
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">3 309 reviews</div>
+                            <p>#4 of 89 Hotels in Vancouver</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182528-r423781207-Hyatt_Regency_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“A wonderful journey." <span>23/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182528-r415153174-Hyatt_Regency_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“4 stars.” <span>05/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182528-r414435729-Hyatt_Regency_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Hotel, nice emplacement” <span>03/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d182528-r400416992-Hyatt_Regency_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Top hotel” <span>02/08/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g154943-d182528-Reviews-Hyatt_Regency_Vancouver-Vancouver_British_Columbia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/vancouverHotel3.jpg" alt="vancouverHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g154943-d6621137-Reviews-Hotel_BLU-Vancouver_British_Columbia.html">
+                                    Hotel BLU
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">1 386 reviews</div>
+                            <p>#5 of 89 Hotels in Vancouver</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d6621137-r446317918-Hotel_BLU-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Good emplacement” <span>23/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d6621137-r416003981-Hotel_BLU-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“excellent hotel” <span>08/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d6621137-r415438288-Hotel_BLU-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“an excellent hotel” <span>06/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d6621137-r309709859-Hotel_BLU-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>”Really good” <span>13/09/2015</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g154943-d6621137-Reviews-Hotel_BLU-Vancouver_British_Columbia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/vancouverHotel4.jpg" alt="vancouverHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.com/Hotel_Review-g154943-d156538-Reviews-The_Listel_Hotel_Vancouver-Vancouver_British_Columbia.html">
+                                    The Listel Hotel Vancouver
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">2 033 reviews</div>
+                            <p>#7 of 89 Hotels in Vancouver</p>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d156538-r455058558-The_Listel_Hotel_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“A nice hotel, not expensive” <span>26/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d156538-r424343548-The_Listel_Hotel_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Perfect” <span>02/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d156538-r297300635-The_Listel_Hotel_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“Good hotel next to citycentre” <span>09/08/2015</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.fr/ShowUserReviews-g154943-d156538-r221333966-The_Listel_Hotel_Vancouver-Vancouver_British_Columbia.html#CHECK_RATES_CONT">
+                                <p>“A very nice discovery” <span>12/08/2014</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.com/Hotel_Review-g154943-d156538-Reviews-The_Listel_Hotel_Vancouver-Vancouver_British_Columbia.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">View Deal</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexEnglish.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/en/cities/vancouver.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBeng.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Destinations</li>
+                    <li><a href="../france.html">France</a></li>
+                    <li><a href="../usa.html">United States</a></li>
+                    <li><a href="../germany.html">Germany</a></li>
+                    <li><a href="../sweden.html">Sweden</a></li>
+                    <li><a href="../russia.html">Russia</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italy.html">Italy</a></li>
+                    <li><a href="../canada.html">Canada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Bookinghelp</li>
+                    <li><a href="http://tripadvisor.com">Find a Restaurant</a></li>
+                    <li><a href="http://kayak.com">Need a Fly?</a></li>
+                    <li><a href="http://booking.com">Explore Hotels</a></li>
+                </ul>
+                <ul>
+                    <li>Other (Cities of Canada)</li>
+                    <li><a href="montreal.html">Montreal</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                    <li><a href="../sitemap.html">Site Map</a></li>
+                </ul>
+                <ul>
+                    <li>Legacy</li>
+                    <li><a href="../termsofuse.html">Terms of Use</a></li>
+                    <li><a href="../abousus.html">About Holipedia</a></li>
+                    <li><a href="../privacypolicy.html">Legal Details</a></li>
+                    <li><a href="../privacypolicy.html">Privacy Statement</a></li>
+                </ul>
+
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. All Rights reserved.</p>
+        </section>
+    </footer>
+
+</body>
+</html>

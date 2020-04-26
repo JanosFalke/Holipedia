@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../../img/favicon.png">
+
+    <title>Berlin | Holipedia</title>
+    <link rel="stylesheet" href="../../../css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="../../../js/password.js"></script>
+    <script type="text/javascript" src="../../../js/nav.js"></script>
+    <script type="text/javascript" src="../../../js/blur.js"></script>
+    <script type="text/javascript" src="../../../js/navSelect.js"></script>
+    <script type="text/javascript" src="../../../js/scrollDown.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogo.js"></script>
+    <script type="text/javascript" src="../../../js/canvasLogoResponsive.js"></script>
+</head>
+
+<body>
+    <header>
+        <input onclick="blurred()" type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+        <label for="drawer-toggle"></label>
+        <article>
+            <a href="../indexDeutsch.html">
+                <canvas id="mon_canvas"></canvas>
+                <canvas id="canvas_responsive"></canvas>
+                <h1>Holipedia</h1>
+            </a>
+        </article>
+        <nav id="primary_nav_wrap">
+
+            <ul id="navListe">
+
+                <li class="language">
+                    <a id="menuLangue" onClick="toggleMenuLanguage()"><img src="../../../img/deutsch.png" alt="Deutsch"></a>
+                    <ul id="menu-boxLangue">
+                        <li>
+                            <a href="../../villes/berlin.html"><img src="../../../img/francais.png" alt="Francais"></a>
+                        </li>
+                        <li>
+                            <a href="../../en/cities/berlin.html"><img src="../../../img/english.png" alt="English"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../indexDeutsch.html">Startseite</a></li>
+                <li><a id="menu" onClick="toggleMenuDeutsch()" class="active">Entdecken &#9662;</a>
+                    <ul id="menu-box">
+                        <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a>
+                            <ul>
+                                <li><a href="newyork.html">New York</a></li>
+                                <li><a href="lasvegas.html">Las Vegas</a></li>
+                                <li><a href="washington.html">Washington D.C.</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li><a href="../frankreich.html">Frankreich</a>
+                            <ul>
+                                <li><a href="paris.html">Paris</a></li>
+                                <li><a href="larochelle.html">La Rochelle</a></li>
+                                <li><a href="strasburg.html">Strasburg</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="../deutschland.html" class="active active2">Deutschland</a>
+                            <ul>
+                                <li><a href="berlin.html" class="active active2">Berlin</a></li>
+                                <li><a href="halle.html">Halle Westfalen</a></li>
+                                <li><a href="munchen.html">München</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../italien.html">Italien</a>
+                            <ul>
+                                <li><a href="rom.html">Rom</a></li>
+                                <li><a href="venedig.html">Venedig</a></li>
+                                <li><a href="mailand.html">Mailand</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../russland.html">Russland</a>
+                            <ul>
+                                <li><a href="moskau.html">Moskau</a></li>
+                                <li><a href="stpetersburg.html">St. Petersburg</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../schweden.html">Schweden</a>
+                            <ul>
+                                <li><a href="stockholm.html">Stockholm</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../england.html">England</a>
+                            <ul>
+                                <li><a href="london.html">London</a></li>
+                                <li><a href="manchester.html">Manchester</a></li>
+                                <li><a href="liverpool.html">Liverpool</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../kanada.html">Kanada</a>
+                            <ul>
+                                <li><a href="vancouver.html">Vancouver</a></li>
+                                <li><a href="montreal.html">Montreal</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../reiseziele.html">Reiseziele</a></li>
+                <li><a href="../unserTeam.html">Unser Team</a></li>
+                <li><a href="../kontakt.html">Kontakt</a></li>
+                <li><a class="password" onClick="passWordsousDossierDE()">Premiumbereich</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+
+
+        <article class="imageBerlinCity topImageCity">
+            <span>Deutschland</span>
+            <h3>Berlin</h3>
+        </article>
+
+        <section class="cityPages">
+            <section>
+                <ul>
+                    <li><a href="#Guide" target="_self">Willkommen !</a></li>
+                    <li><a href="#aVoir" target="_self">Sehenswertes</a></li>
+                    <li><a href="#Decouvrir" target="_self">Entdecken</a></li>
+                    <li><a href="#Hebergement" target="_self">Unterkünfte</a></li>
+                </ul>
+
+            </section>
+            <section class="cityArticles">
+                <article>
+                    <h5 id="Guide">Willkommen in Berlin</h5>
+                    <p>Wohl keiner anderen Stadt der Welt steht ihre Geschichte so sehr ins Gesicht geschrieben wie Berlin. Gewiss, die Mauer ist weg, doch im Innern ist die Stadt noch immer geteilt. Dabei ist im Zentrum Berlins ein ganz angenehmer optischer Übergang vom Wohlstandsglitzer des Westens zum neu herausgeputzten Zentrum des ehemaligen Ost-Berlin gelungen. Die Gegend wurde in den frühen Neunziger Jahren postwendend von der schicken Café-, Bar- und Kneipenszene in Beschlag genommen, während zur gleichen Zeit praktisch alle Spuren der früheren Mauer durch die Sanierungen und eine Reihe schnell hochgezogener Neubauten verwischt wurden. Doch graue, verfallende Plattenbausiedlungen am östlichen Stadtrand mit altersschwachen Trabis und einem Mangel an öffentlichen Telefonzellen lassen erahnen, dass die Mauer einstmals den Sinn hatte, einen auf Funktionalität ausgerichteten Osten vor dem dekadenten Westen zu schützen.</p>
+
+                    <p>Bevor die Mauer abgerissen wurde, schien sie das ewige Symbol für die Entfremdung einer ganzen Nation zu sein. Doch die Stadt ist den Wandel gewohnt. Angefangen bei den Wirren des Dreißigjährigen Krieges bis hin zu den grauenhaften Zerstörungen durch Bomben und Brände im zweiten Weltkrieg, befand sich Berlin ständig im Belagerungszustand oder in einer Phase des Wiederaufbaus. Selbst in Zeiten ärgsten Unfriedens und härtester Entbehrungen haben die Berliner es immer wieder verstanden, das Beste aus ihrer misslichen Lage zu machen. Das Berliner Nachtleben hatte immer schon eine etwas schräge, gleichermaßen einschüchternde wie aufregende Qualität - man denke nur an die göttliche Dekadenz einer Sally Bowles, von Liza Minelli in Cabaret großartig dargestellt, die Coolness eines Blixa Bargeld, dem Mitgründer der Einstürzenden Neubauten, oder die gequälte Noise-Lyrik eines Nick Cave. Man kann es auch so ausdrücken: In Berlin tanzt immer irgendwo der Bär.</p>
+
+
+
+
+                </article>
+                <article>
+                    <h5 id="aVoir">Sehenswertes vor Ort</h5>
+                    <ul>
+
+                        <li>
+                            <h6>Brandenburger Tor</h6>
+
+                            <p>Dieses imposante, im Jahre 1791 errichtete Bauwerk musste schon mehrere symbolische Neubelebungen über sich ergehen lassen. Ursprünglich von dem Architekten Carl Gotthard von Langhans als Symbol des Friedens entworfen, wurde das Tor ein paar Jahre später um die geflügelte Siegesgöttin und den vierspännigen Wagen (Quadriga) erweitert und so zu einem preußischen Machtsymbol. Die Göttin und ihre Rösser genossen auch einen Kurzaufenthalt in Paris, als Napoleon 1806 in Berlin vorbeikam und sie kurzerhand fortschaffte. Immer wieder missbrauchten politische Gruppen unterschiedlicher ideologischer Couleur das duldsame Brandenburger Tor als Kulisse für ihre Aufmärsche und Kundgebungen, bis 1961 schließlich die Mauer errichtet und das Tor ins Niemandsland abgeschoben wurde. Nach der Öffnung der Grenze im Jahre 1989 wurden das Brandenburger Tor und der Pariser Platz der Öffentlichkeit wieder zugänglich gemacht. Heute fließt der Verkehr ungehindert durch das Tor, und an den zahlreichen Ständen drehen schlitzohrige Händler den Touristen alle möglichen militärischen Souvenirs und Stücke der Berliner Mauer von oftmals dubioser Herkunft an. Falls die Mauer jemals aus den verkauften Stücken wieder zusammengesetzt werden sollte, kann man wahrscheinlich ganz Deutschland mit ihr umzäunen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Museum am Checkpoint Charlie</h6>
+
+                            <p>Das vorgefertigte Kontrollhäusschen, das die Alliierten nach dem Bau der Berliner Mauer am innerdeutschen Grenzübergang Checkpoint Charlie aufstellten, gibt es nicht mehr. Trotz seines festen Platzes in der Mythologie des Kalten Krieges wurde es ein paar Monate nach der Grenzöffnung sang- und klanglos fortgeschafft und steht heute im Alliierten-Museum in Berlin-Dahlem. Checkpoint Charlie ist einer der vielen Plätze Berlins, wo die offensichtliche Ausradierung der jüngeren Geschichte irritierend wirkt. Das Museum ist interessant, wenn auch überteuert. Es zeigt einige der genialen Erfindungen, mit Hilfe derer ehemalige DDR-Bürger in den Westen zu fliehen versuchten. Doch auch nach einem Besuch des Museums kann man noch nicht richtig begreifen, dass dieser an sich unscheinbare Ort mitten in der Stadt einmal einer der bedeutendsten Druckpunkte in der globalen Pattsituation zwischen Ost und West war, an dem 80 Menschen ihr Leben verloren. Neben dem Museum ist ein von den Berliner Behörden bewahrtes und von Berliner Künstlern verziertes Stück der echten Mauer zu besichtigen.</p>
+                        </li>
+
+                        <li>
+                            <h6>Kaiser-Wilhelm-Gedächtniskirche</h6>
+
+                            <p>Ende 1943 wurde die Kirche von den Engländern zerbombt, und es blieb nur der Westturm als Ruine stehen. Die von der Geschäfts- und Glitzerwelt der westlichen City eingerahmte Kirche ist nun eine der zahlreichen bizarren Sehenswürdigkeiten Berlins. Der neue Glockenturm aus blauen Glasbausteinen beherbergt einige schöne Werke von Chagall. Doch aufgepasst: Wer aus der Kirche kommt und das helle Tageslicht wieder erblickt, sollte nicht länger in Ehrfurcht erstarren, denn dort muss man sich gleich wieder gegen rasende Rollerskater durchsetzen und Fragen beantworten wie: "Haste mal 'n Euro?".</p>
+                        </li>
+
+                        <li>
+                            <h6>Kulturforum</h6>
+
+                            <p>Der Museumskomplex Dahlem war kulturell und historisch einmal ein absolutes Highlight. Doch seit jenen berauschenden Tagen mussten die Museen einige Veränderungen und Verlegungen über sich ergehen lassen: Die Bildergalerie ist endgültig in ihr neues Heim im Kulturforum in der Nähe des Potsdamer Platzes gezogen. Dort sind weiter Meilensteine des Berliner Kulturlebens: die Philharmonie, die Matthäikirche und das Museum für angewandte Künste.</p>
+                        </li>
+
+                    </ul>
+                </article>
+                <article id="Decouvrir">
+                    <h5>Entdecken Sie die Schönheit Berlins</h5>
+
+                    <img src="../../../img/berlinVille1.jpg" alt="berlinVille1">
+                    <img src="../../../img/berlinVille2.jpg" alt="berlinVille2">
+                    <img src="../../../img/berlinVille3.jpg" alt="berlinVille3">
+                    <img src="../../../img/berlinVille4.jpg" alt="berlinVille4">
+                    <img src="../../../img/berlinVille5.jpg" alt="berlinVille5">
+                    <img src="../../../img/berlinVille7.jpg" alt="berlinVille6">
+                    <img src="../../../img/berlinVille6.jpg" alt="berlinVille7">
+                    <img src="../../../img/berlinVille8.JPG" alt="berlinVille8">
+                    <img src="../../../img/berlinVille9.jpg" alt="berlinVille9">
+
+                </article>
+                <article id="Hebergement">
+                    <h5>Unterkünfte</h5>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel3.jpg" alt="berlinHotel3">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187323-d306038-Reviews-Hotel_Q-Berlin.html">
+                                    Hotel Q!
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">1 176 Bewertungen</div>
+                            <p>Nr. 1 von 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d306038-r464760096-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Nocheinmal!” <span>05/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d306038-r447240683-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Klasse tolles Hotel” <span>28/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d306038-r426052869-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Sichere Unterkunft” <span>08/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d306038-r366362581-Hotel_Q-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Hôtel Q für ein WE” <span>22/04/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187323-d306038-Reviews-Hotel_Q-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel4.jpg" alt="berlinHotel4">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187323-d1307675-Reviews-The_Circus_Hotel-Berlin.html">
+                                    The Circus Hotel
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripVotes">2 485 Bewertungen</div>
+                            <p>Nr. 3 von 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d1307675-r447993897-The_Circus_Hotel-Berlin.html#review_447993897">
+                                <p>“Perfekt !” <span>30/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d1307675-r424764893-The_Circus_Hotel-Berlin.html#review_424764893">
+                                <p>“Super für Berlinbesichtigung” <span>03/10/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d1307675-r416325773-The_Circus_Hotel-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Atemberaubend” <span>09/09/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d1307675-r397461631-The_Circus_Hotel-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Charmantes Hotel” <span>26/07/2016</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187323-d1307675-Reviews-The_Circus_Hotel-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel2.jpg" alt="berlinHotel2">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187323-d230572-Reviews-Grand_Hyatt_Berlin-Berlin.html">
+                                Grand Hyatt Berlin
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalHalf"></div>
+                            <div class="tripVotes">2 743 Bewertungen</div>
+                            <p>Nr. 23 von 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d230572-r449004193-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Tolles Gebäude...” <span>03/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d230572-r448239411-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Sehr gutes Hotel” <span>01/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d230572-r442086535-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Beste Erfahrungen” <span>05/12/2016</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d230572-r430520129-Grand_Hyatt_Berlin-Berlin.html#CHECK_RATES_CONT">
+                                <p>”Hotel der großen Klasse <span>22/10/2016</span></p>
+                            </a>
+
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187323-d230572-Reviews-Grand_Hyatt_Berlin-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                    <section>
+                        <aside>
+                            <img src="../../../img/berlinHotel1.jpg" alt="berlinHotel1">
+                        </aside>
+
+                        <aside>
+                            <a href="https://www.tripadvisor.de/Hotel_Review-g187323-d6896648-Reviews-Leonardo_Hotel_Berlin_Mitte-Berlin.html">
+                                    Leonardo Hotel Berlin Mitte
+                                </a>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval"></div>
+                            <div class="tripEval tripEvalEmpty"></div>
+                            <div class="tripVotes">870 Bewertungen</div>
+                            <p>Nr. 109 von 633 Hotels in Berlin</p>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d6896648-r464198132-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Super Aufenthalt in Berlin” <span>02/03/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d6896648-r452350708-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Super situation für einen Trip” <span>16/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d6896648-r449580011-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Gutes neues Hotel” <span>05/01/2017</span></p>
+                            </a>
+                            <a href="https://www.tripadvisor.de/ShowUserReviews-g187323-d6896648-r436737949-Leonardo_Hotel_Berlin_Mitte-Berlin.html#CHECK_RATES_CONT">
+                                <p>“Interessanter Platz” <span>13/01/2017</span></p>
+                            </a>
+                        </aside>
+
+                        <aside>
+                            <form action="https://www.tripadvisor.de/Hotel_Review-g187323-d6896648-Reviews-Leonardo_Hotel_Berlin_Mitte-Berlin.html" target="_blank">
+                                <button type="submit" value="cherche prix hotels">Zum Angebot</button>
+                            </form>
+                        </aside>
+                    </section>
+
+                </article>
+            </section>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <section class="homebar">
+            <section>
+                <a href="#navListe"><img src="../../../img/house.png" alt="Home"></a>
+            </section>
+            <section>
+                <a href="../indexDeutsch.html">Holipedia</a>
+            </section>
+        </section>
+
+
+        <section class="iconClass">
+
+            <ul>
+
+                <li>
+                    <a href="https://www.facebook.com/HolipediaOfficial/"><img class="logoFB" src="../../../img/logoFB.png" alt="Facebook"></a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/JFalkemusic"><img class="logoTwitter" src="../../../img/logoTwitter.png" alt="Twitter"></a>
+                </li>
+                <li>
+                    <a href="https://www.Instagram.com/JFalkephotography"><img class="logoInsta" src="../../../img/logoInsta.png" alt="Instagram"></a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCWqJED8Ie_6pt0gcpiYrgng?view_as=public"><img class="logoYT" src="../../../img/logoYT.png" alt="Youtube"></a>
+                </li>
+            </ul>
+
+            <ul>
+                <li class="shareFB">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=http://holipedia.000webhostapp.com/html/de/cities/berlin.html&t=Share" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" src="../../../img/shareFBdeu.png"></a>
+                </li>
+                <li>
+                    <a href="javascript:window.print()">
+                        <img src="../../../img/print.png" alt="printImg">
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <section class="socialMediaSection">
+
+
+
+            <section class="footerMenuCity">
+                <ul>
+                    <li>Reiseziele</li>
+                    <li><a href="../frankreich.html">Frankreich</a></li>
+                    <li><a href="../vereinigteStaaten.html">Vereinigte Staaten</a></li>
+                    <li><a href="../deutschland.html">Deutschland</a></li>
+                    <li><a href="../schweden.html">Schweden</a></li>
+                    <li><a href="../russland.html">Russland</a></li>
+                    <li><a href="../england.html">England</a></li>
+                    <li><a href="../italien.html">Italien</a></li>
+                    <li><a href="../kanada.html">Kanada</a></li>
+                </ul>
+
+                <ul>
+                    <li>Reservierung</li>
+                    <li><a href="http://tripadvisor.com">Richtiges Restaurant finden</a></li>
+                    <li><a href="http://kayak.com">Einen Flug finden</a></li>
+                    <li><a href="http://booking.com">Auf der Suche nach einem Hotel</a></li>
+                </ul>
+                <ul>
+                    <li>Sonstiges (andere deutsche Städte)</li>
+                    <li><a href="munchen.html">München</a></li>
+                    <li><a href="halle.html">Halle Westfalen</a></li>
+                    <li><a href="../kontakt.html">Kontakt</a></li>
+                    <li><a href="../sitemap.html">Sitemap</a></li>
+                </ul>
+                <ul>
+                    <li>Urheberschutz</li>
+                    <li><a href="../unserTeam.html">Impressum</a></li>
+                    <li><a href="../unserTeam.html">Über Holipedia</a></li>
+                    <li><a href="../datenschutz.html">Datenschutz</a></li>
+                    <li><a href="../nutzungsbedingungen.html">Nutzungsbedingungen</a></li>
+                </ul>
+
+            </section>
+        </section>
+
+        <section class="copyrightCity">
+            <p>© 2017 Holipedia, J.F. Alle Rechte vorbehalten.</p>
+        </section>
+    </footer>
+
+</body>
+</html>
